@@ -1,11 +1,11 @@
 ﻿/*.period is a class can be used over and over, # is Identifier can only be used once*/
 .TopContent  
 {
-	color:Blue ; /*Text Color*/
+	color:lawngreen ; /*Text Color*/
 	font-size: 50px;
 	width: auto;
-    height: 135px;
-	background-color: green;
+    height: 80px;
+	background-color: transparent;
 }
 .PrimaryNavigation
 {
@@ -17,6 +17,8 @@
 	line-height:1.5em;
 	left:-40px;
 	top:-22px;
+    background-color: aqua;
+    
 
 }
 .PrimaryNavigation li
@@ -29,7 +31,7 @@
 /*  anchor tag */
 .PrimaryNavigation a {
 	display:block; 
-	color:#fff;  /* text all channels = white*/
+	color:green;  /* text all channels = white*/
 	text-decoration:none; /* turn off underline */
 	font-weight:bold; /* bold the text */
 	background: blue; 
@@ -41,6 +43,7 @@
 }
 .PrimaryNavigation a:hover {
      background: #bbb;
+     color: pink;
 
 }
 h2 {

@@ -5,17 +5,27 @@
      
 <div id="contactUs">
 <br />
-<h2>Contact Us</h2>
+<h2>  </h2>
 <br />
+      <asp:Label ID="lblmsg" 
+            Text= "Contact Us!" 
+            runat="server" />
 <table>
     <!-- Name -->
     <tr>
         <td align="center">
-            Name:</td>
+            Username:</td>
         <td>
-            <asp:TextBox ID="txtName" 
-                            runat="server"
-                            Columns="50"></asp:TextBox>
+            <asp:TextBox ID="txtUsername" 
+                runat="server"
+                Columns="50">
+            </asp:TextBox>
+             <asp:RequiredFieldValidator id="txtUsernameReqValidator" 
+                runat="server" 
+                ControlToValidate="txtMessage" 
+                ErrorMessage="Please Enter Your Username."
+                ForeColor="Red"> 
+            </asp:RequiredFieldValidator>
         </td>
     </tr>
  
@@ -41,10 +51,17 @@
         </td>
         <td>
             <asp:TextBox ID="txtMessage" 
-                            runat="server"
-                            Columns="40"
-                            Rows="6" 
-                            TextMode="MultiLine"></asp:TextBox>
+                runat="server" 
+                Columns="40" 
+                Rows="6" 
+                TextMode="MultiLine">
+            </asp:TextBox>
+            <asp:RequiredFieldValidator id="txtMessageReqValidator" 
+                runat="server" 
+                ControlToValidate="txtMessage" 
+                ErrorMessage="Please Describe Your Problem."
+                ForeColor="Red"> 
+            </asp:RequiredFieldValidator>
         </td>
     </tr>
  

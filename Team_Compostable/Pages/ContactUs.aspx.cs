@@ -15,7 +15,14 @@ namespace Team_Compostable.Pages
         }
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-
+            if (Page.IsValid)
+            {
+                lblResult.Text = "Thank You";
+            }
+            else
+            {
+                lblResult.Text = "Fill up all the fields";
+            }
         }
     }
 }
