@@ -5,13 +5,14 @@
      
 <div id="contactUs">
 <br />
-<h2>  </h2>
+<h2> Contact US </h2>
 <br />
       <asp:Label ID="lblmsg" 
             Text= "Contact Us!" 
             runat="server" />
 <table>
     <!-- Name -->
+    
     <tr>
         <td align="center">
             Username:</td>
