@@ -10,7 +10,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-     <header class="TopContent"><ucBan:Banner ID="Banner" runat="server" /></header>
+     <header class="TopContent BgGradient GreenGiant"><ucBan:Banner ID="Banner" runat="server" /></header>
     <nav class="PrimaryNavigation">
         <ul>
             <asp:SiteMapDataSource ID="siteMapData" runat="server" ShowStartingNode="false" />
@@ -30,5 +30,6 @@
         </asp:ContentPlaceHolder>
     </div>
     </form>
+
 </body>
 </html>

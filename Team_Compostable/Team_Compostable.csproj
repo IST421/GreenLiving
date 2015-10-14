@@ -64,6 +64,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Images\Banner3.JPG" />
     <Content Include="Pages\CarbonCalc.aspx" />
     <Content Include="Pages\Pollution.aspx" />
     <Content Include="Pages\Terms.aspx" />
