@@ -16,16 +16,11 @@
     height: 200px;
 }
 .GreenGiant{
-    background-image:url(/Images/Banner3.JPG), linear-gradient(lightgreen, white);
+    background-image:url(/App_Themes/GreenTheme/Images/Banner3.png), linear-gradient(lightgreen, white);
     background-repeat:no-repeat;
     background-position:bottom center;
     
 }
-/*.BgGradient{
-    background-image: linear-gradient(green, white);
-    opacity:.5;
-    z-index:9999;
-}*/
 .PrimaryNavigation
 {
     font-family: Arial;
@@ -51,6 +46,9 @@
 .active{
     color:#5C832F;
 }
+h1{
+    text-align:center;
+}
 h2 {
     padding-top: 5%;
     padding-left: 25%;
@@ -61,7 +59,45 @@ h2 {
     padding-left: 25%;
 }
 .footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
     height:200px;
     width:100%;
-    border-bottom-color:red;
+    background-color:#363942;
+    text-align:center;
+}
+
+
+.leftFoot,
+.midFoot,
+.rightFoot {
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   display: inline-block;
+   text-align: center;
+   font-size: 25px;
+   padding: 0 8%;
+   margin-top:60px;
+   min-width: 300px;
+   width: 33%;
+   color:white;
+
+   
+}
+
+
+
+
+
+
+/* just messing around lol */
+@media screen and (max-width: 480px){
+.leftFoot,
+.midFoot,
+.rightFoot {
+   display: block;
+}
+
 }
