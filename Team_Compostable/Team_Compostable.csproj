@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\BlueTheme\BlueTheme.css" />
     <Content Include="App_Themes\GreenTheme\Images\Banner3.png" />
     <Content Include="GreenLiving.Master" />
     <None Include="Web.Debug.config">
@@ -141,6 +142,7 @@
   <ItemGroup>
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
+    <Folder Include="App_Themes\BlueTheme\Images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

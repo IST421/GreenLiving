@@ -1,12 +1,12 @@
 ﻿/*.period is a class can be used over and over, # is Identifier can only be used once*/
 /*
-    COLORS FOR THIS THEME...
+    COLORS FOR BLUE THEME...
 
-    #FFE8F6 white
-    #5C832F light green
-    #284907 dark forest green
-    #382513 brown
-    #363942 dark grey
+    #00001E Dark dark blue
+    #AA3133 Retro red
+    #004C4C Dark teal
+    #E2CDAF Light beige
+    #319BBC Light blue
 
 */
 body{
@@ -18,11 +18,9 @@ body{
     height: 200px;
 }
 .GreenGiant{
-    background-image:url(../GreenTheme/Images/Banner3.png), linear-gradient(lightgreen, white);
+    background-image:url(../GreenTheme/Images/Banner3.png), linear-gradient(#319BBC, white);
     background-repeat:no-repeat;
     background-position:bottom center;
-   
-    
 }
 .PrimaryNavigation
 {
