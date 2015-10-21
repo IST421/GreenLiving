@@ -59,12 +59,10 @@
   <ItemGroup>
     <Content Include="App_Themes\BlueTheme\BlueTheme.css" />
     <Content Include="App_Themes\GreenTheme\Images\Banner3.png" />
-    <Content Include="Controls\CarbonFoot.ascx" />
     <Content Include="Controls\Contact.ascx" />
     <Content Include="Controls\Events.ascx" />
     <Content Include="Controls\Home.ascx" />
     <Content Include="Controls\Pollution.ascx" />
-    <Content Include="Controls\Terms.ascx" />
     <Content Include="Global.asax" />
     <Content Include="GreenLiving.Master" />
     <None Include="Web.Debug.config">
@@ -112,13 +110,6 @@
     <Compile Include="Controls\Banner.ascx.designer.cs">
       <DependentUpon>Banner.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Controls\CarbonFoot.ascx.cs">
-      <DependentUpon>CarbonFoot.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\CarbonFoot.ascx.designer.cs">
-      <DependentUpon>CarbonFoot.ascx</DependentUpon>
-    </Compile>
     <Compile Include="Controls\Contact.ascx.cs">
       <DependentUpon>Contact.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -146,13 +137,6 @@
     </Compile>
     <Compile Include="Controls\Pollution.ascx.designer.cs">
       <DependentUpon>Pollution.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Terms.ascx.cs">
-      <DependentUpon>Terms.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\Terms.ascx.designer.cs">
-      <DependentUpon>Terms.ascx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

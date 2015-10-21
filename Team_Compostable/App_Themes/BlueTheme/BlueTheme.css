@@ -45,7 +45,7 @@ body{
     text-align:center;
 }
 .PrimaryNavigation :hover{
-    color:#5C832F;
+    color:#004C4C; 
 }
 .active{
     color:#5C832F;
@@ -70,7 +70,7 @@ h2 {
     left: 0;
     height:100px;
     width:100%;
-    background-color:#363942;
+    background-color:#00001E;
     text-align:center;
     
    
