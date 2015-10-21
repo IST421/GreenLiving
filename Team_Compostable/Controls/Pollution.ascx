@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Pollution.ascx.cs" Inherits="Team_Compostable.Controls.Pollution" %>
+<asp:Label ID="lblPollution" Text="<%$ Resources:WebResources, LabelPollution %>" runat="server" />

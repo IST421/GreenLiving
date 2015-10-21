@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D8FAA0C3-7426-410D-89E6-AAEE014982A4}"
 	ProjectSection(SolutionItems) = preProject
 		Default.html = Default.html
+		Team_Compostable\GreenLiving.Master = Team_Compostable\GreenLiving.Master
 	EndProjectSection
 EndProject
 Global

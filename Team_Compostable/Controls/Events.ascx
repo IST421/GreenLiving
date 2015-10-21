@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Events.ascx.cs" Inherits="Team_Compostable.Controls.Events" %>
+<asp:Label ID="lblEvents" Text="<%$ Resources:WebResources, LabelEvents %>" runat="server" />

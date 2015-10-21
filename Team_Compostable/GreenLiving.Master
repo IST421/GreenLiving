@@ -1,5 +1,14 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GreenLiving.Master.cs" Inherits="Team_Compostable.Site1" %>
 <%@ Register Src="~/Controls/Banner.ascx" TagName="Banner" TagPrefix="ucBan" %>
+<%@ Register Src="~/Controls/Home.ascx" TagName="Home" TagPrefix="ucHome" %>
+<%@ Register Src="~/Controls/CarbonFoot.ascx" TagName="CarbFoot" TagPrefix="ucCar" %>
+<%@ Register Src="~/Controls/Contact.ascx" TagName="Contact" TagPrefix="ucCon" %>
+<%@ Register Src="~/Controls/Events.ascx" TagName="Events" TagPrefix="ucEvt" %>
+<%@ Register Src="~/Controls/Pollution.ascx" TagName="Pollution" TagPrefix="ucPol" %>
+<%@ Register Src="~/Controls/Terms.ascx" TagName="Terms" TagPrefix="ucTerm" %>
+
+
+
 
 <!DOCTYPE html>
 
@@ -7,10 +16,16 @@
 <head runat="server">
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
+   
     </asp:ContentPlaceHolder>
+
 </head>
 <body>
-     <header class="TopContent GreenGiant"><ucBan:Banner ID="Banner" runat="server" /></header>
+     <header class="TopContent GreenGiant"><ucBan:Banner ID="Banner" runat="server" />
+      <asp:ContentPlaceHolder ID="Header" runat="server">
+      
+    </asp:ContentPlaceHolder>
+     </header>
     <nav class="PrimaryNavigation">
         <ul>
             <asp:SiteMapDataSource ID="siteMapData" runat="server" ShowStartingNode="false" />
@@ -20,13 +35,19 @@
                     <a href="<%# Eval("url") %>"><%# Eval("title") %></a>
                 </li>
                 </ItemTemplate>
-            </asp:Repeater>
+            </asp:Repeater> 
         </ul>
    </nav>	
     <form id="form1" runat="server">
+ <%--     <asp:DropDownList runat="server" ID="DropDownList1" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+      <asp:ListItem Value="en" Text="English" />
+      <asp:ListItem Value="fr" Text="French" />
+      <asp:ListItem Value="de" Text="German" />
+</asp:DropDownList>--%>
     <div>
+       
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
+
         </asp:ContentPlaceHolder>
     </div>
 

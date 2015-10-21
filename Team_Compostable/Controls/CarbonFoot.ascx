@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CarbonFoot.ascx.cs" Inherits="Team_Compostable.Controls.CarbonFoot" %>
+<asp:Label ID="lblCarbFoot" Text="<%$ Resources:WebResources, LabelCarbFoot %>" runat="server" />
