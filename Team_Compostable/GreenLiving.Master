@@ -5,7 +5,6 @@
 <%@ Register Src="~/Controls/Contact.ascx" TagName="Contact" TagPrefix="ucCon" %>
 <%@ Register Src="~/Controls/Events.ascx" TagName="Events" TagPrefix="ucEvt" %>
 <%@ Register Src="~/Controls/Pollution.ascx" TagName="Pollution" TagPrefix="ucPol" %>
-<%@ Register Src="~/Controls/Terms.ascx" TagName="Terms" TagPrefix="ucTerm" %>
 
 
 

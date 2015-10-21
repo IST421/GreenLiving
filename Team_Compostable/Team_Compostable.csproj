@@ -57,8 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Themes\BlueTheme\BlueTheme.css" />
     <Content Include="App_Themes\GreenTheme\Images\Banner3.png" />
+    <Content Include="Controls\CarbonFoot.ascx" />
     <Content Include="Controls\Contact.ascx" />
     <Content Include="Controls\Events.ascx" />
     <Content Include="Controls\Home.ascx" />
@@ -109,6 +109,10 @@
     </Compile>
     <Compile Include="Controls\Banner.ascx.designer.cs">
       <DependentUpon>Banner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CarbonFoot.ascx.cs">
+      <DependentUpon>CarbonFoot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Controls\Contact.ascx.cs">
       <DependentUpon>Contact.ascx</DependentUpon>
@@ -195,7 +199,6 @@
   <ItemGroup>
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
-    <Folder Include="App_Themes\BlueTheme\Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_GlobalResources\WebResources.resx">
