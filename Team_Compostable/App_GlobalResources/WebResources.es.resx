@@ -133,6 +133,9 @@
     <value>Casa</value>
     <comment>Home page link</comment>
   </data>
+  <data name="LabelLanguage" xml:space="preserve">
+    <value>Espanol</value>
+  </data>
   <data name="LabelPollution" xml:space="preserve">
     <value>Contaminación</value>
     <comment>Pollution Page Link</comment>

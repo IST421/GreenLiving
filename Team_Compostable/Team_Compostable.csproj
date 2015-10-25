@@ -64,6 +64,7 @@
     <Content Include="Controls\Events.ascx" />
     <Content Include="Controls\Home.ascx" />
     <Content Include="Controls\Pollution.ascx" />
+    <Content Include="Controls\Languages.ascx" />
     <Content Include="Global.asax" />
     <Content Include="GreenLiving.Master" />
     <None Include="Web.Debug.config">
@@ -72,6 +73,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Images\f1.png" />
+    <Content Include="Images\f2.png" />
+    <Content Include="Images\f3.png" />
     <Content Include="Pages\CarbonCalc.aspx" />
     <Content Include="Pages\Pollution.aspx" />
     <Content Include="Pages\Terms.aspx" />
@@ -142,6 +146,13 @@
     </Compile>
     <Compile Include="Controls\Pollution.ascx.designer.cs">
       <DependentUpon>Pollution.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Languages.ascx.cs">
+      <DependentUpon>Languages.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Languages.ascx.designer.cs">
+      <DependentUpon>Languages.ascx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

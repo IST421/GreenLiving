@@ -5,6 +5,8 @@
 <%@ Register Src="~/Controls/Contact.ascx" TagName="Contact" TagPrefix="ucCon" %>
 <%@ Register Src="~/Controls/Events.ascx" TagName="Events" TagPrefix="ucEvt" %>
 <%@ Register Src="~/Controls/Pollution.ascx" TagName="Pollution" TagPrefix="ucPol" %>
+<%@ Register Src="~/Controls/Languages.ascx" TagPrefix="ucLan" TagName="Languages" %>
+
 
 
 
@@ -22,7 +24,7 @@
 <body>
      <header class="TopContent GreenGiant"><ucBan:Banner ID="Banner" runat="server" />
       <asp:ContentPlaceHolder ID="Header" runat="server">
-      
+           
     </asp:ContentPlaceHolder>
      </header>
     <nav class="PrimaryNavigation">
@@ -38,11 +40,7 @@
         </ul>
    </nav>	
     <form id="form1" runat="server">
- <%--     <asp:DropDownList runat="server" ID="DropDownList1" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
-      <asp:ListItem Value="en" Text="English" />
-      <asp:ListItem Value="fr" Text="French" />
-      <asp:ListItem Value="de" Text="German" />
-</asp:DropDownList>--%>
+         <ucLan:Languages ID="LanSelect" runat="server" />
     <div>
        
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
