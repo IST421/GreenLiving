@@ -1,8 +1,23 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GreenLiving.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Team_Compostable.Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+<asp:Content ID="mainHomeContent" ContentPlaceHolderID="mainHomeContent" runat="server">
+     <div class="mainHome">
+        <div class="mainContainer">
+            <h1>Learn about us <br /> and Our Mission</h1>
+            
+        </div>
+    </div>
+
+</asp:Content>
+
+
+<asp:Content ID="missionContent" ContentPlaceHolderID="missionContent" runat="server">
    <div id="mission">
+
+
+
      <h1> Mission Statement </h1>
     <p>
        

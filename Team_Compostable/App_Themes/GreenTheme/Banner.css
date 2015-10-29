@@ -15,7 +15,7 @@ body{
 .TopContent  
 {
 	width: auto;
-    height: 200px;
+    height: 16vh;
 }
 .GreenGiant{
     background-image:url(../GreenTheme/Images/4.PNG), linear-gradient(lightgreen, white);
@@ -24,6 +24,7 @@ body{
     
     
 }
+/*NAVIGATION CONTENT HERE*/
 .PrimaryNavigation
 {
     font-family: Arial;
@@ -61,12 +62,95 @@ h2 {
     /*padding-left: 25%;*/
     align-self: center;
 }
+
+
+
+#form1{
+    height: 100px;
+}
+
+
+.mainContainer{
+    padding:5% 7%;
+    color:white;
+    font-size: 40px;
+    text-shadow: 2px 20px 30px  black;
+
+}
+/*HOME content HERE*/
+.mainHome{
+    width: 100%;
+    height:75vh;
+    background-color:#173b17;
+}
+
+#mission{
+    font-size:20px;
+    text-align:center;
+    width:75%;
+    height:500px;
+    padding-bottom: 500px;
+    margin:auto;
+}
+
+/*EVENT content HERE*/
+.mainEvent{
+    width: 100%;
+    height:75vh;
+    background-color:brown;
+}
+.calendar{
+    padding-left: 35%;
+    font-size:30px;
+}
+.events{
+    width:100%;
+    height:600px;
+    background-color:black;
+    position:relative;
+}
+.eventsLeft{
+    width:45%;
+    height:400px;
+    float:left;
+    background-color:green;
+    left: -100%;
+    position:inherit;
+}
+.eventsRight{
+    width:45%;
+    height:400px;
+    float:right;
+    background-color:red;
+    position:inherit;
+}
+
+/*CARBON content HERE*/
+.mainCalc{
+    width: 100%;
+    height:75vh;
+    background-color:#5551ae;
+}
+
+/*POLLUTION content HERE*/
+.mainPollution{
+    width: 100%;
+    height:75vh;
+    background-color:#ff6d00;
+}
+/*CONTACT content HERE*/
+.mainContact{
+    width: 100%;
+    height:75vh;
+    background-color:#620565;
+}
 #contactUs{
     align-content: center;
     /*padding-left: 25%;*/
 }
+/*FOOTER content HERE*/
 .footer{
-    position: fixed;
+    position: relative;
     right: 0;
     bottom: 0px;
     left: 0;
@@ -77,14 +161,6 @@ h2 {
     
    
 }
-.calendar{
-    padding-left: 35%;
-    font-size:30px;
-}
-#form1{
-    height: 100px;
-}
-
 .leftFoot,
 .midFoot,
 .rightFoot {
@@ -102,20 +178,6 @@ h2 {
    
    
 }
-#mission{
-    font-size:20px;
-    text-align:center;
-    width:75%;
-    height:500px;
-    padding-bottom: 500px;
-    margin:auto;
-}
-
-
-
-
-
-
 /* just messing around lol */
 @media screen and (max-width: 480px){
 .leftFoot,
