@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Themes\BlueTheme\BlueTheme.css" />
+    <Content Include="App_Themes\GreenTheme\Images\4.PNG" />
     <Content Include="App_Themes\GreenTheme\Images\Banner3.png" />
     <Content Include="Controls\CarbonFoot.ascx" />
     <Content Include="Controls\Contact.ascx" />

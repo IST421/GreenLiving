@@ -9,14 +9,16 @@
     #363942 dark grey
 
 */
-
+body{
+    margin:0px;
+}
 .TopContent  
 {
 	width: auto;
     height: 200px;
 }
 .GreenGiant{
-    background-image:url(../GreenTheme/Images/Banner3.png), linear-gradient(lightgreen, white);
+    background-image:url(../GreenTheme/Images/4.PNG), linear-gradient(lightgreen, white);
     background-repeat:no-repeat;
     background-position:bottom center;
     
