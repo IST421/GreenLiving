@@ -3,7 +3,7 @@
 </asp:Content>
 
 <asp:Content ID="mainPollutionContent" ContentPlaceHolderID="mainPollutionContent" runat="server">
-        <div class="mainPollution">
+        <div class="mainPollution BGimg">
         <div class="mainContainer">
             <h1>Carbon Dioxide, <br /> Haze, Ozone, and More</h1>
             

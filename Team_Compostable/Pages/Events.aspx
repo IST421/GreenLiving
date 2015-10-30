@@ -3,7 +3,7 @@
 </asp:Content>
 
 <asp:Content ID="mainEventContent" ContentPlaceHolderID="mainEventContent" runat="server">
-    <div class="mainEvent">
+    <div class="mainEvent BGimg">
         <div class="mainContainer">
             <h1>All of the  Green Living events <br /> are located below</h1>
             

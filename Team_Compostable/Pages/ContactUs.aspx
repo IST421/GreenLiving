@@ -3,7 +3,7 @@
 </asp:Content>
 
 <asp:Content ID="mainContactContent" ContentPlaceHolderID="mainContactContent" runat="server">
-    <div class="mainContact">
+    <div class="mainContact BGimg">
         <div class="mainContainer">
             <h1>Questions? Concerns? <br /> Contact us below</h1>
             
