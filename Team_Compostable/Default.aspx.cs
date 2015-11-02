@@ -17,7 +17,7 @@ namespace Team_Compostable
         }
         protected override void InitializeCulture()
         {
-            if ((string)Session["Langauge"] !=null)
+            if ((string)Session["Langauge"]!= )
             {
                 string selectedLanguage = (string)Session["Langauge"];
                 UICulture = selectedLanguage;
