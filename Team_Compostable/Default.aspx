@@ -3,10 +3,16 @@
 </asp:Content>
 
 <asp:Content ID="mainHomeContent" ContentPlaceHolderID="mainHomeContent" runat="server">
-     <div class="mainHome BGimg">
-        <div class="mainContainer">
-            <h1>Mission Compostable!<br /><br /> Everything you need to know<br /> about <span class="span1"> Green Living</span></h1>
-            <p><span class="glyphicon glyphicon-menu-down"></span></p>
+    <div class="mainHome BGimg">
+        <div class=" transBOX">
+            <div class="mainContainer">
+
+                <h1>Mission Compostable!<br />
+                    <br />
+                    Everything you need to know<br />
+                    about <span class="span1">Green Living</span></h1>
+                <p><span class="glyphicon glyphicon-menu-down"></span></p>
+            </div>
         </div>
     </div>
 

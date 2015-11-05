@@ -60,8 +60,10 @@
     <Content Include="App_Themes\BlueTheme\BlueTheme.css" />
     <Content Include="App_Themes\GreenTheme\Images\4.PNG" />
     <Content Include="App_Themes\GreenTheme\Images\Banner3.png" />
+    <Content Include="App_Themes\GreenTheme\Images\contact-min.jpg" />
+    <Content Include="App_Themes\GreenTheme\Images\events-min.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\HOME-min.JPG" />
-    <Content Include="App_Themes\GreenTheme\Images\problem-min.JPG" />
+    <Content Include="App_Themes\GreenTheme\Images\Pollution-min.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\Solution-min.JPG" />
     <Content Include="Controls\CarbonFoot.ascx" />
     <Content Include="Controls\Contact.ascx" />
