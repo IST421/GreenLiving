@@ -15,16 +15,22 @@
 <head runat="server">
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
-   
+   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'/>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" /> 
     </asp:ContentPlaceHolder>
 
 </head>
 <body>
-     <header class="TopContent GreenGiant"><ucBan:Banner ID="Banner" runat="server" />
+
+    <%-- <header class="TopContent GreenGiant"><ucBan:Banner ID="Banner" runat="server" />
       <asp:ContentPlaceHolder ID="Header" runat="server">
       
     </asp:ContentPlaceHolder>
-     </header>
+     </header>--%>
+
+
+
     <nav class="PrimaryNavigation">
         <ul>
             <asp:SiteMapDataSource ID="siteMapData" runat="server" ShowStartingNode="false" />
@@ -37,18 +43,83 @@
             </asp:Repeater> 
         </ul>
    </nav>	
+
+
+
     <form id="form1" runat="server">
  <%--     <asp:DropDownList runat="server" ID="DropDownList1" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
       <asp:ListItem Value="en" Text="English" />
       <asp:ListItem Value="fr" Text="French" />
       <asp:ListItem Value="de" Text="German" />
 </asp:DropDownList>--%>
+  
+        <%--HOME AREA CONTENT--%>
+        <div>
+            <asp:ContentPlaceHolder ID="mainHomeContent" runat="server">
+
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="missionContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+
+
+        <%--EVENTS AREA CONTENT--%>
     <div>
-       
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <asp:ContentPlaceHolder ID="mainEventContent" runat="server">
 
         </asp:ContentPlaceHolder>
     </div>
+
+    <div>
+        <asp:ContentPlaceHolder ID="CalendarContent" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div>
+        <asp:ContentPlaceHolder ID="TestContent" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </div>
+
+        <%--CALC AREA CONTENT--%>
+        <div>
+            <asp:ContentPlaceHolder ID="mainCalcContent" runat="server">
+
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+        <%--POLLUTION AREA CONTENT--%>
+        <div>
+            <asp:ContentPlaceHolder ID="mainPollutionContent" runat="server">
+
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+        <%--CONTACT AREA CONTENT--%>
+        <div>
+            <asp:ContentPlaceHolder ID="mainContactContent" runat="server">
+
+            </asp:ContentPlaceHolder>
+
+        </div>
+         <div>
+            <asp:ContentPlaceHolder ID="contactContent" runat="server">
+
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+
+        <%--FOOTER ARE CONTENT--%>
 
         <div class="footer">
             <div class="leftFoot">

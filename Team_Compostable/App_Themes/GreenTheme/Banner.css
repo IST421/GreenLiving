@@ -9,13 +9,20 @@
     #363942 dark grey
 
 */
+.span1{
+    font-family: 'Pacifico', cursive;
+    color:#1bdb0c;
+    font-style:italic;
+}
+
+
 body{
     margin:0px;
 }
 .TopContent  
 {
 	width: auto;
-    height: 200px;
+    height: 16vh;
 }
 .GreenGiant{
     background-image:url(../GreenTheme/Images/4.PNG), linear-gradient(lightgreen, white);
@@ -24,6 +31,7 @@ body{
     
     
 }
+/*NAVIGATION CONTENT HERE*/
 .PrimaryNavigation
 {
     font-family: Arial;
@@ -44,7 +52,7 @@ body{
 	padding-left:.65em; 
 }
 .PrimaryNavigation ul{
-    text-align:center;
+    text-align:left;
 }
 .PrimaryNavigation :hover{
     color:#5C832F;
@@ -54,6 +62,7 @@ body{
 }
 h1{
     text-align:center;
+    
     /*padding-left: 25%;*/
 }
 h2 {
@@ -61,12 +70,107 @@ h2 {
     /*padding-left: 25%;*/
     align-self: center;
 }
+
+
+
+#form1{
+    height: 100px;
+}
+
+
+.mainContainer{
+    padding:3% 7%;
+    color:white;
+    font-size: 3.4vh;
+    text-shadow: 0px 0px 50px  black;
+}
+.mainContainer p{
+    color:white;
+    font-size:50px;
+}
+.BGimg{
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed; /*maybe*/
+    box-shadow: 1px 5px 20px  black;
+    
+}
+/*HOME content HERE*/
+.mainHome{
+    width: 100%;
+    height:50vh;
+    background-image:url(../GreenTheme/Images/HOME-min.JPG);
+}
+
+#mission{
+    font-size:20px;
+    text-align:center;
+    width:60%;
+    height:100%;
+    padding-bottom:100px;
+    margin:auto;
+}
+
+/*EVENT content HERE*/
+.mainEvent{
+    width: 100%;
+    height:50vh;
+    background-image:url(../GreenTheme/Images/events-min.jpg);
+    background-position:bottom;
+}
+.calendar{
+    padding-left: 35%;
+    font-size:30px;
+}
+.events{
+    width:100%;
+    height:600px;
+    background-color:black;
+    position:relative;
+}
+.eventsLeft{
+    width:45%;
+    height:400px;
+    float:left;
+    background-color:green;
+    left: -100%;
+    position:inherit;
+}
+.eventsRight{
+    width:45%;
+    height:400px;
+    float:right;
+    background-color:red;
+    position:inherit;
+}
+
+/*CARBON content HERE*/
+.mainCalc{
+    width: 100%;
+    height:50vh;
+    background-image:url(../GreenTheme/Images/Solution-min.JPG);
+    background-position:bottom;
+}
+
+/*POLLUTION content HERE*/
+.mainPollution{
+    width: 100%;
+    height:50vh;
+    background-image:url(../GreenTheme/Images/Pollution-min.jpg);
+}
+/*CONTACT content HERE*/
+.mainContact{
+    width: 100%;
+    height:50vh;
+    background-image:url(../GreenTheme/Images/contact-min.jpg);
+}
 #contactUs{
     align-content: center;
     /*padding-left: 25%;*/
 }
+/*FOOTER content HERE*/
 .footer{
-    position: fixed;
+    position: relative;
     right: 0;
     bottom: 0px;
     left: 0;
@@ -77,14 +181,6 @@ h2 {
     
    
 }
-.calendar{
-    padding-left: 35%;
-    font-size:30px;
-}
-#form1{
-    height: 100px;
-}
-
 .leftFoot,
 .midFoot,
 .rightFoot {
@@ -102,20 +198,6 @@ h2 {
    
    
 }
-#mission{
-    font-size:20px;
-    text-align:center;
-    width:75%;
-    height:500px;
-    padding-bottom: 500px;
-    margin:auto;
-}
-
-
-
-
-
-
 /* just messing around lol */
 @media screen and (max-width: 480px){
 .leftFoot,

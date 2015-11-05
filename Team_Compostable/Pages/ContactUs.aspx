@@ -1,7 +1,17 @@
-﻿<%@ Page Theme="BlueTheme" Title="" Language="C#" MasterPageFile="~/GreenLiving.Master" AutoEventWireup="true" CodeBehind="ContactUs.aspx.cs" Inherits="Team_Compostable.Pages.ContactUs" %>
+﻿<%@ Page Theme="GreenTheme" Title="" Language="C#" MasterPageFile="~/GreenLiving.Master" AutoEventWireup="true" CodeBehind="ContactUs.aspx.cs" Inherits="Team_Compostable.Pages.ContactUs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+<asp:Content ID="mainContactContent" ContentPlaceHolderID="mainContactContent" runat="server">
+    <div class="mainContact BGimg">
+        <div class="mainContainer">
+            <h1>Questions? Concerns? <br /> Contact us below</h1>
+            
+        </div>
+    </div>
+</asp:Content>
+
+<asp:Content ID="contactContent" ContentPlaceHolderID="contactContent" runat="server">
      
 <div id="contactUs">
 <br />
