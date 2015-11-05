@@ -11,6 +11,7 @@
 */
 body{
     margin:0px;
+    background:linear-gradient(#319BBC, white) no-repeat;
 }
 .TopContent  
 {
@@ -36,7 +37,7 @@ body{
 }
 /*  anchor tag */
 .PrimaryNavigation a {
-	color:black;  /* text all channels = white*/
+	color:#AA3133;  /* text all channels = white*/
 	text-decoration:none; /* turn off underline */
 	font-weight:bold; /* bold the text */
 	padding-left:.65em; 
@@ -45,7 +46,7 @@ body{
     text-align:center;
 }
 .PrimaryNavigation :hover{
-    color:#004C4C; 
+    color:#00001E; 
 }
 .active{
     color:#5C832F;
@@ -70,7 +71,7 @@ h2 {
     left: 0;
     height:100px;
     width:100%;
-    background-color:#00001E;
+    background-color:#004C4C;
     text-align:center;
     
    

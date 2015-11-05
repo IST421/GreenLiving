@@ -5,6 +5,8 @@ using System.Threading;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Threading;
+using System.Globalization;
 
 
 namespace Team_Compostable
@@ -15,11 +17,16 @@ namespace Team_Compostable
         {
 
         }
-        //protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        //protected override void InitializeCulture()
         //{
-        //    HttpCookie cookie = new HttpCookie("DropDownName");
-        //    cookie.Value = DropDownList1.UniqueID;
-        //    Response.SetCookie(cookie);
+        //    if ((string)Session["Langauge"] != null)
+        //    {
+        //        string selectedLanguage = (string)Session["Langauge"];
+        //        UICulture = selectedLanguage;
+        //        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(selectedLanguage);
+        //        Thread.CurrentThread.CurrentUICulture = new CultureInfo(selectedLanguage);
+        //    }
+        //    base.InitializeCulture();
         //}
      
 

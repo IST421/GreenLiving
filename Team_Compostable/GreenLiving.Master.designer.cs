@@ -49,6 +49,15 @@ namespace Team_Compostable {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// LanSelect control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Team_Compostable.Controls.WebUserControl1 LanSelect;
+        
+        /// <summary>
         /// mainHomeContent control.
         /// </summary>
         /// <remarks>

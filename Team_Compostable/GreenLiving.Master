@@ -5,6 +5,8 @@
 <%@ Register Src="~/Controls/Contact.ascx" TagName="Contact" TagPrefix="ucCon" %>
 <%@ Register Src="~/Controls/Events.ascx" TagName="Events" TagPrefix="ucEvt" %>
 <%@ Register Src="~/Controls/Pollution.ascx" TagName="Pollution" TagPrefix="ucPol" %>
+<%@ Register Src="~/Controls/Languages.ascx" TagPrefix="ucLan" TagName="Languages" %>
+
 
 
 
@@ -47,6 +49,7 @@
 
 
     <form id="form1" runat="server">
+        <ucLan:Languages ID="LanSelect" runat="server" />    
  <%--     <asp:DropDownList runat="server" ID="DropDownList1" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
       <asp:ListItem Value="en" Text="English" />
       <asp:ListItem Value="fr" Text="French" />
@@ -78,7 +81,7 @@
 
     <div>
         <asp:ContentPlaceHolder ID="CalendarContent" runat="server">
-
+       
         </asp:ContentPlaceHolder>
     </div>
 
@@ -114,9 +117,9 @@
          <div>
             <asp:ContentPlaceHolder ID="contactContent" runat="server">
 
-            </asp:ContentPlaceHolder>
+        </asp:ContentPlaceHolder>
 
-        </div>
+    </div>
 
 
         <%--FOOTER ARE CONTENT--%>
