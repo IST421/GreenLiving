@@ -17,14 +17,26 @@
 <head runat="server">
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
-   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'/>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" /> 
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     </asp:ContentPlaceHolder>
 
 </head>
 <body>
-
+   <a href="http://jquery.com/">jQuery</a>
+     <script> 
+         //code as soon as the document is ready to be manipulated
+         $(document).ready(function () {
+             $("a").click(function (event) {
+                 alert("the link will not longer take you to jquery.com");
+                 event.preventDefault();
+             });
+         }); </script>
+   
     <%-- <header class="TopContent GreenGiant"><ucBan:Banner ID="Banner" runat="server" />
       <asp:ContentPlaceHolder ID="Header" runat="server">
       
