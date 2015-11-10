@@ -11,7 +11,7 @@
                     <br />
                     Everything you need to know<br />
                     about <span class="span1">Green Living</span></h1>
-                <p><span class="glyphicon glyphicon-menu-down"></span></p>
+                <i class="fa fa-angle-double-down midmidmid"></i>
             </div>
         </div>
     </div>
@@ -36,4 +36,6 @@ We allow users to track and store information on their CO2 emissions. We do this
  <h3>Who We Do it for?<br /></h3>
 Our primary concern is for the environment. Without a sustainable and clean environment, there may negative consequences to human health, energy supply, the ecosystem, etc. In the long run this could affect future generations as well. Mission Compostable seeks to make people aware to this issue and encourages the people of today to leave less of a carbon footprint for the sake of the environment and future generations who live in it.
     </div>
+
+
 </asp:Content>

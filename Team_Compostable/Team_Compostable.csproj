@@ -58,11 +58,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Themes\BlueTheme\BlueTheme.css" />
+    <Content Include="App_Themes\BlueTheme\Images\contact-min.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\4.PNG" />
     <Content Include="App_Themes\GreenTheme\Images\Banner3.png" />
     <Content Include="App_Themes\GreenTheme\Images\contact-min.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\events-min.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\HOME-min.JPG" />
+    <Content Include="App_Themes\GreenTheme\Images\home1-min.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\Pollution-min.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\Solution-min.JPG" />
     <Content Include="Controls\CarbonFoot.ascx" />
@@ -82,6 +84,7 @@
     <Content Include="Images\f1.png" />
     <Content Include="Images\f2.png" />
     <Content Include="Images\f3.png" />
+    <Content Include="JavaScript1.js" />
     <Content Include="Pages\CarbonCalc.aspx" />
     <Content Include="Pages\Pollution.aspx" />
     <Content Include="Pages\Terms.aspx" />
@@ -217,7 +220,6 @@
   <ItemGroup>
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
-    <Folder Include="App_Themes\BlueTheme\Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_GlobalResources\WebResources.resx">

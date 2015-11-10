@@ -15,14 +15,21 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Norican' rel='stylesheet' type='text/css'/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    
+
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
-   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'/>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" /> 
+
+    
+
     </asp:ContentPlaceHolder>
 
 </head>
+
 <body>
 
     <%-- <header class="TopContent GreenGiant"><ucBan:Banner ID="Banner" runat="server" />
@@ -32,33 +39,61 @@
      </header>--%>
 
 
-
-    <nav class="PrimaryNavigation">
-        <ul>
-            <asp:SiteMapDataSource ID="siteMapData" runat="server" ShowStartingNode="false" />
-            <asp:Repeater ID="menu" runat="server" DataSourceID="siteMapData">
-                <ItemTemplate>
-                <li>
-                    <a href="<%# Eval("url") %>"><%# Eval("title") %></a>
-                </li>
-                </ItemTemplate>
-            </asp:Repeater> 
-        </ul>
-   </nav>	
-
-
+    <script>
+        //$(document).ready(function () {
+        //    alert("hi!");
+        //});
+       
+        $(".midmidmid").hover(function () {
+            $(".midmidmid").effect("bounce", { times: 4, distance: 200 }, 400);
+        });
+      
+    </script>
 
     <form id="form1" runat="server">
-        <ucLan:Languages ID="LanSelect" runat="server" />    
+
+        <nav class="PrimaryNavigation">
+            <ul>
+                <asp:SiteMapDataSource ID="siteMapData" runat="server" ShowStartingNode="false" />
+                <asp:Repeater ID="menu" runat="server" DataSourceID="siteMapData">
+                    <ItemTemplate>
+                        <li>
+                            <a href="<%# Eval("url") %>"><%# Eval("title") %></a>
+                            
+                        </li>
+
+                    </ItemTemplate>
+                </asp:Repeater>
+                <ucLan:Languages ID="LanSelect" runat="server" />
+            </ul>
+        </nav>
+
+
+
+        <%--<ucLan:Languages ID="LanSelect" runat="server" /> --%>   
  <%--     <asp:DropDownList runat="server" ID="DropDownList1" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
       <asp:ListItem Value="en" Text="English" />
       <asp:ListItem Value="fr" Text="French" />
       <asp:ListItem Value="de" Text="German" />
 </asp:DropDownList>--%>
-  
+
+      <%--  <asp:Button ID="btnSubmit" runat="server" Text="Button" />
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+                $("#<%= btnSubmit.ClientID%>").click(function () {
+                    alert("Alert using Jquery");
+                });
+            });
+
+       
+
+        </script>--%>
+
         <%--HOME AREA CONTENT--%>
         <div>
             <asp:ContentPlaceHolder ID="mainHomeContent" runat="server">
+
 
             </asp:ContentPlaceHolder>
 
