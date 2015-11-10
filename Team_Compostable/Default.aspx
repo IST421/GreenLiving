@@ -4,6 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    <div id="mission">
      <h1> Mission Statement </h1>
+       
     <p>
        
          <h2>What We Do? <br /></h2>
