@@ -5,6 +5,7 @@
 <asp:Content ID="mainCalcContent" ContentPlaceHolderID="mainCalcContent" runat="server">
      <div class="mainCalc BGimg">
         <div class="mainContainer">
+            <h1><span class="span1">Carbon Calculator</span></h1>
             <h1>Calculate your impact <br /> you have on this earth</h1>
             
         </div>
