@@ -154,16 +154,19 @@
 
         <div class="footer">
             <div class="leftFoot">
-                Copyright<br />
-                Terms and Agreements
+                <a href="~/Pages/Terms.aspx" runat="server">Copyright<br />
+                    Terms and Agreements</a>
             </div>
 
             <div class="midFoot">
-                Contact Us
+                <a href="~/Pages/ContactUs.aspx" runat="server">Contact Us</a>
             </div>
 
             <div class="rightFoot">
-                Follow Us
+                <a href="https://www.facebook.com/" runat="server" title="Facebook"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/" runat="server" title="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/" runat="server" title="Github"><i class="fa fa-github-square"></i></a>
+                <a href="https://pinterest.com/" runat="server" title="Pinterest"><i class="fa fa-pinterest-square"></i></a>
             </div>
         </div>
     </form>
