@@ -18,9 +18,9 @@ namespace Team_Compostable.Pages
         }
         protected override void InitializeCulture()
         {
-            if ((string)Session["Langauge"] != null)
+            if ((string)Session["Language"] != null)
             {
-                string selectedLanguage = (string)Session["Langauge"];
+                string selectedLanguage = (string)Session["Language"];
                 UICulture = selectedLanguage;
                 Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(selectedLanguage);
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo(selectedLanguage);
