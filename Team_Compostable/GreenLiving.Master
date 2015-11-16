@@ -19,6 +19,7 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
     <script src="JavaScript1.js" type="text/javascript"></script>
     <link href='https://fonts.googleapis.com/css?family=Norican' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
     
 
@@ -164,9 +165,9 @@
 
             <div class="rightFoot">
                 <a href="https://www.facebook.com/" runat="server" title="Facebook"><i class="fa fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/" runat="server" title="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://instagram.com/" runat="server" title="Instagram"><i class="fa fa-instagram"></i></a>
                 <a href="https://github.com/" runat="server" title="Github"><i class="fa fa-github-square"></i></a>
-                <a href="https://pinterest.com/" runat="server" title="Pinterest"><i class="fa fa-pinterest-square"></i></a>
+                <a href="https://www.pinterest.com/" runat="server" title="Pinterest"><i class="fa fa-pinterest-square"></i></a>
             </div>
         </div>
     </form>
