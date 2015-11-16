@@ -5,7 +5,7 @@
     <siteMapNode url="~/Pages/Pollution.aspx" title="$resources:WebResources,LabelPollution"  description="Pollution Solutions" />
     <siteMapNode url="~/Pages/CarbonCalc.aspx" title="$resources:WebResources,LabelCarbFoot"  description="Carbon Foot Print Calc Page" />
     <siteMapNode url="~/Pages/Events.aspx" title="$resources:WebResources,LabelEvents"  description="Events" />
-    <!--<siteMapNode url="~/Pages/ContactUs.aspx" title="$resources:WebResources,LabelContact"  description="Contact Us Page" />-->
-    <!--<siteMapNode url="~/Pages/Terms.aspx" title="$resources:WebResources,LabelTerms"  description="TermsandAgree Page" />-->
+    <siteMapNode url="~/Pages/ContactUs.aspx" title="$resources:WebResources,LabelContact"  description="Contact Us Page" />
+    <siteMapNode url="~/Pages/Terms.aspx" title="$resources:WebResources,LabelTerms"  description="TermsandAgree Page" />
   </siteMapNode>
 </siteMap>

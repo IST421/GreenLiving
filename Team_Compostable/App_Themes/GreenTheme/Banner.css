@@ -34,9 +34,9 @@
 
 body{
     margin:0px;
-    font-family:"Trebuchet MS", Helvetica, sans-serif;
 }
-.TopContent  {
+.TopContent  
+{
 	width: auto;
     height: 16vh;
 }
@@ -47,13 +47,13 @@ body{
 }
 /*NAVIGATION CONTENT HERE*/
 .PrimaryNavigation{
-    font-size:  22px; 
+    font-family: Arial;
+    font-size:  25px; 
     position:fixed; 
     width:100%;
     background:white;
     color:black;
-    transition: all 0.7s ease;
-
+    transition: all 0.6s ease;
 }
 .sticky {
      position:fixed;
@@ -75,7 +75,6 @@ body{
 	text-decoration:none; /* turn off underline */
 	font-weight:bold; /* bold the text */
 	padding-left:.65em; 
-
 }
 .PrimaryNavigation ul{
     padding-left:5%;
@@ -221,18 +220,9 @@ h2 {
     height:200px;
     width:100%;
     background-color:#363942;
-    text-align:center;  
-
-}
-.footer a{
-    text-decoration:none;
-}
-.footer a:visited{
-    color:white;
-}
-.footer a:hover{
-    color:#5C832F;
-    transition: all 0.4s ease;
+    text-align:center;
+    
+   
 }
 .leftFoot,
 .midFoot,
