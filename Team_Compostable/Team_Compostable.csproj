@@ -75,6 +75,28 @@
     <Content Include="Controls\Languages.ascx" />
     <Content Include="Global.asax" />
     <Content Include="GreenLiving.Master" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="t1.aspx" />
+    <Content Include="Web References\retrive\CompositeType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\retrive\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\retrive\Service1.wsdl" />
+    <None Include="Web References\retrive\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\retrive\Service10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\retrive\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -88,6 +110,7 @@
     <Content Include="Pages\CarbonCalc.aspx" />
     <Content Include="Pages\Pollution.aspx" />
     <Content Include="Pages\Terms.aspx" />
+    <None Include="Web References\retrive\Service1.disco" />
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
@@ -216,6 +239,23 @@
     <Compile Include="GreenLiving.Master.designer.cs">
       <DependentUpon>GreenLiving.Master</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="t1.aspx.cs">
+      <DependentUpon>t1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="t1.aspx.designer.cs">
+      <DependentUpon>t1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\retrive\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Code\" />
@@ -238,6 +278,25 @@
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>WebResources.de.designer.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:58624/Service1.svc">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\retrive\</RelPath>
+      <UpdateFromURL>http://localhost:58624/Service1.svc</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Team_Compostable_retrive_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
