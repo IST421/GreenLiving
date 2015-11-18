@@ -19,6 +19,7 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
     <script src="JavaScript1.js" type="text/javascript"></script>
     <link href='https://fonts.googleapis.com/css?family=Norican' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
     
 
@@ -148,22 +149,41 @@
         </asp:ContentPlaceHolder>
 
     </div>
+       <%--USER PROFILE CONTENT--%>
 
+       <%--Welcome user banner--%>
+
+        <div>
+            <asp:ContentPlaceHolder ID="mainUserWelcome" runat="server">
+
+
+            </asp:ContentPlaceHolder>
+        </div>
+         <%--Actual user settings and content--%>
+        <div>
+            <asp:ContentPlaceHolder ID="mainUserContent" runat="server">
+
+
+            </asp:ContentPlaceHolder>
+        </div>
 
         <%--FOOTER ARE CONTENT--%>
 
         <div class="footer">
-            <div class="leftFoot">
-                Copyright<br />
-                Terms and Agreements
+          <div class="leftFoot">
+                <a href="~/Pages/Terms.aspx" runat="server">Copyright<br />
+                    Terms and Agreements</a>
             </div>
 
-            <div class="midFoot">
-                Contact Us
+           <div class="midFoot">
+                <a href="~/Pages/ContactUs.aspx" runat="server">Contact Us</a>
             </div>
 
-            <div class="rightFoot">
-                Follow Us
+           <div class="rightFoot">
+                <a href="https://www.facebook.com/" runat="server" title="Facebook"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://instagram.com/" runat="server" title="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/" runat="server" title="Github"><i class="fa fa-github-square"></i></a>
+                <a href="https://www.pinterest.com/" runat="server" title="Pinterest"><i class="fa fa-pinterest-square"></i></a>
             </div>
         </div>
     </form>
