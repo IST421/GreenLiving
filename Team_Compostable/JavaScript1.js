@@ -6,7 +6,7 @@ $(".midArrow").hover(function () {
     $(".midArrow").effect("bounce", { times: 4, distance: 200 }, 400);
 });
 
-$(document).scroll(function () {
+$(window).scroll(function () {
     if ($(this).scrollTop() > 1) {
         $(".PrimaryNavigation").addClass("sticky");
         $(".PrimaryNavigation a").css("color", "white");
