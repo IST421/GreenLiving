@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="App_Themes\BlueTheme\BlueTheme.css" />
     <Content Include="App_Themes\BlueTheme\Images\contact-min.jpg" />
+    <Content Include="App_Themes\GreenTheme\animate.css" />
     <Content Include="App_Themes\GreenTheme\Images\4.PNG" />
     <Content Include="App_Themes\GreenTheme\Images\Banner3.png" />
     <Content Include="App_Themes\GreenTheme\Images\contact-min.jpg" />
@@ -73,7 +74,7 @@
     <Content Include="Controls\Home.ascx" />
     <Content Include="Controls\Pollution.ascx" />
     <Content Include="Controls\Languages.ascx" />
-    <Content Include="Global.asax" />
+    <Content Include="Pages\Global.asax" />
     <Content Include="GreenLiving.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -84,8 +85,9 @@
     <Content Include="Images\f1.png" />
     <Content Include="Images\f2.png" />
     <Content Include="Images\f3.png" />
-    <Content Include="JavaScript1.js" />
+    <Content Include="Pages\JavaScript1.js" />
     <Content Include="Pages\CarbonCalc.aspx" />
+    <Content Include="Pages\jquery.waypoints.min.js" />
     <Content Include="Pages\Pollution.aspx" />
     <Content Include="Pages\Terms.aspx" />
     <Content Include="Pages\UserPage.aspx" />
@@ -94,7 +96,7 @@
   <ItemGroup>
     <Content Include="App_Themes\GreenTheme\Banner.css" />
     <Content Include="Controls\Banner.ascx" />
-    <Content Include="Default.aspx" />
+    <Content Include="Pages\Default.aspx" />
     <Content Include="Pages\ContactUs.aspx" />
     <Content Include="Pages\ErrorPage.html" />
     <Content Include="Pages\Events.aspx" />
@@ -164,14 +166,14 @@
     <Compile Include="Controls\Languages.ascx.designer.cs">
       <DependentUpon>Languages.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
+    <Compile Include="Pages\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
+    <Compile Include="Pages\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Global.asax.cs">
+    <Compile Include="Pages\Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Pages\CarbonCalc.aspx.cs">

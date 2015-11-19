@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization ="true">
   <siteMapNode>
-    <siteMapNode url="~/Default.aspx" title="$resources:WebResources,LabelHome"  description="Home"/>
+    <siteMapNode url="~/Pages/Default.aspx" title="$resources:WebResources,LabelHome"  description="Home"/>
     <siteMapNode url="~/Pages/Pollution.aspx" title="$resources:WebResources,LabelPollution"  description="Pollution Solutions" />
     <siteMapNode url="~/Pages/CarbonCalc.aspx" title="$resources:WebResources,LabelCarbFoot"  description="Carbon Foot Print Calc Page" />
     <siteMapNode url="~/Pages/Events.aspx" title="$resources:WebResources,LabelEvents"  description="Events" />

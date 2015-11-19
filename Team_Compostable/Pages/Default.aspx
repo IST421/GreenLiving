@@ -1,11 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GreenLiving.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Team_Compostable.Default" %>
+<%@ Register Src="~/Controls/Languages.ascx" TagPrefix="ucLan" TagName="Languages" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
 <asp:Content ID="mainHomeContent" ContentPlaceHolderID="mainHomeContent" runat="server">
-    <div class="mainHome BGimg">
+    <div  class="mainHome BGimg">
 
-        <div class="mainContainer">
+        <div id="mainHome" class="mainContainer">
             <div class=" transBOX">
                 <h1>Mission Compostable!<br />
                     <br />
@@ -20,7 +21,7 @@
 
 
 <asp:Content ID="missionContent" ContentPlaceHolderID="missionContent" runat="server">
-   <div id="mission">
+   <div id="mission" class="animated">
 
 
        

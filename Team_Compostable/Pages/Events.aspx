@@ -5,7 +5,7 @@
 <asp:Content ID="mainEventContent" ContentPlaceHolderID="mainEventContent" runat="server">
     <div class="container-fluid mainEvent BGimg">
         <div class="mainContainer">
-            <div class=" transBOX">
+            <div class="animated transBOX" id="eventsHead">
             <h1><span class="span1">Events</span></h1>
             <h1>All of the  Green Living events <br /> are located below</h1>
             </div>
@@ -24,14 +24,14 @@
 </asp:Content>
 
 <asp:Content ID="TestContent" ContentPlaceHolderID="TestContent" runat="server">
-<div class="events">
-    <div class="eventsLeft">
-
+<div class="animated" id="events">
+    <div class="animated eventsLeft" id="eventsLeftID">
+        bull
 
     </div>
 
-    <div class="eventsRight" id="eventsRight">
-
+    <div class="animated eventsRight" id="eventsRightID">
+       shit
 
     </div>
 </div>
