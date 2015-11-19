@@ -150,15 +150,7 @@
 
     </div>
        <%--USER PROFILE CONTENT--%>
-
-       <%--Welcome user banner--%>
-
-        <div>
-            <asp:ContentPlaceHolder ID="mainUserWelcome" runat="server">
-
-
-            </asp:ContentPlaceHolder>
-        </div>
+       
          <%--Actual user settings and content--%>
         <div>
             <asp:ContentPlaceHolder ID="mainUserContent" runat="server">
