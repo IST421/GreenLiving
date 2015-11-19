@@ -4,10 +4,11 @@
 
 <asp:Content ID="mainEventContent" ContentPlaceHolderID="mainEventContent" runat="server">
     <div class="container-fluid mainEvent BGimg">
-        <div class="mainContainer transBOX ">
+        <div class="mainContainer">
+            <div class=" transBOX">
             <h1><span class="span1">Events</span></h1>
             <h1>All of the  Green Living events <br /> are located below</h1>
-            
+            </div>
         </div>
     </div>
 </asp:Content>

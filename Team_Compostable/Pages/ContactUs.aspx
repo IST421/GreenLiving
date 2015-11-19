@@ -5,9 +5,10 @@
 <asp:Content ID="mainContactContent" ContentPlaceHolderID="mainContactContent" runat="server">
     <div class="mainContact BGimg">
         <div class="mainContainer">
+            <div class=" transBOX">
             <h1><span class="span1">Contact US</span></h1>
             <h1>Questions? Concerns? <br /> Contact us below</h1>
-            
+            </div>
         </div>
     </div>
 </asp:Content>

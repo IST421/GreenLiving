@@ -4,16 +4,16 @@
 
 <asp:Content ID="mainHomeContent" ContentPlaceHolderID="mainHomeContent" runat="server">
     <div class="mainHome BGimg">
-        <div class=" transBOX">
-            <div class="mainContainer">
 
+        <div class="mainContainer">
+            <div class=" transBOX">
                 <h1>Mission Compostable!<br />
                     <br />
                     Everything you need to know<br />
                     about <span class="span1">Green Living</span></h1>
                 <i class="fa fa-angle-double-down midArrow"></i>
             </div>
-        </div>
+    </div>
     </div>
 
 </asp:Content>
@@ -23,10 +23,9 @@
    <div id="mission">
 
 
-
-     <h2> Mission Statement </h2>
-    
        
+     <h2> Mission Statement </h2>
+       <asp:Button class="ClickMe" Text="clickmememe" runat="server" ></asp:Button>
          <h3>What We Do? <br /></h3>
 Mission Compostable is a nonprofit group of individuals dedicated to utilizing modern web development skills, in order to design and develop a functional web page for those seeking to live a greener lifestyle. Our website will be able to be used for a multitude of tasks to promote green living.
  <h3>How We Do It?<br /></h3>

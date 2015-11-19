@@ -2,9 +2,9 @@
 //    alert("hi!");
 //});
 
-$(".midArrow").hover(function () {
-    $(".midArrow").effect("bounce", { times: 4, distance: 200 }, 400);
-});
+//$(".midArrow").hover(function () {
+//    $(".midArrow").effect("bounce", { times: 4, distance: 200 }, 400);
+//});
 
 $(window).scroll(function () {
     if ($(this).scrollTop() > 1) {
@@ -16,3 +16,8 @@ $(window).scroll(function () {
         $(".PrimaryNavigation a").css("color", "black");
     }
 });
+$(document).ready(function(){
+    $(".ClickMe").click(function () {
+        alert("hi!");
+    });
+ });
