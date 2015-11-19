@@ -46,19 +46,23 @@ body{
 }
 /*NAVIGATION CONTENT HERE*/
 .PrimaryNavigation{
-    font-size:  22px; 
-    position:fixed; 
+    font-size: 20px; 
+    position:relative;
     width:100%;
     background:white;
     color:black;
     transition: all 0.7s ease;
+    padding:4px;
+    height:25px;
+    top:0;
+    left:0;
 
 }
 .sticky {
+     height:20px;
      position:fixed;
      text-align:center;
-     font-size: 17px;
-     height: 50px;
+     font-size: 15px;
      background: black;
      color:white;
 }
@@ -66,7 +70,7 @@ body{
     list-style:none; 
     width:100%;
     display:inline;
-    
+    vertical-align:middle;
 }
 /*  anchor tag */
 .PrimaryNavigation a {
@@ -81,9 +85,12 @@ body{
 .PrimaryNavigation ul{
     padding-left:5%;
     text-align:left;
+    margin:0px;
+    position:center;
 }
 .PrimaryNavigation :hover{
     color:#5C832F;
+    transition: all 0.7s ease;
 }
 .active{
     color:#5C832F;
@@ -128,9 +135,8 @@ h2 {
 /*.transBOX{
     background-color:rgba(221, 221, 221, 0.42);
     border-radius:10px;
-    margin:auto;
-    width:100%;
-   
+    padding:10%;
+    width:100%; 
 }*/
 /*HOME content HERE*/
 .mainHome {
@@ -212,6 +218,7 @@ h2 {
 /*LANGUAGE*/
 .languages{
     float:right;
+    padding-right:50px;
 }
 /*USER PROFILE*/
 .mainUser{
@@ -220,21 +227,22 @@ h2 {
     background-image: linear-gradient(white, rgba(27, 219, 12, 0.60));
     color:black;
     font-size:20px;
+    position:relative;
 }
 .userMainBOX{
     width:100%;
-    height:64vh;
+    height:100vh;
     background-color:yellow;
     position:relative;
 }
         .userSettings{
             width:20%;
-            height:63vh;
+            height:99vh;
             background-color:red;
         }
         .userContent{
             width:79%;
-            height:63vh;
+            height:99vh;
             background-color:blue;
         }
              .userSettings,
@@ -248,6 +256,16 @@ h2 {
              margin-top:5px;
              min-width: 300px;
         }
+             #Link1, #Link2, #Link3, #Link4, #Link5{
+                 display:none;
+             } 
+             #Link1:target, #Link2:target, #Link3:target, #Link4:target, #Link5:target{
+                 display:block;  
+                 /*padding-top:29px;
+                 margin-top:-29px;*/   
+                 vertical-align:top;       
+                 position:relative;                 
+             }
 /*ERROR PAGE*/
 .errorPage{
 
