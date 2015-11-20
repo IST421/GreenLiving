@@ -13,8 +13,13 @@ namespace Team_Compostable
         protected void Page_Load(object sender, EventArgs e)
         {
             
+        }
+
+        protected void Submitter_Click(object sender, EventArgs e)
+        {
             Service1 retrive = new Service1();
-            yo.Text = retrive.fnlName("yo","hi");
+            retrive.fnlName("spanish20","IST421");
+
         }
     }
 }

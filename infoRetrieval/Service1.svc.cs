@@ -17,6 +17,10 @@ namespace infoRetrieval
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
+        static string strcon = ConfigurationManager.ConnectionStrings["JoeDB"].ConnectionString;
+        static SqlConnection con = new SqlConnection(strcon);
+        static SqlCommand comm = new SqlCommand();
+
         public string GetData(int value)
         {
             return string.Format("You entered: {0}", value);
@@ -36,9 +40,28 @@ namespace infoRetrieval
         }
         public string fnlName(string fname, string lname)
         {
+            try
+            {
+                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandText = "infoinsert";
+                comm.Parameters.Add("@firstname", fname);
+                comm.Parameters.Add("@lastname", lname);
+                comm.Connection = con;
+                con.Open();
+                comm.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+                con.Dispose();
+            }
             return string.Format("nice {0} and {1}", fname, lname);
         }
 
-        
+
     }
 }
