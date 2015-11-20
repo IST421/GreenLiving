@@ -50,10 +50,18 @@ namespace infoRetrieval
                 con.Open();
                 comm.ExecuteNonQuery();
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
                 throw ex;
             }
+            catch (InvalidOperationException secondEx)
+            {
+                throw secondEx;
+            }
+            catch (Exception thirdEx)
+            {
+                throw thirdEx;
+            }            
             finally
             {
                 con.Close();
