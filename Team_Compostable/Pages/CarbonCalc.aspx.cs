@@ -18,14 +18,21 @@ namespace Team_Compostable.Pages
         }
         protected override void InitializeCulture()
         {
-            if ((string)Session["Langauge"] != null)
+            try
             {
-                string selectedLanguage = (string)Session["Langauge"];
-                UICulture = selectedLanguage;
-                Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(selectedLanguage);
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo(selectedLanguage);
+                if ((string)Session["Langauge"] != null)
+                {
+                    string selectedLanguage = (string)Session["Langauge"];
+                    UICulture = selectedLanguage;
+                    Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(selectedLanguage);
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(selectedLanguage);
+                }
+                base.InitializeCulture();
             }
-            base.InitializeCulture();
+            catch (CultureNotFoundException ex)
+            {
+                
+            }
         }
     }
 }

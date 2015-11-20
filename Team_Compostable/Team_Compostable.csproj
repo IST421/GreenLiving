@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ErrorLog.txt" />
     <Content Include="App_Themes\BlueTheme\BlueTheme.css" />
     <Content Include="App_Themes\GreenTheme\Images\Banner3.png" />
     <Content Include="Controls\CarbonFoot.ascx" />
@@ -93,6 +94,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\ExceptionUtility.cs" />
     <Compile Include="App_GlobalResources\WebResources.de.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -209,8 +211,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Code\" />
-    <Folder Include="App_Data\" />
     <Folder Include="App_Themes\BlueTheme\Images\" />
   </ItemGroup>
   <ItemGroup>
