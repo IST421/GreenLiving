@@ -7,7 +7,6 @@
         <div class="mainContainer">
             <div class="animated transBOX" id="calcHead">
             <h1><span class="span1">Carbon Calculator</span></h1>
-                <asp:Button class="ClickMe" Text="clickmememe" runat="server" ></asp:Button>
             <h1>Calculate your impact <br /> you have on this earth</h1>
                   
         </div>

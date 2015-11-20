@@ -9,11 +9,9 @@
 $(window).scroll(function () {
     if ($(this).scrollTop() > 1) {
         $(".PrimaryNavigation").addClass("sticky");
-        $(".PrimaryNavigation a").css("color", "white");
     }
     else {
         $(".PrimaryNavigation").removeClass("sticky");
-        $(".PrimaryNavigation a").css("color", "black");
     }
 });
 $(document).ready(function(){
@@ -23,26 +21,52 @@ $(document).ready(function(){
 });
 
 $(document).ready(function () {
+   ///////////////////////////////////////////////////////////////// //MISSION ANIMATION
 
     // hide our element on page load
     $('#mission').css('opacity', 0);
     $('#mission').waypoint(function () {
         $('#mission').addClass('fadeInUp');
-    }, { offset: '50%' });
+    }, { offset: '70%' });
 
-    // hide our element on page load
-    $('#eventsRightID').css('opacity', 0);
-    $('#eventsRightID').waypoint(function() {
-        $('#eventsRightID').addClass('fadeInRight');
-    }, { offset: '100%' });
-    $('#eventsLeftID').css('opacity', 0);
-    $('#eventsLeftID').waypoint(function () {
-        $('#eventsLeftID').addClass('fadeInLeft');
-    }, { offset: '100%' });
 
-    $('#eventsHead, #calcHead').css('opacity', 0);
-    $('#eventsHead, #calcHead').waypoint(function () {
-        $('#eventsHead, #calcHead').addClass('fadeIn');
+    // hide our element on page load 
+   ////////////////////////////////////// WRAP
+    //////WRAP1
+    $('#eventsLeftID, #mission2').css('opacity', 0);
+    $('#eventsLeftID, #mission2').waypoint(function () {
+        $('#eventsLeftID, #mission2').addClass('fadeInLeft');
+    }, { offset: '100%' });
+    $('#eventsRightID, #mission3').css('opacity', 0);
+    $('#eventsRightID, #mission3').waypoint(function () {
+        $('#eventsRightID, #mission3').addClass('fadeInRight');
+    }, { offset: '100%' });
+    // WRAP2
+    $('#mission4').css('opacity', 0);
+    $('#mission4').waypoint(function () {
+        $('#mission4').addClass('fadeInLeft');
+    }, { offset: '75%' });
+
+    $('#mission5').css('opacity', 0);
+    $('#mission5').waypoint(function () {
+        $('#mission5').addClass('fadeInRight');
+    }, { offset: '75%' });
+
+    // WRAP3
+    $('#mission6').css('opacity', 0);
+    $('#mission6').waypoint(function () {
+        $('#mission6').addClass('fadeInLeft');
+    }, { offset: '75%' });
+
+    $('#mission7').css('opacity', 0);
+    $('#mission7').waypoint(function () {
+        $('#mission7').addClass('fadeInRight');
+    }, { offset: '75%' });
+     //////////////////////////////////END WRAP
+
+    $('#eventsHead, #calcHead, #pollutionHead, #homeHead').css('opacity', 0);
+    $('#eventsHead, #calcHead, #pollutionHead, #homeHead').waypoint(function () {
+        $('#eventsHead, #calcHead, #pollutionHead, #homeHead').addClass('fadeIn');
     }, { offset: '100%' });
  
 });

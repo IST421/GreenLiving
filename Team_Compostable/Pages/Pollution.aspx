@@ -5,7 +5,7 @@
 <asp:Content ID="mainPollutionContent" ContentPlaceHolderID="mainPollutionContent" runat="server">
         <div class="mainPollution BGimg">
         <div class="mainContainer">
-            <div class=" transBOX">
+            <div class="animated transBOX" id="pollutionHead">
             <h1><span class="span1">Pollution</span></h1>
             <h1>Carbon Dioxide, <br /> Haze, Ozone, and More</h1>
             </div>
