@@ -68,6 +68,7 @@
     <Content Include="App_Themes\GreenTheme\Images\home1-min.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\Pollution-min.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\Solution-min.JPG" />
+    <Content Include="App_Themes\GreenTheme\Images\volc-min.JPEG" />
     <Content Include="Controls\CarbonFoot.ascx" />
     <Content Include="Controls\Contact.ascx" />
     <Content Include="Controls\Events.ascx" />

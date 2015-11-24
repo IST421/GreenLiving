@@ -90,7 +90,7 @@ body{
     margin:0px;
     /*position:center;*/
 }
-.PrimaryNavigation :hover, .userSettings :hover, .basicStyle i:hover{
+.PrimaryNavigation :hover, .userSettings :hover, .mission i:hover{
     color:#5C832F;
     transition: all 0.5s ease;
 }
@@ -113,7 +113,7 @@ h2 {
 }
  /*COLUMN CONTENT*/
  .colh1 {
-   font-size: 7vh;
+   font-size: 6vh;
    margin-bottom:10px;
 }
 .myCol3 {
@@ -137,7 +137,6 @@ h2 {
     min-width: 300px;
     width: 50%;
     float:left;
-    height:10vh;
 }
             /*BASIC CONTENT STYLES*/
 /*.basicStyle{
@@ -162,6 +161,14 @@ h2 {
 }
 .middleH1{
 
+}
+/*IMAGE STYLING*/
+.circle{
+	width: 230px;
+	height: 230px;
+	-moz-border-radius: 50px; 
+	-webkit-border-radius: 50px;
+	border-radius: 50%;
 }
 .mainContainer{
     padding:3% 7%;
@@ -200,8 +207,8 @@ h2 {
     font-size:20px;
     text-align:center;
     width:60%;
-    height:100%;
-    padding:200px;
+    height:350px;
+    padding-bottom:100px;
     margin:auto;
     display:block;
 }
@@ -328,7 +335,7 @@ h2 {
     right: 0;
     bottom: 0px;
     left: 0;
-    height:200px;
+    height:225px;
     width:100%;
     background-color:#363942;
     text-align:center;  
@@ -378,7 +385,6 @@ h2 {
 #mission,
 .mission{
     display:block;
-    float:left;
     text-align:center;
     margin:auto;
 }

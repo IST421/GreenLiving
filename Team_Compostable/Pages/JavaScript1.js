@@ -36,11 +36,11 @@ $(document).ready(function () {
     $('#eventsLeftID, #mission2').css('opacity', 0);
     $('#eventsLeftID, #mission2').waypoint(function () {
         $('#eventsLeftID, #mission2').addClass('fadeInLeft');
-    }, { offset: '100%' });
+    }, { offset: '75%' });
     $('#eventsRightID, #mission3').css('opacity', 0);
     $('#eventsRightID, #mission3').waypoint(function () {
         $('#eventsRightID, #mission3').addClass('fadeInRight');
-    }, { offset: '100%' });
+    }, { offset: '75%' });
     // WRAP2
     $('#mission4').css('opacity', 0);
     $('#mission4').waypoint(function () {
