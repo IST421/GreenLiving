@@ -23,7 +23,7 @@
 <asp:Content ID="missionContent" ContentPlaceHolderID="missionContent" runat="server">
     <div id="mission" class="animated">
 
-        <div class="mission">
+        <div class="basicStyle1">
             <h1 class="colh1">What is Green Living? </h1>
             <div class="myCol3">
                 <h1><i class="fa fa-share-alt"></i></h1>
@@ -47,11 +47,11 @@
     <%--<div class="middleBreak">
                     <h1 class="colh1"> TESTTESTTEST </h1>
     </div>--%>
-    <div class="mission">
+    <div class="basicStyle1">
         <h1 class="colh1">What We Do?</h1>
         <div id="mission2" class="animated myCol2">
-            <div >
-                <img class="circle" src="../App_Themes/GreenTheme/Images/volc-min.JPEG" />
+            <div class="bgGreen circle">
+                
             </div>
         </div>
 
@@ -67,7 +67,7 @@
 
         <%--WRAPPPPPPP2--%>
     
-    <div class="mission">
+    <div class="basicStyle1">
         <h1 class="colh1">How We Do It?</h1>
         <div id="mission4" class="animated myCol2">
             <div>
@@ -87,11 +87,11 @@
 
         <%--WRAPPPPPPP3--%>
     
-    <div class="mission">
+    <div class="basicStyle1">
         <h1 class="colh1">What Value do We Bring?</h1>
         <div id="mission6" class="animated myCol2">
-            <div>
-            IMG
+            <div class="bgBee circle">
+            
             </div>
         </div>
 
@@ -105,8 +105,4 @@
         </div>
     </div>
    <%-- END WRAPPPPPP3--%>
-    <br /><br />
-    <br /><br />
-    <br /><br />
-    <br /><br />
 </asp:Content>
