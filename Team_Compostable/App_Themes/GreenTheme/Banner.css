@@ -60,6 +60,7 @@ body{
     padding:4px;
     height:25px;
     z-index:1;
+    
 
 }
 .sticky {
@@ -73,6 +74,7 @@ body{
     width:100%;
     display:inline;
     vertical-align:middle;
+
 }
 /*  anchor tag */
 .PrimaryNavigation a, .userSettings a {
@@ -86,9 +88,11 @@ body{
 }*/
 .PrimaryNavigation ul{
     padding-left:5%;
+    padding-right:5%;
     text-align:left;
     margin:0px;
     /*position:center;*/
+
 }
 .PrimaryNavigation :hover, .userSettings :hover, .basicStyle1 i:hover{
     color:#5C832F;
@@ -287,11 +291,68 @@ h2 {
     align-content: center;
     /*padding-left: 25%;*/
 }
-/*LANGUAGE*/
+/*LANGUAGE AND MODALS*/
 .languages{
     float:right;
     padding-right:50px;
 }
+.modals {
+    float:right;
+    padding-right:10px;
+    padding-left:.2em !important;
+}
+.modals i{
+    margin-right:5px;
+    font-size:15px;
+    text-shadow:none;
+}
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+        .modalDialog:target {
+	    opacity:1;
+        pointer-events: all;
+        }
+
+                .modalDialog > div {
+	                width: 400px;
+	                position: relative;
+	                margin: 10% auto;
+	                padding: 5px 20px 13px 20px;
+	                border-radius: 10px;
+	                background: white;
+                }
+                                    .close {
+	                                        background: #606061;
+	                                        color: #FFFFFF;
+	                                        line-height: 25px;
+	                                        position: absolute;
+	                                        right: -12px;
+	                                        text-align: center;
+	                                        top: -10px;
+	                                        width: 24px;
+	                                        text-decoration: none;
+	                                        font-weight: bold;
+                                            font-size:10px;
+	                                        -webkit-border-radius: 12px;
+	                                        -moz-border-radius: 12px;
+	                                        border-radius: 12px;
+	                                        -moz-box-shadow: 1px 1px 3px #000;
+	                                        -webkit-box-shadow: 1px 1px 3px #000;
+	                                        box-shadow: 1px 1px 3px #000;
+                                        }
+                                   .close:hover { background: green; }
 /*USER PROFILE*/
 .mainUser{
     width: 100%;

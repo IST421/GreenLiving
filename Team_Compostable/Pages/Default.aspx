@@ -16,6 +16,24 @@
             </div>
     </div>
     </div>
+    <%--LOGIN AND REGISTER MODALS--%>
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Register</h2>
+            <p>put some boxes here</p>
+            <p>and here</p>
+        </div>
+    </div>
+
+     <div id="openModal2" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Login</h2>
+            <p>put some boxes here</p>
+            <p>and here</p>
+        </div>
+    </div>
 
 </asp:Content>
 

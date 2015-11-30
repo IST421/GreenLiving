@@ -20,6 +20,17 @@ $(document).ready(function(){
     });
 });
 
+//MODAL TOGGLE
+$(".modalDialog").click(function (event) {
+    event.stopPropagation();
+    $('.modalDialog').toggle();
+});
+
+$(document).click(function () {
+    $('.modalDialog:target').toggle();
+});
+
+
 $(document).ready(function () {
    ///////////////////////////////////////////////////////////////// //MISSION ANIMATION
 
