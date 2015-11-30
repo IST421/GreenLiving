@@ -14,8 +14,36 @@ $(window).scroll(function () {
         $(".PrimaryNavigation").removeClass("sticky");
     }
 });
+//MODAL TOGGLE
+$(document).ready(function () {
+    function modalClose() {
+        if (location.hash == '#openModal') {
+            location.hash = '';
+        }
+    }
+    var modal = document.querySelector('#openModal');
+    modal.addEventListener('click', function (e) {
+        modalClose();
+    }, false);
 
+    modal.children[0].addEventListener('click', function (e) {
+        e.stopPropagation();
+    }, false);
 
+    function modalClose2() {
+        if (location.hash == '#openModal2') {
+            location.hash = '';
+        }
+    }
+    var modal = document.querySelector('#openModal2');
+    modal.addEventListener('click', function (e) {
+        modalClose2();
+    }, false);
+
+    modal.children[0].addEventListener('click', function (e) {
+        e.stopPropagation();
+    }, false);
+});
 
 $(document).ready(function () {
    ///////////////////////////////////////////////////////////////// //MISSION ANIMATION

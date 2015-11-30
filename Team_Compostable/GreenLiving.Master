@@ -47,12 +47,12 @@
 
     <form id="form1" runat="server">
             <%--LOGIN AND REGISTER MODALS--%>
-
-    <div id="openModal" class="modalDialog">
+        <div id="openModal" class="modalDialog">
         <div>
             <a href="#close" title="Close" class="close">X</a>
             <h2>Register</h2>
-             <asp:TableRow>
+          <%--  <asp:Table runat="server">
+                <asp:TableRow>
                 <asp:TableCell>
                     <asp:Label ID="lblFirstName" Style="color: Black;"
                         Text="First Name:" runat="server" />
@@ -70,7 +70,7 @@
                 </asp:TableCell>
             </asp:TableRow>
           
-
+            
             <asp:TableRow>
                 <asp:TableCell>
                     <asp:Label ID="lblLastName" Style="color: Black"
@@ -89,6 +89,109 @@
                         CssClass="error" />
                 </asp:TableCell>
             </asp:TableRow>
+
+                <asp:TableRow>
+                <asp:TableCell>
+                    <asp:Label ID="lblPassword" Style="color: Black"
+                        Text="Password: " runat="server" />
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:TextBox ID="txtPassword" TextMode="Password" runat="server" />
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:RequiredFieldValidator ID="valRequiredPassword"
+                        runat="server"
+                        ControlToValidate="txtPassword"
+                        ErrorMessage="* You must enter a password"
+                        Display="dynamic"
+                        CssClass="error" />
+                </asp:TableCell>
+            </asp:TableRow>
+
+            <asp:TableRow>
+                <asp:TableCell>
+                    <asp:Label ID="lblPasswordConfirmation" Style="color: Black"
+                        Text="Confirm password: " runat="server" />
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:TextBox ID="txtPasswordConfirmation" TextMode="Password" runat="server" />
+                </asp:TableCell>
+
+                <asp:TableCell>
+                    <asp:RequiredFieldValidator
+                        ID="valRequiredPasswordConfirmation" runat="server"
+                        ControlToValidate="txtPasswordConfirmation"
+                        ErrorMessage="* You must confirm your password"
+                        Display="dynamic"
+                        CssClass="error" />
+                </asp:TableCell>
+
+                <asp:TableCell>
+                    <asp:CompareValidator ID="valCompare" runat="server"
+                        ControlToValidate="txtPassword" ControlToCompare="txtPasswordConfirmation"
+                        Operator="Equal"
+                        Type="String"
+                        ErrorMessage="* Password and Confirmation do not match!"
+                        Display="dynamic"
+                        CssClass="error">
+                    </asp:CompareValidator>
+
+
+                </asp:TableCell>
+
+
+
+            </asp:TableRow>
+
+                <asp:TableRow>
+                <asp:TableCell>
+                    <asp:Label ID="lblEmailAddress" Style="color: Black"
+                        Text="Email Address:" runat="server" />
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:TextBox ID="txtEmailAddress" runat="server" />
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:RegularExpressionValidator ID="valEmailRequired"
+                        runat="server"
+                        ControlToValidate="txtEmailAddress"
+                        ValidationExpression=".*@.*\..*"
+                        ErrorMessage="* Your entry is not a valid e-mail address"
+                        Display="dynamic"
+                        CssClass="error">
+                    </asp:RegularExpressionValidator>
+                </asp:TableCell>
+            </asp:TableRow>
+
+                
+                 <asp:TableRow>
+                <asp:TableCell>
+                    <asp:Label ID="lblTelephoneNumber" Style="color: Black"
+                        Text="Telephone Number:" runat="server" />
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:TextBox ID="txtTelephoneNumber" runat="server" />
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:RequiredFieldValidator ID="valRequiredTelephoneNumber"
+                        runat="server"
+                        ControlToValidate="txtTelephoneNumber"
+                        ErrorMessage="* You must enter a telephone number"
+                        Display="dynamic"
+                        CssClass="error" />
+
+                    <asp:RegularExpressionValidator ID="ReguExpressTelephone" runat="server"
+                        ControlToValidate="txtTelephoneNumber"
+                        ValidationExpression="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        ErrorMessage="* Invalid phone number"
+                        CssClass="error"
+                        Display="Dynamic" />
+                </asp:TableCell>
+            </asp:TableRow>      
+
+            </asp:Table>--%>
+            <p>put some boxes here</p>
+            <p>and here</p>
         </div>
     </div>
 
@@ -114,6 +217,8 @@
                     </ItemTemplate>
                 </asp:Repeater>
                 <ucLan:Languages ID="LanSelect" runat="server" />
+                   <li> <a class="modals" href="#openModal"><i class="fa fa-user-plus"></i>Register</a></li>
+                   <li> <a class="modals" href="#openModal2"><i class="fa fa-sign-in"></i>Login</a></li>
             </ul>
         </nav>
 
