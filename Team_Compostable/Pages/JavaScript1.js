@@ -14,21 +14,7 @@ $(window).scroll(function () {
         $(".PrimaryNavigation").removeClass("sticky");
     }
 });
-$(document).ready(function(){
-    $(".ClickMe").click(function () {
-        alert("hi!");
-    });
-});
 
-//MODAL TOGGLE
-$(".modalDialog").click(function (event) {
-    event.stopPropagation();
-    $('.modalDialog').toggle();
-});
-
-$(document).click(function () {
-    $('.modalDialog:target').toggle();
-});
 
 
 $(document).ready(function () {

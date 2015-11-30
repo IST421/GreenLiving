@@ -46,6 +46,60 @@
 
 
     <form id="form1" runat="server">
+            <%--LOGIN AND REGISTER MODALS--%>
+
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Register</h2>
+             <asp:TableRow>
+                <asp:TableCell>
+                    <asp:Label ID="lblFirstName" Style="color: Black;"
+                        Text="First Name:" runat="server" />
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:TextBox ID="txtFirstName" runat="server" />
+                </asp:TableCell>
+                <asp:TableCell runat="server">
+                    <asp:RequiredFieldValidator ID="valFirstNameRequired"
+                        runat="server"
+                        ControlToValidate="txtFirstName"
+                        ErrorMessage="* You must enter a first name"
+                        Display="dynamic"
+                        CssClass="error" />
+                </asp:TableCell>
+            </asp:TableRow>
+          
+
+            <asp:TableRow>
+                <asp:TableCell>
+                    <asp:Label ID="lblLastName" Style="color: Black"
+                        Text="Last Name:" runat="server" />
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:TextBox ID="txtLastName" runat="server" />
+                </asp:TableCell>
+
+                <asp:TableCell>
+                    <asp:RequiredFieldValidator ID="valLastNameRequired"
+                        runat="server"
+                        ControlToValidate="txtLastName"
+                        ErrorMessage="* You must enter a last name"
+                        Display="dynamic"
+                        CssClass="error" />
+                </asp:TableCell>
+            </asp:TableRow>
+        </div>
+    </div>
+
+     <div id="openModal2" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Login</h2>
+            <p>put some boxes here</p>
+            <p>and here</p>
+        </div>
+    </div>
 
         <nav class="PrimaryNavigation">
             <ul>
