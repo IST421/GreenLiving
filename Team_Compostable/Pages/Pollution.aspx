@@ -21,21 +21,29 @@
         <h1 class="colh1">How is Pollution affecting our planet?</h1>
         <div id="pollution1" class="animated myCol2 pollutionWide">
             <div>
-                
-                    Y axis CO2 (parts per million)<br />
-                <asp:Chart ID="Chart1" OnLoad="Page_Load" runat="server" Width="550px" Height="400px" BorderStyle="solid"
-                    BackColor="LightGreen" CssClass="charts" DataSourceID="XMLFile2">
+
+
+                <asp:Chart ID="Chart1" runat="server" Width="550px" Height="400px" BorderStyle="solid"
+                    BackColor="LightGreen" DataSourceID="XmlDataSource1">
+                    <Titles>
+                        <asp:Title Text="CARBON ABOUT IN THE ATMOSPHERE THROUGH THE YEARS" Font="Relaway, 15" />
+                    </Titles>
                     <Series>
-                        <asp:Series Name="Series1" ChartType="StackedBar" YValuesPerPoint="2"></asp:Series>
+                        <asp:Series font="20pt" Color="#7bc2ed" Name="Carbon Parts per Million" XValueType="DateTime" BorderWidth="10" ChartType="Line" YValuesPerPoint="4"></asp:Series>
+
                     </Series>
                     <ChartAreas>
-                        <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
+                        <asp:ChartArea  Name="ChartArea2">
+                            <AxisX Interval="Auto" IntervalOffset="Auto" Title="YEAR" TitleFont="Relaway, 15"/>
+                            <AxisY Interval="auto" IsStartedFromZero="false"  Title="CO2 (parts per million)" TitleFont="Relaway, 15"/>
+                        </asp:ChartArea>
+
                     </ChartAreas>
                 </asp:Chart>
 
 
 
-                <asp:XmlDataSource runat="server" ID="XMLFile2" DataFile="~/App_Data/XMLFile2.xml"></asp:XmlDataSource>
+                <asp:XmlDataSource runat="server" ID="XmlDataSource1" DataFile="~/App_Data/XMLFile2.xml"></asp:XmlDataSource>
             </div>
         </div>
 
@@ -49,12 +57,20 @@
             <div>
                 
                     <asp:Chart ID="Chart2" onload="Page_Load" runat="server" Width="550px" Height="400px" BorderStyle="solid"
-                        BackColor="LightBlue">
+                        BackColor="#80c0f0">
+                        <Titles><asp:Title Text="ICE DECREASE THROUGH THE YEARS" Font="Relaway, 15"/></Titles>                      
                         <Series>
-                            <asp:Series Name="Series1"></asp:Series>
+                            <asp:Series Color="#8ded99" BorderWidth="10" ChartType="SplineArea" Name="Ice level over the years" YValuesPerPoint="6">
+                                <Points>
+                                    
+                                </Points>
+                            </asp:Series>                            
                         </Series>
                         <ChartAreas>
-                            <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
+                            <asp:ChartArea IsSameFontSizeForAllAxes="true"  Name="ChartArea1">
+                                <AxisX Interval="Auto"  Title="YEAR" TitleFont="Relaway, 15" />                          
+                                <AxisY Interval="Auto" Title="MILLION SQUARE KM" TitleFont="Relaway, 15" />
+                            </asp:ChartArea>                           
                         </ChartAreas>
                     </asp:Chart>
 
