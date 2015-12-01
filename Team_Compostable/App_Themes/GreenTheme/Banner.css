@@ -155,7 +155,7 @@ h2 {
     font-size:20px;
     text-align:center;
     width:60%;
-    height:900px;
+    height:1600px;
     padding-bottom:100px;
     margin:auto;
     display:block;
@@ -270,12 +270,16 @@ h2 {
 .pollutionSmall{
     /*background-color:red;*/
     width:40%;
-    height:250px;
+    height:450px;
 }
 .pollutionWide{
     /*background-color:yellow;*/
     width:60%;
-    height:250px;
+    height:450px;
+}
+.charts{
+   color:purple;
+   font-size:200px;
 }
 /*CONTACT content HERE*/
 .mainContact{
