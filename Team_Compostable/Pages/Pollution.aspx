@@ -26,7 +26,7 @@
                 <asp:Chart ID="Chart1" runat="server" Width="550px" Height="400px" BorderStyle="solid"
                     BackColor="LightGreen" DataSourceID="XmlDataSource1">
                     <Titles>
-                        <asp:Title Text="CARBON ABOUT IN THE ATMOSPHERE THROUGH THE YEARS" Font="Relaway, 15" />
+                        <asp:Title Text="CARBON IN THE ATMOSPHERE THROUGH THE RECENT YEARS" Font="Relaway, 15" />
                     </Titles>
                     <Series>
                         <asp:Series font="20pt" Color="#7bc2ed" Name="Carbon Parts per Million" XValueType="DateTime" BorderWidth="10" ChartType="Line" YValuesPerPoint="4"></asp:Series>
