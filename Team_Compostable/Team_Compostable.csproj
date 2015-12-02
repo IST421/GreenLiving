@@ -68,6 +68,8 @@
     <Content Include="App_Themes\GreenTheme\Images\bgBee-min.JPG" />
     <Content Include="App_Themes\GreenTheme\Images\bgGreen-min.JPG" />
     <Content Include="App_Themes\GreenTheme\Images\contact-min.jpg" />
+    <Content Include="App_Themes\GreenTheme\Images\errorPageBG.jpg" />
+    <Content Include="App_Themes\GreenTheme\Images\ErrorPageVid.mp4" />
     <Content Include="App_Themes\GreenTheme\Images\events-min.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\HOME-min.JPG" />
     <Content Include="App_Themes\GreenTheme\Images\home1-min.jpg" />
