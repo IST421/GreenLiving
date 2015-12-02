@@ -9,30 +9,65 @@
     #363942 dark grey
 
 */
+.span1{
+    font-family: 'Norican';
+    color:#1bdb0c;
+    text-shadow:5px 5px 10px black;
+}
+.midArrow{
+    animation-name:bounce;
+    animation-iteration-count:infinite;
+    animation-duration:2s;
+    text-align:center;
+    margin:auto;
+    width:100%;
+}
+@keyframes bounce {
+	0%, 40%, 80% {
+    transform:translateY(0);
+  }
+	20%, 60% {
+    transform:translateY(-15px);
+  }
 
+}
+
+body{
+    margin:0px;
+}
 .TopContent  
 {
 	width: auto;
-    height: 200px;
+    height: 16vh;
 }
 .GreenGiant{
-    background-image:url(../GreenTheme/Images/Banner3.png), linear-gradient(lightgreen, white);
+    background-image:url(../GreenTheme/Images/4.PNG), linear-gradient(lightgreen, white);
     background-repeat:no-repeat;
     background-position:bottom center;
-    
-    
 }
-.PrimaryNavigation
-{
+/*NAVIGATION CONTENT HERE*/
+.PrimaryNavigation{
     font-family: Arial;
-    font-size:  24px; 
-    position:relative; /* relative to the last element */ 
+    font-size:  25px; 
+    position:fixed; 
+    width:100%;
+    background:white;
+    color:black;
+    transition: all 0.6s ease;
 }
-.PrimaryNavigation li
-{ 
+.sticky {
+     position:fixed;
+     text-align:center;
+     font-size: 17px;
+     height: 50px;
+     background: black;
+     color:white;
+}
+.PrimaryNavigation li { 
     list-style:none; 
     width:100%;
     display:inline;
+    
 }
 /*  anchor tag */
 .PrimaryNavigation a {
@@ -42,7 +77,8 @@
 	padding-left:.65em; 
 }
 .PrimaryNavigation ul{
-    text-align:center;
+    padding-left:5%;
+    text-align:left;
 }
 .PrimaryNavigation :hover{
     color:#5C832F;
@@ -50,8 +86,10 @@
 .active{
     color:#5C832F;
 }
+
 h1{
     text-align:center;
+    
     /*padding-left: 25%;*/
 }
 h2 {
@@ -59,30 +97,133 @@ h2 {
     /*padding-left: 25%;*/
     align-self: center;
 }
+
+
+
+#form1{
+    height: 100px;
+}
+
+
+.mainContainer{
+    padding:3% 7%;
+    text-align:center;
+    color:white;
+    font-size: 3.4vh;
+    text-shadow:5px 5px 10px black;
+
+}
+.mainContainer p{
+    color:white;
+    font-size:50px;
+}
+.BGimg{
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed; /*maybe*/
+    box-shadow: 1px 5px 20px  black;
+}
+/*.transBOX{
+    background-color:rgba(221, 221, 221, 0.42);
+    border-radius:10px;
+    margin:auto;
+    width:100%;
+   
+}*/
+/*HOME content HERE*/
+.mainHome {
+    width: 100%;
+    height:100vh;
+    background-image:url(../GreenTheme/Images/home1-min.jpg);
+}
+.mainHome h1{
+    font-size:10vh;
+}
+
+#mission{
+    font-size:20px;
+    text-align:center;
+    width:60%;
+    height:100%;
+    padding-bottom:100px;
+    margin:auto;
+}
+
+/*EVENT content HERE*/
+.mainEvent{
+    width: 100%;
+    height:50vh;
+    background-image:url(../GreenTheme/Images/events-min.jpg);
+    background-position:bottom;
+}
+.calendar{
+    padding-left: 35%;
+    font-size:30px;
+}
+.events{
+    width:100%;
+    height:600px;
+    background-color:black;
+    position:relative;
+}
+.eventsLeft{
+    width:45%;
+    height:400px;
+    float:left;
+    background-color:green;
+    left: -100%;
+    position:inherit;
+}
+.eventsRight{
+    width:45%;
+    height:400px;
+    float:right;
+    background-color:red;
+    position:inherit;
+    color:white;
+}
+
+/*CARBON content HERE*/
+.mainCalc{
+    width: 100%;
+    height:50vh;
+    background-image:url(../GreenTheme/Images/Solution-min.JPG);
+    background-position:bottom;
+}
+
+/*POLLUTION content HERE*/
+.mainPollution{
+    width: 100%;
+    height:50vh;
+    background-image:url(../GreenTheme/Images/Pollution-min.jpg);
+}
+/*CONTACT content HERE*/
+.mainContact{
+    width: 100%;
+    height:50vh;
+    background-image:url(../GreenTheme/Images/contact-min.jpg);
+}
 #contactUs{
     align-content: center;
     /*padding-left: 25%;*/
 }
+/*LANGUAGE*/
+.languages{
+    float:right;
+}
+/*FOOTER content HERE*/
 .footer{
-    position: fixed;
+    position: relative;
     right: 0;
     bottom: 0px;
     left: 0;
-    height:100px;
+    height:200px;
     width:100%;
     background-color:#363942;
     text-align:center;
     
    
 }
-.calendar{
-    padding-left: 35%;
-    font-size:30px;
-}
-#form1{
-    height: 100px;
-}
-
 .leftFoot,
 .midFoot,
 .rightFoot {
@@ -100,20 +241,6 @@ h2 {
    
    
 }
-#mission{
-    font-size:20px;
-    text-align:center;
-    width:75%;
-    height:500px;
-    padding-bottom: 500px;
-    margin:auto;
-}
-
-
-
-
-
-
 /* just messing around lol */
 @media screen and (max-width: 480px){
 .leftFoot,
@@ -123,3 +250,7 @@ h2 {
 }
 
 }
+
+/*///////////////////////////////////////////////////////*/
+
+
