@@ -27,16 +27,16 @@
     
     <tr>
         <td align="center">
-            Username:</td>
+            Email:</td>
         <td>
-            <asp:TextBox ID="txtUsername" 
+            <asp:TextBox ID="txtEmail" 
                 runat="server"
                 Columns="50">
             </asp:TextBox>
-             <asp:RequiredFieldValidator id="txtUsernameReqValidator" 
+             <asp:RequiredFieldValidator id="txtEmailReqValidator" 
                 runat="server" 
                 ControlToValidate="txtMessage" 
-                ErrorMessage="Please Enter Your Username."
+                ErrorMessage="Please Enter Your Email."
                 ForeColor="Red"> 
             </asp:RequiredFieldValidator>
         </td>

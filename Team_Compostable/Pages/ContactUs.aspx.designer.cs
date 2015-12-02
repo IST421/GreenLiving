@@ -22,22 +22,22 @@ namespace Team_Compostable.Pages {
         protected global::System.Web.UI.WebControls.Label lblmsg;
         
         /// <summary>
-        /// txtUsername control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUsername;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
-        /// txtUsernameReqValidator control.
+        /// txtEmailReqValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator txtUsernameReqValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator txtEmailReqValidator;
         
         /// <summary>
         /// ddlSubject control.
