@@ -7,7 +7,9 @@
     #382513 brown
     #363942 dark grey
 */
-
+html{
+    height:100%;
+}
 .span1{
     font-family: 'Norican';
     color:#1bdb0c;
@@ -416,10 +418,22 @@ h2 {
              }
 /*ERROR PAGE*/
 .errorPage{
-    color:red;
+    background-image:url(../GreenTheme/Images/errorPageBG.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-.error{
-    color:red;
+.error{  
+    width:550px;
+    height:250px;
+    margin:auto;
+    margin-top:15%;
+    color:white;   
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size:25px;
+    text-align:center;
+    text-shadow: 1px 1px 1px black;
+    background-color:rgba(221, 221, 221, 0.30);
+    border-radius:10px;
 }
 
 
