@@ -79,8 +79,8 @@
         </div>
 
         <div id="mission5" class="animated myCol2">
-            <div>
-                 IMG
+            <div class="bgG circle">
+                 
             </div>
         </div>
     </div>

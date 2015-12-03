@@ -64,9 +64,9 @@
     <Content Include="App_Themes\BlueTheme\BlueTheme.css" />
     <Content Include="App_Themes\BlueTheme\Images\contact-min.jpg" />
     <Content Include="App_Themes\GreenTheme\animate.css" />
-    <Content Include="App_Themes\GreenTheme\Images\4.PNG" />
     <Content Include="App_Themes\GreenTheme\Images\Banner3.png" />
     <Content Include="App_Themes\GreenTheme\Images\bgBee-min.JPG" />
+    <Content Include="App_Themes\GreenTheme\Images\bgG.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\bgGreen-min.JPG" />
     <Content Include="App_Themes\GreenTheme\Images\contact-min.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\events-min.jpg" />
