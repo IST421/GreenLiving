@@ -190,7 +190,7 @@
             </asp:TableRow>      
                 <asp:TableRow>
                     <asp:TableCell>
-                        <asp:Button ID="btnSubmitRegister" OnClick="btnSubmitRegister_Click" runat ="server"/>
+                        <asp:Button ID="btnSubmitRegister" Text="Submit" OnClick="btnSubmitRegister_Click" runat ="server"/>
                     </asp:TableCell>
                 </asp:TableRow>
             </asp:Table>
