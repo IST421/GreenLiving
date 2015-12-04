@@ -92,7 +92,7 @@ body{
     margin:0px;
     /*position:center;*/
 }
-.PrimaryNavigation :hover, .userSettings :hover, .basicStyle1 i:hover{
+.PrimaryNavigation :hover, .userSettings :hover, .basicStyle1 i:hover, .error a:hover{
     color:#5C832F;
     transition: all 0.5s ease;
 }
@@ -217,6 +217,7 @@ h2 {
     background-color:rgba(221, 221, 221, 0.30);
     border-radius:10px;
     width:100%; 
+    margin:auto;
 }
 /*HOME content HERE*/
 .mainHome {
@@ -419,12 +420,15 @@ h2 {
 /*ERROR PAGE*/
 .errorPage{
     background-image:url(../GreenTheme/Images/errorPageBG.jpg);
-    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
 }
 .error{  
+    max-width:100%;
+    max-height:100%;
     width:550px;
-    height:250px;
+    height:325px;
     margin:auto;
     margin-top:15%;
     color:white;   
@@ -434,6 +438,10 @@ h2 {
     text-shadow: 1px 1px 1px black;
     background-color:rgba(221, 221, 221, 0.30);
     border-radius:10px;
+}
+.error a{
+    text-decoration:none;
+    color:white;
 }
 
 
@@ -512,6 +520,9 @@ h2 {
      display:inline-block;
      text-align:center;
  }
+ .error{
+    font-size:20px;
+}
 }
 
 
