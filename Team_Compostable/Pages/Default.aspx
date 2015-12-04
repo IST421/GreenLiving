@@ -12,8 +12,8 @@
                     <br />
                     Everything you need to know<br />
                     about <span class="span1">Green Living</span></h1>
-                <i class="fa fa-angle-double-down midArrow"></i>
             </div>
+            <i class="fa fa-angle-double-down midArrow"></i>
     </div>
     </div>
 

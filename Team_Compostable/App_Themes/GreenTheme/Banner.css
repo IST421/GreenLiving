@@ -152,6 +152,7 @@ h2 {
     padding-bottom:100px;
     margin:auto;
     display:block;
+    min-height:100%;
 }
 .basicStyle2{
     font-size:20px;
@@ -242,8 +243,7 @@ h2 {
 }
 #events{
     width:100%;
-    height:600px;
-    color:white;
+    height:400px;
 }
 .eventsLeft{
     width:45%;
@@ -259,7 +259,16 @@ h2 {
     background-color:red;
     color:white;
 }
-
+.events1{
+    width:100%;
+    margin:auto;    
+    height:100%;
+    border-radius:10px;
+}
+.itemCSS{
+    padding:20px;
+    font-size:25px;
+}
 /*CARBON content HERE*/
 .mainCalc{
     width: 100%;
@@ -486,6 +495,12 @@ h2 {
 
    
    
+}
+
+#eventsHead, #calcHead, #pollutionHead, #homeHead{
+    display:none;
+    animation-duration:1.9s;
+    transition-timing-function:ease-out;
 }
 /* just messing around lol */
 @media screen and (max-width: 480px){

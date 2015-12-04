@@ -59,6 +59,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ProductCatalog.xml" />
     <Content Include="App_Data\XMLFile1.xml" />
     <Content Include="App_Data\XMLFile2.xml" />
     <Content Include="App_Themes\BlueTheme\BlueTheme.css" />
