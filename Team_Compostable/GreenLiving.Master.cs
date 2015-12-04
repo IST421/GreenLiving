@@ -37,6 +37,8 @@ namespace Team_Compostable
 
             smtp.EnableSsl = true;
             smtp.Send(mail);
+
+
         }
         //protected override void InitializeCulture()
         //{

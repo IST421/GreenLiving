@@ -22,6 +22,9 @@ namespace infoRetrieval
         [OperationContract]
         string fnlName(string fname, string lname);
 
+        [OperationContract]
+        string userRegister(string firstname, string lastname, string username, string password, string email, string telephone);
+
         // TODO: Add your service operations here
     }
 

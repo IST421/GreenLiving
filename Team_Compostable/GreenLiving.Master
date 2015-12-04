@@ -92,6 +92,24 @@
 
                 <asp:TableRow>
                 <asp:TableCell>
+                    <asp:Label ID="lbluName" Style="color: Black;"
+                        Text="User Name:" runat="server" />
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:TextBox ID="txtUserName" runat="server" />
+                </asp:TableCell>
+                <%--<asp:TableCell runat="server">
+                    <asp:RequiredFieldValidator ID="valFirstNameRequired"
+                        runat="server"
+                        ControlToValidate="txtFirstName"
+                        ErrorMessage="* You must enter a first name"
+                        Display="dynamic"
+                        CssClass="error" />
+                </asp:TableCell>--%>
+            </asp:TableRow>
+
+                <asp:TableRow>
+                <asp:TableCell>
                     <asp:Label ID="lblPassword" Style="color: Black"
                         Text="Password: " runat="server" />
                 </asp:TableCell>
