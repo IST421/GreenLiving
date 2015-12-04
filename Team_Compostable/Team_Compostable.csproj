@@ -97,6 +97,7 @@
     <Content Include="Pages\JavaScript1.js" />
     <Content Include="Pages\CarbonCalc.aspx" />
     <Content Include="Pages\jquery.waypoints.min.js" />
+    <Content Include="Pages\Oops.aspx" />
     <Content Include="Pages\Pollution.aspx" />
     <Content Include="Pages\Terms.aspx" />
     <Content Include="Pages\UserPage.aspx" />
@@ -205,6 +206,13 @@
     </Compile>
     <Compile Include="Pages\Events.aspx.designer.cs">
       <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Oops.aspx.cs">
+      <DependentUpon>Oops.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Oops.aspx.designer.cs">
+      <DependentUpon>Oops.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Pollution.aspx.cs">
       <DependentUpon>Pollution.aspx</DependentUpon>
