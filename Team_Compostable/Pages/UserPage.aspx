@@ -6,11 +6,12 @@
 <asp:Content ID="mainUserContent" ContentPlaceHolderID="mainUserContent" runat="server">
     <div class="userMainBOX">
         <div class="userSettings">
-            <a href="#Link1">Link1</a><br />
-            <a href="#Link2">Link2</a><br />
-            <a href="#Link3">Link3</a><br />
-            <a href="#Link4">Link4</a><br />
-            <a href="#Link5">Link5</a><br />
+            <a href="#Link1">Achievements</a><br />
+            <a href="#Link2">Calculator</a><br />
+            <a href="#Link3">Account Edit</a><br />
+            <a href="#Link4">Leaderboards</a><br />
+            <a href="#Link5">Link5</a>
+            <br />
         </div>
 
         <div class="userContent">
