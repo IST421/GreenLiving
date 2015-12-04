@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Threading;
 using System.Globalization;
+using System.Net.Mail;
 
 
 namespace Team_Compostable.Pages
@@ -31,6 +32,22 @@ namespace Team_Compostable.Pages
         {
             if (Page.IsValid)
             {
+                MailMessage mail = new MailMessage();
+                mail.To.Add(txtEmail.Text);
+
+                mail.From = new MailAddress("421.team3.greenliving@gmail.com");
+                mail.Subject = ddlSubject.Text;
+                mail.Body = txtMessage.Text;
+                mail.IsBodyHtml = true;
+                
+                SmtpClient smtp = new SmtpClient();
+                smtp.Host = "smtp.gmail.com";
+                smtp.Port = 587;
+                smtp.Credentials = new System.Net.NetworkCredential
+                     ("421.team3.greenliving@gmail.com", "421Team3Joe");
+
+                smtp.EnableSsl = true;
+                smtp.Send(mail);
                 lblResult.Text = "Thank You";
             }
             else

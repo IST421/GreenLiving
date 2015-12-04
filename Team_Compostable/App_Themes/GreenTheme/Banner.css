@@ -1,42 +1,48 @@
 ﻿/*.period is a class can be used over and over, # is Identifier can only be used once*/
 /*
     COLORS FOR THIS THEME...
-
     #FFE8F6 white
     #5C832F light green
     #284907 dark forest green
     #382513 brown
     #363942 dark grey
-
 */
+html{
+    height:100%;
+}
 .span1{
     font-family: 'Norican';
     color:#1bdb0c;
-    text-shadow:5px 5px 10px black;
+    text-shadow:3px 3px 3px black;
+    font-size:12vh;
+}
+i{
+    text-shadow:1px 1px 1px black;
 }
 .midArrow{
     animation-name:bounce;
     animation-iteration-count:infinite;
-    animation-duration:2s;
-    text-align:center;
-    margin:auto;
+    animation-duration:3s;
     width:100%;
+    position:absolute;
+    bottom:0px;
+    left:0px;
 }
 @keyframes bounce {
 	0%, 40%, 80% {
     transform:translateY(0);
   }
 	20%, 60% {
-    transform:translateY(-15px);
+    transform:translateY(-10px);
   }
 
 }
 
 body{
     margin:0px;
+    font-family: 'Raleway', Helvetica, sans-serif;
 }
-.TopContent  
-{
+.TopContent  {
 	width: auto;
     height: 16vh;
 }
@@ -47,41 +53,48 @@ body{
 }
 /*NAVIGATION CONTENT HERE*/
 .PrimaryNavigation{
-    font-family: Arial;
-    font-size:  25px; 
-    position:fixed; 
+    font-size: 20px; 
+    position:fixed;
     width:100%;
     background:white;
     color:black;
-    transition: all 0.6s ease;
+    transition: all 0.5s ease-in-out;
+    padding:4px;
+    height:25px;
+    z-index:1;
+
 }
 .sticky {
+     height:20px;
      position:fixed;
      text-align:center;
-     font-size: 17px;
-     height: 50px;
-     background: black;
-     color:white;
+     font-size: 15px;
 }
 .PrimaryNavigation li { 
     list-style:none; 
     width:100%;
     display:inline;
-    
+    vertical-align:middle;
 }
 /*  anchor tag */
-.PrimaryNavigation a {
+.PrimaryNavigation a, .userSettings a {
 	color:black;  /* text all channels = white*/
 	text-decoration:none; /* turn off underline */
 	font-weight:bold; /* bold the text */
 	padding-left:.65em; 
 }
+/*.PrimaryNavigation a:hover{
+    border-bottom:solid 5px red;
+}*/
 .PrimaryNavigation ul{
     padding-left:5%;
     text-align:left;
+    margin:0px;
+    /*position:center;*/
 }
-.PrimaryNavigation :hover{
+.PrimaryNavigation :hover, .userSettings :hover, .basicStyle1 i:hover, .error a:hover{
     color:#5C832F;
+    transition: all 0.5s ease;
 }
 .active{
     color:#5C832F;
@@ -95,13 +108,91 @@ h1{
 h2 {
     padding-top: 5%;
     /*padding-left: 25%;*/
-    align-self: center;
 }
-
-
 
 #form1{
     height: 100px;
+}
+ /*COLUMN CONTENT*/
+.myCol3 {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    font-size: 2vh;
+    padding: 3%;
+    min-width: 300px;
+    width: 33%;
+    float:left;
+}
+.myCol2{
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    font-size: 2vh;
+    padding: 2%;
+    min-width: 300px;
+    width: 50%;
+    float:left;
+    margin:auto;
+    position:relative;
+} 
+.colh1 {
+   font-size: 6vh;
+   margin-bottom:10px;
+   text-align:center;
+}           
+/*BASIC CONTENT STYLES*/
+.basicStyle1{
+    font-size:20px;
+    text-align:center;
+    width:60%;
+    height:350px;
+    padding-bottom:100px;
+    margin:auto;
+    display:block;
+    min-height:100%;
+}
+.basicStyle2{
+    font-size:20px;
+    text-align:center;
+    width:60%;
+    height:1600px;
+    padding-bottom:100px;
+    margin:auto;
+    display:block;
+}
+.middleBreak {
+    width: 100%;
+    height: 17vh;
+    color: white;
+    text-align: center;
+    background-color:black;
+}
+.middleH1{
+
+}
+        /*IMAGES AND STYLING*/
+.circle{
+	width: 230px;
+	height: 230px;
+	-moz-border-radius: 50px; 
+	-webkit-border-radius: 50px;
+	border-radius: 50%;
+    background-position:center;
+    background-size:cover;
+    /*margin:auto;*/ /*maybe*/
+}
+.bgBee{
+    background-image:url(../GreenTheme/Images/bgBee-min.jpg);
+}
+.bgGreen{
+    background-image:url(../GreenTheme/Images/bgGreen-min.jpg);
+}
+.bgG{
+    background-image:url(../GreenTheme/Images/bgG.jpg);
+    float:right;
 }
 
 
@@ -110,7 +201,7 @@ h2 {
     text-align:center;
     color:white;
     font-size: 3.4vh;
-    text-shadow:5px 5px 10px black;
+    text-shadow:3px 3px 3px black;
 
 }
 .mainContainer p{
@@ -123,13 +214,12 @@ h2 {
     background-attachment:fixed; /*maybe*/
     box-shadow: 1px 5px 20px  black;
 }
-/*.transBOX{
-    background-color:rgba(221, 221, 221, 0.42);
+.transBOX{
+    background-color:rgba(221, 221, 221, 0.30);
     border-radius:10px;
+    width:100%; 
     margin:auto;
-    width:100%;
-   
-}*/
+}
 /*HOME content HERE*/
 .mainHome {
     width: 100%;
@@ -137,52 +227,48 @@ h2 {
     background-image:url(../GreenTheme/Images/home1-min.jpg);
 }
 .mainHome h1{
-    font-size:10vh;
-}
-
-#mission{
-    font-size:20px;
-    text-align:center;
-    width:60%;
-    height:100%;
-    padding-bottom:100px;
-    margin:auto;
+    font-size:8vh; /*10?*/
 }
 
 /*EVENT content HERE*/
 .mainEvent{
     width: 100%;
     height:50vh;
-    background-image:url(../GreenTheme/Images/events-min.jpg);
+    background-image:url(../GreenTheme/Images/contact-min.jpg);
     background-position:bottom;
 }
 .calendar{
     padding-left: 35%;
     font-size:30px;
 }
-.events{
+#events{
     width:100%;
-    height:600px;
-    background-color:black;
-    position:relative;
+    height:400px;
 }
 .eventsLeft{
     width:45%;
     height:400px;
     float:left;
     background-color:green;
-    left: -100%;
-    position:inherit;
+    color:white;
 }
 .eventsRight{
     width:45%;
     height:400px;
     float:right;
     background-color:red;
-    position:inherit;
     color:white;
 }
-
+.events1{
+    width:100%;
+    margin:auto;    
+    height:100%;
+    border-radius:10px;
+}
+.itemCSS{
+    padding:20px;
+    font-size:25px;
+}
 /*CARBON content HERE*/
 .mainCalc{
     width: 100%;
@@ -197,36 +283,204 @@ h2 {
     height:50vh;
     background-image:url(../GreenTheme/Images/Pollution-min.jpg);
 }
+.pollutionSmall{
+    /*background-color:red;*/
+    width:40%;
+    height:450px;
+}
+.pollutionWide{
+    /*background-color:yellow;*/
+    width:60%;
+    height:450px;
+}
+.charts{
+   color:purple;
+   font-size:200px;
+}
 /*CONTACT content HERE*/
 .mainContact{
     width: 100%;
     height:50vh;
-    background-image:url(../GreenTheme/Images/contact-min.jpg);
+    background-image:url(../GreenTheme/Images/events-min.jpg);
 }
 #contactUs{
-    align-content: center;
+     border-radius:10px;
     /*padding-left: 25%;*/
 }
+#contactUs td{
+     text-align: left;
+}
+.panels table{
+    display:block;
+    border-radius:10px;
+}
+
 /*LANGUAGE*/
 .languages{
     float:right;
+    padding-right:50px;
 }
+.modals {
+    float:right;
+    padding-right:10px;
+    padding-left:.2em !important;
+}
+.modals i{
+    margin-right:5px;
+    font-size:15px;
+    text-shadow:none;
+}
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+        .modalDialog:target {
+	    opacity:1;
+        pointer-events: all;
+        }
+
+                .modalDialog > div {
+	                width: 500px;
+	                position: relative;
+	                margin: 10% auto;
+	                padding: 5px 20px 13px 20px;
+	                border-radius: 10px;
+	                background: white;
+                }
+                                    .close {
+	                                        background: #606061;
+	                                        color: #FFFFFF;
+	                                        line-height: 25px;
+	                                        position: absolute;
+	                                        right: -12px;
+	                                        text-align: center;
+	                                        top: -10px;
+	                                        width: 24px;
+	                                        text-decoration: none;
+	                                        font-weight: bold;
+                                            font-size:10px;
+	                                        -webkit-border-radius: 12px;
+	                                        -moz-border-radius: 12px;
+	                                        border-radius: 12px;
+	                                        -moz-box-shadow: 1px 1px 3px #000;
+                                            -webkit-box-shadow: 1px 1px 3px #000;
+	                                        box-shadow: 1px 1px 3px #000;
+                                        }
+                                     .close:hover { background: green; }
+/*USER PROFILE*/
+.mainUser{
+    width: 100%;
+    height:20vh;
+    background-image: linear-gradient(white, rgba(27, 219, 12, 0.60));
+    color:black;
+    font-size:20px;
+    position:relative;
+}
+.userMainBOX{
+    width:100%;
+    height:100vh;
+    padding-top: 3%;
+    background-color:yellow;
+    position:relative;
+
+}
+        .userSettings{
+            width:15%;
+            height:99vh;
+            background-color:red;
+            
+            
+        }
+        .userContent{
+            margin-left:1%;
+            width:75%;
+            height:99vh;
+            background-color:blue;
+            
+        }
+             .userSettings,
+             .userContent{
+             float:left;
+            -moz-box-sizing: border-box;
+             box-sizing: border-box;
+             display:block;
+             font-size: 25px;
+             padding:3% 1%;
+             margin-top:5px;                 
+        }
+             #Link1, #Link2, #Link3, #Link4, #Link5{
+                 display:none;
+             } 
+             #Link1:target, #Link2:target, #Link3:target, #Link4:target, #Link5:target{
+                 display:inline-block;  
+                 padding-top:9%;
+                 margin-top:-9%;                   
+             }
+/*ERROR PAGE*/
+.errorPage{
+    background-image:url(../GreenTheme/Images/errorPageBG.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.error{  
+    max-width:100%;
+    max-height:100%;
+    width:550px;
+    height:325px;
+    margin:auto;
+    margin-top:15%;
+    color:white;   
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size:25px;
+    text-align:center;
+    text-shadow: 1px 1px 1px black;
+    background-color:rgba(221, 221, 221, 0.30);
+    border-radius:10px;
+}
+.error a{
+    text-decoration:none;
+    color:white;
+}
+
+
 /*FOOTER content HERE*/
 .footer{
     position: relative;
     right: 0;
     bottom: 0px;
     left: 0;
-    height:200px;
+    height:225px;
+    min-height:100%;
     width:100%;
     background-color:#363942;
-    text-align:center;
-    
-   
+    text-align:center;  
+
+}
+.footer a{
+    text-decoration:none;
+    color:white;
+}
+.footer a:visited{
+    color:white;
+}
+.footer a:hover{
+    color:#5C832F;
+    transition: all 0.4s ease;
 }
 .leftFoot,
 .midFoot,
-.rightFoot {
+.rightFoot{
    -moz-box-sizing: border-box;
    box-sizing: border-box;
    display: inline-block;
@@ -237,20 +491,55 @@ h2 {
    min-width: 300px;
    width: 33%;
    color:white;
+   float:left;
 
    
    
+}
+
+#eventsHead, #calcHead, #pollutionHead, #homeHead{
+    display:none;
+    animation-duration:1.9s;
+    transition-timing-function:ease-out;
 }
 /* just messing around lol */
 @media screen and (max-width: 480px){
 .leftFoot,
 .midFoot,
-.rightFoot {
+.rightFoot,
+.myCol3,
+.myCol2{
    display: block;
+   text-align:center;
+   margin:auto;
+   width:100%;
+   padding-bottom:20px;
+   min-width:0px;
+}
+.circle{
+    width: 150px;
+	height: 150px;
+    margin:auto;
+}
+.basicStyle2{
+   height:1600px;
 }
 
 }
+
+
+
+
+@media (min-width: 400px) and (max-width: 720px)  {
+ .myCol3 {
+     display:inline-block;
+     text-align:center;
+ }
+ .error{
+    font-size:20px;
+}
+}
+
 
 /*///////////////////////////////////////////////////////*/
-
-
+/*http://www.infragistics.com/samples/aspnet/chart/overview*/

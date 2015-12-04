@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<arctic>
+  <yearofIce>
+    <year>1980</year>
+    <totalMSkm>7.8</totalMSkm>
+  </yearofIce>
+
+  <yearofIce>
+    <year>1984</year>
+    <totalMSkm>7.2</totalMSkm>
+  </yearofIce>
+
+  <yearofIce>
+    <year>1988</year>
+    <totalMSkm>7.5</totalMSkm>
+  </yearofIce>
+
+  <yearofIce>
+    <year>1992</year>
+    <totalMSkm>7.5</totalMSkm>
+  </yearofIce>
+
+  <yearofIce>
+    <year>2000</year>
+    <totalMSkm>6.3</totalMSkm>
+  </yearofIce>
+
+  <yearofIce>
+    <year>2004</year>
+    <totalMSkm>6.04</totalMSkm>
+  </yearofIce>
+
+  <yearofIce>
+    <year>2012</year>
+    <totalMSkm>3.61</totalMSkm>
+  </yearofIce>
+
+  <yearofIce>
+    <year>2014</year>
+    <totalMSkm>5.2</totalMSkm>
+  </yearofIce>
+</arctic>

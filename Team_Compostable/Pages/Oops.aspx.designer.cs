@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Team_Compostable
+namespace Team_Compostable.Pages
 {
 
 
-    public partial class Default
+    public partial class Oops
     {
     }
 }
