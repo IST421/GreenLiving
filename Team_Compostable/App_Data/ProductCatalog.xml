@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<eventList>
+  <event>
+    <name><![CDATA[Green Festival Expo <br/>
+    ]]></name>
+    
+    <website>
+      <![CDATA[
+      http://www.going.green/event/green-festival-expo/ <br/>
+      ]]>
+    </website> 
+    <date> 
+      <![CDATA[
+      April 24, 2015 to April 26, 2015
+      ]]>
+    </date> 
+     
+    <description>
+        <![CDATA[
+      DotGreen Community is one of the sponsors of the upcoming Green Festival to be held in the Javits Center in New York City.  
+      The Green Festival is America’s largest and longest running sustainability and green living event. 
+      More than 300 exhibitors will be displaying their product, services and “green” information and attendance over the 3 days is expected to be 20,000.<br/>]]> 
+      </description>
+</event>
+
+  <event>
+    <name>
+      <![CDATA[Greenbuild 2016 Iconic Green <br/>]]>
+    </name>
+    <website>
+      <![CDATA[http://www.greenbuildexpo.com/
+      <br/>
+      ]]>
+      </website>
+    <date>
+      <![CDATA[
+      October 5, 2015 to October 7, 2015
+      <br/>
+      ]]>
+    </date>
+    <description>
+        <![CDATA[
+      Greenbuild is the premier event for sustainable building.
+      Featuring three exhilarating days of uplifting speakers, unmatched networking opportunities, showcases, LEED workshops and tours of green buildings in Washington, DC, Greenbuild offers a place for thousands to gather and renew their commitment to the green movement.
+      With so much to see and do, you can't miss the excitement and energy of Greenbuild 2016 in Los Angeles.
+    <br/>
+      ]]>
+    </description>
+  </event>
+
+  <event>
+    <name>
+      <![CDATA[
+      21st Conference of the Parties
+    <br/>
+    ]]>
+    
+  </name>
+    <website>
+      <![CDATA[
+      http://www.cop21.gouv.fr/en
+    <br/>
+    ]]>
+    </website>
+    <date>
+      <![CDATA[
+      November 30, 2015 to December 11, 2015
+      <br/>
+      ]]>
+    </date>
+    <description>
+      <![CDATA[
+      It will be held in Le Bourget, The French and international civil society gathered to launch the climate Generations areas. 
+    Areas dedicated to knowledge, exchange and debate.
+    According to the organizing committee, the objective of the 2015 conference is to achieve, for the first time in over 20 years of UN negotiations, a binding and universal agreement on climate, from all the nations of the world.
+  <br/>
+    ]]>
+    </description>
+  </event>
+</eventList>
