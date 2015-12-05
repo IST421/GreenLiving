@@ -13,6 +13,24 @@ namespace Team_Compostable {
     public partial class t1 {
         
         /// <summary>
+        /// fname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox fname;
+        
+        /// <summary>
+        /// lname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox lname;
+        
+        /// <summary>
         /// Submitter control.
         /// </summary>
         /// <remarks>

@@ -8,6 +8,10 @@
     <br />
     <br />
     <br />
+    <asp:TextBox ID="fname" runat="server"/>
+    <asp:TextBox ID="lname" runat="server" />
+    <br />
+    <br />
     <asp:Button ID="Submitter" Text="submit" OnClick="Submitter_Click" runat="server" />
     <br />
     <br />

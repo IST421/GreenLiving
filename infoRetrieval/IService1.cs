@@ -20,7 +20,7 @@ namespace infoRetrieval
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         [OperationContract]
-        string fnlName(string fname, string lname);
+        void fnlName(string fname, string lname);
 
         // TODO: Add your service operations here
     }

@@ -18,8 +18,9 @@ namespace Team_Compostable
         protected void Submitter_Click(object sender, EventArgs e)
         {
             Service1 retrive = new Service1();
-            retrive.fnlName("spanish20","IST421");
+            retrive.fnlName(fname.Text.ToString(),lname.Text.ToString());
 
+            Response.Redirect("~/t1.aspx");
         }
     }
 }

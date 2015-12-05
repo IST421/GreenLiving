@@ -18,8 +18,8 @@ namespace infoRetrieval
     public class Service1 : IService1
     {
         static string strcon = ConfigurationManager.ConnectionStrings["JoeDB"].ConnectionString;
-        static SqlConnection con = new SqlConnection(strcon);
-        static SqlCommand comm = new SqlCommand();
+        //static SqlConnection con = new SqlConnection(strcon);
+        //static SqlCommand comm = new SqlCommand();
 
         public string GetData(int value)
         {
@@ -38,30 +38,34 @@ namespace infoRetrieval
             }
             return composite;
         }
-        public string fnlName(string fname, string lname)
+        public void fnlName(string fname, string lname)
         {
-            try
+            using (SqlConnection con = new SqlConnection(strcon))
             {
-                comm.CommandType = CommandType.StoredProcedure;
-                comm.CommandText = "infoinsert";
-                comm.Parameters.Add("@firstname", fname);
-                comm.Parameters.Add("@lastname", lname);
-                comm.Connection = con;
-                con.Open();
-                comm.ExecuteNonQuery();
+                try
+                {
+
+                    using (SqlCommand comm = new SqlCommand("infoinsert", con))
+                    {
+                        comm.CommandType = CommandType.StoredProcedure;
+                        comm.Parameters.AddWithValue("@firstname", fname);
+                        comm.Parameters.AddWithValue("@lastname", lname);
+                        comm.Connection = con;
+                        con.Open();
+                        comm.ExecuteNonQuery();
+                    }
+                }
+
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    con.Close();
+                    con.Dispose();
+                }
             }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                con.Close();
-                con.Dispose();
-            }
-            return string.Format("nice {0} and {1}", fname, lname);
         }
-
-
     }
 }
