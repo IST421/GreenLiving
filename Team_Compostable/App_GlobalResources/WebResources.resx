@@ -120,6 +120,31 @@
   <data name="HeaderMission" xml:space="preserve">
     <value>Mission Statement</value>
   </data>
+  <data name="hHabout" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="hHEverything" xml:space="preserve">
+    <value>Everything you need to know</value>
+  </data>
+  <data name="hHGreen" xml:space="preserve">
+    <value>Green Living</value>
+  </data>
+  <data name="hHMission" xml:space="preserve">
+    <value>Mission Compostable!</value>
+  </data>
+  <data name="homeKnowW" xml:space="preserve">
+    <value>Know ways you can prevent pollution, learn the consequences and how you stack up against everyone else</value>
+  </data>
+  <data name="homeKnowY" xml:space="preserve">
+    <value>Know your carbon footprint, earn points, and compete with friends.
+                You can find events and workshops around you to make yourself a little more environmentally friendly</value>
+  </data>
+  <data name="homeOur" xml:space="preserve">
+    <value>Our mission is to provide a better way to inform people about Green Living</value>
+  </data>
+  <data name="homeWhat" xml:space="preserve">
+    <value>What is Green Living?</value>
+  </data>
   <data name="LabelCarbFoot" xml:space="preserve">
     <value>Carbon Footprint</value>
     <comment>Carbon Footprint page link</comment>
@@ -146,5 +171,30 @@
   <data name="LabelTerms" xml:space="preserve">
     <value>Terms and Agreements</value>
     <comment>Terms page link</comment>
+  </data>
+  <data name="mission3" xml:space="preserve">
+    <value>Mission Compostable is a nonprofit group of individuals dedicated to utilizing modern web development skills,
+                 in order to design and develop a functional web page for those seeking to live a greener lifestyle.
+                 Our website will be able to be used for a multitude of tasks to promote green living.</value>
+  </data>
+  <data name="mission4" xml:space="preserve">
+    <value>Greenhouse gases have been one of the most talked about issues in the 2000’s.
+                 Data, solutions and other information regarding them are wide and plentiful.
+                 We gather and collect data from various sources and determine ways that allow users to undergo greener living while still being able to maintain a comfortable lifestyle.</value>
+  </data>
+  <data name="mission7" xml:space="preserve">
+    <value>Our primary concern is for the environment. Without a sustainable and clean environment, 
+                there may negative consequences to human health, energy supply, the ecosystem, etc.
+                In the long run this could affect future generations as well. 
+                Mission Compostable seeks to make people aware to this issue and encourages the people of today to leave less of a carbon footprint for the sake of the environment and future generations who live in it.</value>
+  </data>
+  <data name="missionDo" xml:space="preserve">
+    <value>What We Do?</value>
+  </data>
+  <data name="missionHow" xml:space="preserve">
+    <value>How We Do It?</value>
+  </data>
+  <data name="missionWhat" xml:space="preserve">
+    <value>What Value do We Bring?</value>
   </data>
 </root>
