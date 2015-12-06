@@ -38,6 +38,38 @@ namespace infoRetrieval
             }
             return composite;
         }
+        public void userRegister(string username, string password, string firstname, string lastname, string email, string city, string state, string country, string telephone)
+        {
+            using (SqlConnection con = new SqlConnection(strcon))
+            {
+                try
+                { 
+                    using (SqlCommand comm = new SqlCommand("userRegistration",con))
+                    {
+                       comm.CommandType = CommandType.StoredProcedure;
+                        comm.Parameters.AddWithValue("@username", username);
+                        comm.Parameters.AddWithValue("@userPass", password);
+                        comm.Parameters.AddWithValue("@firstName",firstname);
+                        comm.Parameters.AddWithValue("@lastName",lastname);
+                        comm.Parameters.AddWithValue("@email",email);
+                        comm.Parameters.AddWithValue("@city",city);
+                        comm.Parameters.AddWithValue("@state",state);
+                        comm.Parameters.AddWithValue("@country",country);
+                        comm.Parameters.AddWithValue("@userTelephone",telephone);
+                        con.Open();
+                        comm.ExecuteNonQuery();
+                    }
+                }
+                catch(Exception et){
+                    throw et;
+                }
+                finally
+                {
+                    con.Close();
+                    con.Dispose();
+                }
+            }
+        }
         public void fnlName(string fname, string lname)
         {
             using (SqlConnection con = new SqlConnection(strcon))

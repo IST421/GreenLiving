@@ -23,7 +23,7 @@ namespace infoRetrieval
         void fnlName(string fname, string lname);
 
         [OperationContract]
-        string userRegister(string firstname, string lastname, string username, string password, string email, string telephone);
+        void userRegister(string username, string password, string firstname, string lastname, string email, string city, string state, string country, string telephone);
 
         // TODO: Add your service operations here
     }
