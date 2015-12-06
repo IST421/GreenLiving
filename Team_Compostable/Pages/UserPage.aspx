@@ -15,7 +15,7 @@
 
         <div class="userContent">
             <div id="Link1">
-                test 1
+                <asp:Label runat="server" Text="asdasd"></asp:Label>
             </div>
 
             <div id="Link2">

@@ -64,6 +64,11 @@
     <Content Include="App_Data\XMLFile2.xml" />
     <Content Include="App_Themes\BlueTheme\BlueTheme.css" />
     <Content Include="App_Themes\BlueTheme\Images\contact-min.jpg" />
+    <Content Include="App_Themes\EarthTheme\animate.css" />
+    <Content Include="App_Themes\EarthTheme\EarthTheme.css" />
+    <Content Include="App_Themes\EarthTheme\Images\Calc1-min.JPEG" />
+    <Content Include="App_Themes\EarthTheme\Images\Home1-min.JPEG" />
+    <Content Include="App_Themes\EarthTheme\Images\Pollution1-min.JPEG" />
     <Content Include="App_Themes\GreenTheme\animate.css" />
     <Content Include="App_Themes\GreenTheme\Images\Banner3.png" />
     <Content Include="App_Themes\GreenTheme\Images\bgBee-min.JPG" />
