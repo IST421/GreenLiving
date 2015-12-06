@@ -502,6 +502,10 @@ h2 {
     animation-duration:1.9s;
     transition-timing-function:ease-out;
 }
+#pollution1, #pollution2, #pollution3, #pollution4, #pollution5, #pollution6{
+    animation-duration:1s;
+    transition-timing-function:ease-out;
+} 
 /* just messing around lol */
 @media screen and (max-width: 480px){
 .leftFoot,

@@ -49,14 +49,43 @@
 
         <div id="pollution2" class="animated myCol2 pollutionSmall">
             <div>
-              INFO1
+              This chart shows Carbon dioxide levels in recent years. CO2 is an important heat-trapping gas which
+                is released through human activity. Visit Carbon Calculator page to find your contribution to the CO2 Levels <a href="CarbonCalc.aspx">here</a>
             </div>
         </div>
 
         <div id="pollution3" class="animated myCol2 pollutionWide charts">
             <div>
+                <asp:Chart ID="Chart3" Width="550px" Height="400px" BorderStyle="solid" runat="server">
+                    <Titles><asp:Title Text="GLOBAL TEMPERATURE INCREASE" Font="Relaway, 15"/></Titles> 
+                    <Series>
+                        <asp:Series ChartType="Area" Name="SurfaceTemp"></asp:Series>
+                    </Series>
+                    <ChartAreas>
+                        <asp:ChartArea Name="ChartArea1">
+                            <AxisX Interval="Auto" Title="YEAR" TitleFont="Relaway, 15" />
+                            <AxisY Interval="Auto" Title="GLOBAL SURFACE TEMP(C)" TitleFont="Relaway, 14" />
+                        </asp:ChartArea>
+                    </ChartAreas>
+                </asp:Chart>
                 
-                    <asp:Chart ID="Chart2" onload="Page_Load" runat="server" Width="550px" Height="400px" BorderStyle="solid"
+                 
+
+                
+            </div>
+        </div>
+
+        <div id="pollution4" class="animated myCol2 pollutionSmall">
+            <div>
+              This chart illustrates the change in global surface temperature that was recorded since 1881.
+                The increasing trend of the warmest temperatures shows to be in the last years starting in 2000.
+                Last year recorded to be the warmest year out of all. 
+            </div>
+        </div>
+
+        <div id="pollution5" class="animated myCol2 pollutionWide">
+            <div>
+                  <asp:Chart ID="Chart2" onload="Page_Load" runat="server" Width="550px" Height="400px" BorderStyle="solid"
                         BackColor="#80c0f0">
                         <Titles><asp:Title Text="ICE DECREASE THROUGH THE YEARS" Font="Relaway, 15"/></Titles>                      
                         <Series>
@@ -73,26 +102,14 @@
                             </asp:ChartArea>                           
                         </ChartAreas>
                     </asp:Chart>
-
-                
-            </div>
-        </div>
-
-        <div id="pollution4" class="animated myCol2 pollutionSmall">
-            <div>
-              INFO2
-            </div>
-        </div>
-
-        <div id="pollution5" class="animated myCol2 pollutionWide">
-            <div>
-                GRAPH3
             </div>
         </div>
 
         <div id="pollution6" class="animated myCol2 pollutionSmall">
             <div>
-              INFO3
+              This chart shows the Artic Sea Ice decrease over the years. The decrease amount
+                equals out to 13.3% per decade. The decrease in artic sea ice levels means more water in the oceans
+                which could lead to floods and warmer water could potentially lead to climate change.
             </div>
         </div>
 

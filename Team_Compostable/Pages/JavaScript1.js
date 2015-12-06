@@ -103,15 +103,15 @@ $(document).ready(function () {
     ///////////////////////////////////////////////////////POLLUTION ANIMATION
     $('#pollution1, #pollution2').css('opacity', 0);
     $('#pollution1, #pollution2').waypoint(function () {
-        $('#pollution1, #pollution2').addClass('rotateInUpLeft');
+        $('#pollution1, #pollution2').addClass('fadeInUp');
     }, { offset: '75%' });
     $('#pollution3, #pollution4').css('opacity', 0);
     $('#pollution3, #pollution4').waypoint(function () {
-        $('#pollution3, #pollution4').addClass('rotateInUpLeft');
+        $('#pollution3, #pollution4').addClass('fadeInUp');
     }, { offset: '75%' });
     $('#pollution5, #pollution6').css('opacity', 0);
     $('#pollution5, #pollution6').waypoint(function () {
-        $('#pollution5, #pollution6').addClass('rotateInUpLeft');
+        $('#pollution5, #pollution6').addClass('fadeInUp');
     }, { offset: '75%' });
 
 });
