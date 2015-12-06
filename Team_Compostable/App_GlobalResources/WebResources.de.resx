@@ -120,6 +120,32 @@
   <data name="HeaderMission" xml:space="preserve">
     <value>Leitbild</value>
   </data>
+  <data name="hHabout" xml:space="preserve">
+    <value>about
+etwa</value>
+  </data>
+  <data name="hHEverything" xml:space="preserve">
+    <value>Alles, was Sie wissen müssen</value>
+  </data>
+  <data name="hHGreen" xml:space="preserve">
+    <value>Grün Leben</value>
+  </data>
+  <data name="hHMission" xml:space="preserve">
+    <value>Mission Kompostierbare !</value>
+  </data>
+  <data name="homeKnowW" xml:space="preserve">
+    <value>Kennen Möglichkeiten, wie Sie Verschmutzung zu verhindern , zu lernen , die Folgen und wie Sie stapeln gegen jeden</value>
+  </data>
+  <data name="homeKnowY" xml:space="preserve">
+    <value>Kennen Sie Ihre Carbon Footprint , Punkte zu verdienen und konkurrieren Sie mit Freunden .
+                Sie können Veranstaltungen und Workshops in Ihrer Nähe zu finden , um sich ein wenig mehr umweltfreundlicher zu machen</value>
+  </data>
+  <data name="homeOur" xml:space="preserve">
+    <value>Unsere Mission ist es, einen besseren Weg, um die Menschen über Green Living informieren liefern</value>
+  </data>
+  <data name="homeWhat" xml:space="preserve">
+    <value>Was ist Green Living ?</value>
+  </data>
   <data name="LabelCarbFoot" xml:space="preserve">
     <value>Carbon Footprint</value>
     <comment>Carbon Footprint page link</comment>
@@ -146,5 +172,30 @@
   <data name="LabelTerms" xml:space="preserve">
     <value>Fristen und Bedingungen</value>
     <comment>Terms page link</comment>
+  </data>
+  <data name="mission3" xml:space="preserve">
+    <value>Kompostierbare Mission ist eine gemeinnützige Gruppe von Individuen , um den Einsatz moderner Web-Entwicklung Fähigkeiten gewidmet ,
+                 um zu entwerfen und zu entwickeln, eine funktionale Website für diejenigen, die einen grüneren Lebensstil zu leben.
+                 Unserer Website in der Lage, für eine Vielzahl von Aufgaben verwendet, um grünes Leben zu fördern.</value>
+  </data>
+  <data name="mission4" xml:space="preserve">
+    <value>Treibhausgase haben eine der am meisten über Themen in den 2000er Jahren gesprochen.
+                 Daten , Lösungen und andere Informationen über sie sind breit und reichlich.
+                 Wir sammeln und sammeln Daten aus verschiedenen Quellen und Wege festzulegen , mit der Benutzer grüner Wohnunterziehenzu ermöglichen, während noch in der Lage , um einen komfortablen Lebensstil beizubehalten .</value>
+  </data>
+  <data name="mission7" xml:space="preserve">
+    <value>Unser Hauptanliegen ist für die Umwelt. Ohne eine nachhaltige und saubere Umwelt,
+                Es könnte negative Folgen für die menschliche Gesundheit , Energieversorgung, das Ökosystem etc.
+                Auf lange Sicht könnte dies die künftigen Generationen in Mitleidenschaft ziehen .
+                Kompostierbare Mission soll den Menschen bewusst zu diesem Thema zu machen und ermutigt die Menschen von heute , um weniger von einem Carbon Footprint zum Wohle der Umwelt und zukünftigen Generationen , die darin leben zu lassen .</value>
+  </data>
+  <data name="missionDo" xml:space="preserve">
+    <value>Was wir tun?</value>
+  </data>
+  <data name="missionHow" xml:space="preserve">
+    <value>Wie machen wir es?</value>
+  </data>
+  <data name="missionWhat" xml:space="preserve">
+    <value>Welchen Wert bringen wir ?</value>
   </data>
 </root>

@@ -46,13 +46,16 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-   ///////////////////////////////////////////////////////////////// //MISSION ANIMATION
+   ///////////////////////////////////////////////////////////////// //MISSION/EVENTS ANIMATION
 
     // hide our element on page load
-    $('#mission').css('opacity', 0);
-    $('#mission').waypoint(function () {
-        $('#mission').addClass('fadeInUp');
+    $('#mission, #events, #calendar').css('opacity', 0);
+    $('#mission, #events, #calendar').waypoint(function () {
+        $('#mission, #events').addClass('fadeInUp');
+        $('#calendar').addClass('rollIn');
+        $('#calendar, #events, #mission').css('animation-duration','1.5s');
     }, { offset: '70%' });
+
 
 
     // hide our element on page load 
@@ -89,11 +92,12 @@ $(document).ready(function () {
     }, { offset: '75%' });
      //////////////////////////////////END WRAP
 
-    $('#eventsHead, #calcHead, #pollutionHead, #homeHead').css('opacity', 0);
-    $('#eventsHead, #calcHead, #pollutionHead, #homeHead').waypoint(function () {
-        $('#eventsHead, #calcHead, #pollutionHead, #homeHead').addClass('fadeIn');
-    }, { offset: '100%' });
- 
+        $('#eventsHead, #calcHead, #pollutionHead, #homeHead').waypoint(function () {
+            $('#eventsHead, #calcHead, #pollutionHead, #homeHead').addClass('fadeInDown').css('display','block')
+        }, { offset: '100%' });
+
+        $('#eventsHead, #calcHead, #pollutionHead, #homeHead').css('animation-duration', '1.3s', 'transition', 'ease-out');
+
 
 
     ///////////////////////////////////////////////////////POLLUTION ANIMATION

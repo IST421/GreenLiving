@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+<carbon>
+  <yearofCarbon>
+    <year>Jan. 2005</year>
+    <totalCO2>378.21</totalCO2>
+  </yearofCarbon>
+
+  <yearofCarbon>
+    <year>Apr. 2006</year>
+    <totalCO2>382.02</totalCO2>
+  </yearofCarbon>
+
+  <yearofCarbon>
+    <year>Jan. 2007</year>
+    <totalCO2>382.74</totalCO2>
+  </yearofCarbon>
+
+  <yearofCarbon>
+    <year>Jan. 2008</year>
+    <totalCO2>385.26</totalCO2>
+  </yearofCarbon>
+
+  <yearofCarbon>
+    <year>Dec. 2009</year>
+    <totalCO2>388.13</totalCO2>
+  </yearofCarbon>
+
+  <yearofCarbon>
+    <year>Nov. 2012</year>
+    <totalCO2>394.97</totalCO2>
+  </yearofCarbon>
+
+  <yearofCarbon>
+    <year>Jan. 2015</year>
+    <totalCO2>399.93</totalCO2>
+  </yearofCarbon>
+
+  <yearofCarbon>
+    <year>Oct. 2015</year>
+    <totalCO2>401.58</totalCO2>
+  </yearofCarbon>
+
+</carbon>

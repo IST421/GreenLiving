@@ -19,7 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
-    <JSLintSkip>\Pages\JavaScript1.js|\Pages\jquery.waypoints.min.js</JSLintSkip>
+    <JSLintSkip>\Pages\jquery.waypoints.min.js|\Pages\JavaScript1.js</JSLintSkip>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,6 +40,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -58,14 +59,23 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ProductCatalog.xml" />
+    <Content Include="App_Data\XMLFile1.xml" />
+    <Content Include="App_Data\XMLFile2.xml" />
     <Content Include="App_Themes\BlueTheme\BlueTheme.css" />
     <Content Include="App_Themes\BlueTheme\Images\contact-min.jpg" />
+    <Content Include="App_Themes\EarthTheme\animate.css" />
+    <Content Include="App_Themes\EarthTheme\EarthTheme.css" />
+    <Content Include="App_Themes\EarthTheme\Images\Calc1-min.JPEG" />
+    <Content Include="App_Themes\EarthTheme\Images\Home1-min.JPEG" />
+    <Content Include="App_Themes\EarthTheme\Images\Pollution1-min.JPEG" />
     <Content Include="App_Themes\GreenTheme\animate.css" />
-    <Content Include="App_Themes\GreenTheme\Images\4.PNG" />
     <Content Include="App_Themes\GreenTheme\Images\Banner3.png" />
     <Content Include="App_Themes\GreenTheme\Images\bgBee-min.JPG" />
+    <Content Include="App_Themes\GreenTheme\Images\bgG.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\bgGreen-min.JPG" />
     <Content Include="App_Themes\GreenTheme\Images\contact-min.jpg" />
+    <Content Include="App_Themes\GreenTheme\Images\errorPageBG.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\events-min.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\HOME-min.JPG" />
     <Content Include="App_Themes\GreenTheme\Images\home1-min.jpg" />
@@ -80,6 +90,27 @@
     <Content Include="Controls\Languages.ascx" />
     <Content Include="Pages\Global.asax" />
     <Content Include="GreenLiving.Master" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\retrieve\CompositeType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\retrieve\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\retrieve\Service1.wsdl" />
+    <None Include="Web References\retrieve\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\retrieve\Service10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\retrieve\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -92,9 +123,11 @@
     <Content Include="Pages\JavaScript1.js" />
     <Content Include="Pages\CarbonCalc.aspx" />
     <Content Include="Pages\jquery.waypoints.min.js" />
+    <Content Include="Pages\Oops.aspx" />
     <Content Include="Pages\Pollution.aspx" />
     <Content Include="Pages\Terms.aspx" />
     <Content Include="Pages\UserPage.aspx" />
+    <None Include="Web References\retrieve\Service1.disco" />
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +203,7 @@
     <Compile Include="Controls\Languages.ascx.designer.cs">
       <DependentUpon>Languages.ascx</DependentUpon>
     </Compile>
+    <Compile Include="classes\InputValidation.cs" />
     <Compile Include="Pages\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -201,6 +235,13 @@
     <Compile Include="Pages\Events.aspx.designer.cs">
       <DependentUpon>Events.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Oops.aspx.cs">
+      <DependentUpon>Oops.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Oops.aspx.designer.cs">
+      <DependentUpon>Oops.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Pollution.aspx.cs">
       <DependentUpon>Pollution.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -222,6 +263,7 @@
     <Compile Include="Pages\UserPage.aspx.designer.cs">
       <DependentUpon>UserPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="classes\PasswordHash.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GreenLiving.Master.cs">
       <DependentUpon>GreenLiving.Master</DependentUpon>
@@ -230,10 +272,20 @@
     <Compile Include="GreenLiving.Master.designer.cs">
       <DependentUpon>GreenLiving.Master</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="Properties\Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\retrieve\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Code\" />
-    <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_GlobalResources\WebResources.resx">
@@ -252,6 +304,25 @@
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>WebResources.de.designer.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:58624/Service1.svc">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\retrieve\</RelPath>
+      <UpdateFromURL>http://localhost:58624/Service1.svc</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Team_Compostable_retrieve_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
