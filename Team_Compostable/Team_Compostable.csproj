@@ -67,7 +67,7 @@
     <Content Include="App_Themes\EarthTheme\animate.css" />
     <Content Include="App_Themes\EarthTheme\EarthTheme.css" />
     <Content Include="App_Themes\EarthTheme\Images\Calc1-min.JPEG" />
-    <Content Include="App_Themes\EarthTheme\Images\Home1-min.JPEG" />
+    <Content Include="App_Themes\GreenTheme\Images\Home1-min.JPEG" />
     <Content Include="App_Themes\EarthTheme\Images\Pollution1-min.JPEG" />
     <Content Include="App_Themes\GreenTheme\animate.css" />
     <Content Include="App_Themes\GreenTheme\Images\Banner3.png" />
@@ -77,7 +77,7 @@
     <Content Include="App_Themes\GreenTheme\Images\contact-min.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\errorPageBG.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\events-min.jpg" />
-    <Content Include="App_Themes\GreenTheme\Images\HOME-min.JPG" />
+    <Content Include="App_Themes\EarthTheme\Images\HOME-min.JPG" />
     <Content Include="App_Themes\GreenTheme\Images\home1-min.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\Pollution-min.jpg" />
     <Content Include="App_Themes\GreenTheme\Images\Solution-min.JPG" />
