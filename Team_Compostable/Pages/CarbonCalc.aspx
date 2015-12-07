@@ -13,9 +13,8 @@
     </div>
     </div>
     <div class="carbonCalcForm">
-        <asp:Table runat="server">
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server">
+       
+
                 <asp:Panel runat="server" ID="utiliitesForm">
                         <asp:Table runat="server">
                             <asp:TableHeaderRow runat="server">
@@ -75,8 +74,7 @@
                             </asp:TableRow>
                         </asp:Table>
                     </asp:Panel>
-                    </asp:TableCell>
-                <asp:TableCell>
+                  
                     <asp:Panel runat="server" ID="travelForm">
                         <asp:Table runat="server">
                             <asp:TableHeaderRow runat="server">
@@ -156,9 +154,8 @@
                             </asp:TableRow>
                         </asp:Table>
                     </asp:Panel>
-                    </asp:TableCell>
-                </asp:TableRow>
-            </asp:Table>
+                  
+            
         <asp:TableCell runat="server">
                     <asp:Panel runat="server" ID="totals">
                         <asp:Table runat="server">
