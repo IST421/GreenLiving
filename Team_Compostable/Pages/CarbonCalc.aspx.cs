@@ -4,9 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Drawing;
+using System.Data;
+using System.IO;
 using System.Threading;
 using System.Globalization;
-
+using System.Configuration;
 
 namespace Team_Compostable.Pages
 {
@@ -14,7 +17,21 @@ namespace Team_Compostable.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            this.Chart4.Series["Emissions"].Points.AddXY("United States", 18.1);
+            this.Chart4.Series["Emissions"].Points.AddXY("Germany", 9.6);
+            this.Chart4.Series["Emissions"].Points.AddXY("Spain", 6.8);
+            this.Chart4.Series["Emissions"].Points.AddXY("Japan", 9.2);
+            this.Chart4.Series["Emissions"].Points.AddXY("Europe", 7.2);
+            this.Chart4.Series["Emissions"].Points.AddXY("Austria", 8.5);
+            this.Chart4.Series["Emissions"].Points.AddXY("France", 6.2);
+            this.Chart4.Series["Emissions"].Points.AddXY("Iceland", 10.9);
+            this.Chart4.Series["Emissions"].Points.AddXY("Ireland", 8.8);
+            this.Chart4.Series["Emissions"].Points.AddXY("Italy", 7.2);
+            this.Chart4.Series["Emissions"].Points.AddXY("Netherlands", 15.7);
+            this.Chart4.Series["Emissions"].Points.AddXY("Sweden", 6.9);
+            this.Chart4.Series["Emissions"].Points.AddXY("Switzerland", 5.9);
+            this.Chart4.Series["Emissions"].Points.AddXY("Iran", 7.3);
+            this.Chart4.Series["Emissions"].Points.AddXY("Russia", 11.7);
         }
         protected override void InitializeCulture()
         {

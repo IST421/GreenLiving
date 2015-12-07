@@ -1,4 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GreenLiving.Master" AutoEventWireup="true" CodeBehind="CarbonCalc.aspx.cs" Inherits="Team_Compostable.Pages.CarbonCalc" %>
+<%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, 
+   PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
@@ -210,7 +212,27 @@
             </div>
             </div>
         </div>
-  
+
+
+    <div>
+        <div>
+            <asp:Chart ID="Chart4" Width="550px" Height="400px" BorderStyle="solid" runat="server">
+                    <Titles><asp:Title Text="Average CO2 emissions yearly per person" Font="Relaway, 14"/></Titles> 
+                    <Series>
+                        <asp:Series ChartType="Column" Name="Emissions"></asp:Series>
+                        
+                    </Series>
+                    <ChartAreas>
+                        <asp:ChartArea Name="ChartArea1">
+                            <AxisX Interval="2" Title="COUNTRY" TitleFont="Relaway, 14" />
+                            <AxisY Interval="auto" Title="CO2(TONS)" TitleFont="Relaway, 14" />
+                        </asp:ChartArea>
+                    </ChartAreas>
+                </asp:Chart>
+        </div>
+    </div>
+
+    
 </asp:Content>
 
 
