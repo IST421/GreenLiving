@@ -138,6 +138,19 @@ h2 {
     margin:auto;
     position:relative;
 } 
+.myCol1{
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    font-size: 2vh;
+    padding: 2%;
+    min-width: 300px;
+    width: 100%;
+    float:left;
+    margin:auto;
+    position:relative;
+}
 .colh1 {
    font-size: 6vh;
    margin-bottom:10px;
@@ -280,7 +293,7 @@ h2 {
     font-size:20px;
     text-align:left;
     width:60%;
-    height:650px;
+    height:500px;
     padding-bottom:100px;
     margin:auto;
     display:block;
@@ -289,12 +302,27 @@ h2 {
 .calcStyle1 .myCol2{
     text-align:left;
 }
+.calcStyle2{
+    font-size:20px;
+    text-align:center;
+    width:60%;
+    height:450px;
+    padding-bottom:100px;
+    margin:auto;
+    display:block;
+    min-height:100%;
+}
 .calcPanels{
     color:black;
     font-size:14px;
     display:block;
-    width:400px;    
+    width:360px;    
     margin:auto;
+    padding-bottom:25px;
+
+}
+.buttonSUBMIT{
+    float:left;
 }
 
 

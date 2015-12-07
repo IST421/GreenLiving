@@ -57,7 +57,7 @@ $(document).ready(function () {
     $('#mission, #events, #calendar').waypoint(function () {
         $('#mission, #events').addClass('fadeInUp');
         $('#calendar').addClass('rollIn');
-        $('#calendar, #events, #mission').css('animation-duration','1.5s');
+        $('#calendar, #events, #mission').css('animation-duration', '1.5s');
     }, { offset: '70%' });
 
 
@@ -116,6 +116,12 @@ $(document).ready(function () {
     $('#pollution5, #pollution6').css('opacity', 0);
     $('#pollution5, #pollution6').waypoint(function () {
         $('#pollution5, #pollution6').addClass('fadeInUp');
+    }, { offset: '75%' });
+
+
+    $('#calc').css('opacity', 0);
+    $('#calc').waypoint(function () {
+        $('#calc').addClass('fadeInUp');
     }, { offset: '75%' });
 
 });
