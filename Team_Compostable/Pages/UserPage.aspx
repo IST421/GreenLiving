@@ -16,7 +16,8 @@
 
         <div class="userContent">
             <div id="Link1">
-                <asp:Label runat="server" Text="asdasd"></asp:Label>
+                <asp:Label ID="qqq"runat="server" Text="asdasd"></asp:Label>
+                <img src="" id="sexy" />
             </div>
 
             <div id="Link2">

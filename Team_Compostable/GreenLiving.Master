@@ -270,7 +270,8 @@
                 </asp:Repeater>
                 <ucLan:Languages ID="LanSelect" runat="server" />
                    <li> <a class="modals" href="#openModal"><i class="fa fa-user-plus"></i>Register</a></li>
-                   <li> <a class="modals" href="#openModal2"><i class="fa fa-sign-in"></i>Login</a></li>
+                   <li> <a id="blahblah" class="modals" href="#openModal2"><i class="fa fa-sign-in"></i>Login</a></li>
+                <li> <a id="userPageID" style="float:right; display:none;" href="UserPage.aspx" >USER </a></li>
             </ul>
         </nav>
 

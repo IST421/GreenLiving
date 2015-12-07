@@ -12,9 +12,15 @@
         </div>
     </div>
     </div>
-    <div class="carbonCalcForm">
-       
 
+    <div class="calcStyle1">
+        <h1 class="colh1"></h1>
+        <div id="mission2" class="animated myCol2">
+            <div>
+                 <div class="carbonCalcForm">
+       
+         <asp:Panel Style="clear: both" ID="carbonCalcForm" runat="server"
+        GroupingText="Carbon Calculator"  CssClass="calcPanels">
                 <asp:Panel runat="server" ID="utiliitesForm">
                         <asp:Table runat="server">
                             <asp:TableHeaderRow runat="server">
@@ -193,7 +199,18 @@
                 </asp:TableCell>
                 
             <asp:Button ID="Submit" Text="Submit" runat="server" OnClick="Submit_Click" />
-    </div>
+            </asp:Panel>
+    </div> 
+            </div>
+        </div>
+
+        <div id="mission3" class="animated myCol2">
+            <div>
+                INFO INFO INFO
+            </div>
+            </div>
+        </div>
+  
 </asp:Content>
 
 

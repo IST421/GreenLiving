@@ -1,6 +1,10 @@
-﻿//$(document).ready(function () {
-//    alert("hi!");
-//});
+﻿$(document).ready(function () {
+    $("#blahblah").click(function () {
+        $("#userPageID").css("display", "block")
+        $("#userPageID").html("user CHANGED WHEN logged in ")
+        $(".modals").css("display", "none")                    //give login Li and ID OF "blahblah" for test 
+    });
+});
 
 //$(".midArrow").hover(function () {
 //    $(".midArrow").effect("bounce", { times: 4, distance: 200 }, 400);
