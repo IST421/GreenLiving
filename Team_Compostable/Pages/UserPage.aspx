@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GreenLiving.Master" AutoEventWireup="true" CodeBehind="UserPage.aspx.cs" Inherits="Team_Compostable.Pages.UserPage" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
@@ -16,7 +17,8 @@
 
         <div class="userContent">
             <div id="Link1">
-                test 1
+                <asp:Label ID="hellouser" runat="server" Text="asdasd"></asp:Label>
+                <asp:Label ID="country" runat="server"></asp:Label>
             </div>
 
             <div id="Link2">

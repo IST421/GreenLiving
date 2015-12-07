@@ -40,6 +40,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -89,13 +91,33 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Service References\datamine\Service1.disco" />
+    <None Include="Service References\datamine\configuration91.svcinfo" />
+    <None Include="Service References\datamine\configuration.svcinfo" />
+    <None Include="Service References\datamine\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Web References\retrieve\CompositeType.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </Content>
-    <Content Include="Web References\retrieve\Reference.map">
+    <None Include="Service References\datamine\Service1.wsdl" />
+    <None Include="Service References\datamine\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\datamine\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\datamine\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\datamine\Team_Compostable.datamine.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Web References\retrieve\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
-    </Content>
+    </None>
     <None Include="Web References\retrieve\Service1.wsdl" />
     <None Include="Web References\retrieve\Service1.xsd">
       <SubType>Designer</SubType>
@@ -273,6 +295,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Service References\datamine\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Web References\retrieve\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -318,6 +345,9 @@
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>Team_Compostable_retrieve_Service1</CachedSettingsPropName>
     </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\datamine\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

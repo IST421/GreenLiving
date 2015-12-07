@@ -20,10 +20,12 @@ namespace infoRetrieval
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         [OperationContract]
-        void fnlName(string fname, string lname);
+        void userRegister(string username, string password, string firstname, string lastname, string email, string city, string state, string country, string telephone);
 
         [OperationContract]
-        void userRegister(string username, string password, string firstname, string lastname, string email, string city, string state, string country, string telephone);
+        int loginUser(string username, string password);
+
+
 
         // TODO: Add your service operations here
     }

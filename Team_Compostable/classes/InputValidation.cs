@@ -37,7 +37,7 @@ namespace Team_Compostable
             {
                 phoneCheck = phoneCheck.Replace("-", "");
             }
-            if(phoneCheck.Contains("."))
+            if (phoneCheck.Contains("."))
             {
                 phoneCheck = phoneCheck.Replace(".", "");
             }
@@ -45,7 +45,7 @@ namespace Team_Compostable
             {
                 phoneCheck = phoneCheck.Replace(" ", "");
             }
-            if(phoneCheck.Length == 10 && Regex.IsMatch(phoneCheck,NumberCheck))
+            if (phoneCheck.Length == 10 && Regex.IsMatch(phoneCheck, NumberCheck))
             {
                 check = true;
             }
@@ -69,7 +69,7 @@ namespace Team_Compostable
                 check = false;
             }
             return check;
-            
+
         }
     }
 }

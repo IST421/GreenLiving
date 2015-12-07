@@ -43,24 +43,26 @@ namespace infoRetrieval
             using (SqlConnection con = new SqlConnection(strcon))
             {
                 try
-                { 
-                    using (SqlCommand comm = new SqlCommand("userRegistration",con))
+                {
+                    using (SqlCommand comm = new SqlCommand("userRegistration", con))
                     {
-                       comm.CommandType = CommandType.StoredProcedure;
+                        comm.CommandType = CommandType.StoredProcedure;
                         comm.Parameters.AddWithValue("@username", username);
                         comm.Parameters.AddWithValue("@userPass", password);
-                        comm.Parameters.AddWithValue("@firstName",firstname);
-                        comm.Parameters.AddWithValue("@lastName",lastname);
-                        comm.Parameters.AddWithValue("@email",email);
-                        comm.Parameters.AddWithValue("@city",city);
-                        comm.Parameters.AddWithValue("@state",state);
-                        comm.Parameters.AddWithValue("@country",country);
-                        comm.Parameters.AddWithValue("@userTelephone",telephone);
+                        comm.Parameters.AddWithValue("@firstName", firstname);
+                        comm.Parameters.AddWithValue("@lastName", lastname);
+                        comm.Parameters.AddWithValue("@email", email);
+                        comm.Parameters.AddWithValue("@city", city);
+                        comm.Parameters.AddWithValue("@state", state);
+                        comm.Parameters.AddWithValue("@country", country);
+                        comm.Parameters.AddWithValue("@userTelephone", telephone);
                         con.Open();
                         comm.ExecuteNonQuery();
                     }
                 }
-                catch(Exception et){
+
+                catch (Exception et)
+                {
                     throw et;
                 }
                 finally
@@ -70,33 +72,37 @@ namespace infoRetrieval
                 }
             }
         }
-        public void fnlName(string fname, string lname)
+        public int loginUser(string username, string password)
         {
             using (SqlConnection con = new SqlConnection(strcon))
             {
+                int returnvalue = 0;
                 try
                 {
-
-                    using (SqlCommand comm = new SqlCommand("infoinsert", con))
+                    using (SqlCommand comm = new SqlCommand("loginValidation", con))
                     {
                         comm.CommandType = CommandType.StoredProcedure;
-                        comm.Parameters.AddWithValue("@firstname", fname);
-                        comm.Parameters.AddWithValue("@lastname", lname);
-                        comm.Connection = con;
+                        comm.Parameters.AddWithValue("@username", username);
+                        comm.Parameters.AddWithValue("@password", password);
                         con.Open();
+                        SqlParameter p1 = new SqlParameter("ret", SqlDbType.Int);
+                        p1.Direction = ParameterDirection.ReturnValue;
+                        comm.Parameters.Add(p1);
                         comm.ExecuteNonQuery();
+                        returnvalue = Convert.ToInt32(comm.Parameters["ret"].Value);
+
                     }
                 }
-
-                catch (Exception ex)
+                catch (Exception e)
                 {
-                    throw ex;
+                    throw e;
                 }
                 finally
                 {
                     con.Close();
                     con.Dispose();
                 }
+                return returnvalue;
             }
         }
     }

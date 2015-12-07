@@ -33,9 +33,9 @@ namespace Team_Compostable.retrieve {
         
         private System.Threading.SendOrPostCallback GetDataUsingDataContractOperationCompleted;
         
-        private System.Threading.SendOrPostCallback fnlNameOperationCompleted;
-        
         private System.Threading.SendOrPostCallback userRegisterOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback loginUserOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
         
@@ -82,10 +82,10 @@ namespace Team_Compostable.retrieve {
         public event GetDataUsingDataContractCompletedEventHandler GetDataUsingDataContractCompleted;
         
         /// <remarks/>
-        public event fnlNameCompletedEventHandler fnlNameCompleted;
+        public event userRegisterCompletedEventHandler userRegisterCompleted;
         
         /// <remarks/>
-        public event userRegisterCompletedEventHandler userRegisterCompleted;
+        public event loginUserCompletedEventHandler loginUserCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/GetData", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -150,36 +150,6 @@ namespace Team_Compostable.retrieve {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/fnlName", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void fnlName([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string fname, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string lname) {
-            this.Invoke("fnlName", new object[] {
-                        fname,
-                        lname});
-        }
-        
-        /// <remarks/>
-        public void fnlNameAsync(string fname, string lname) {
-            this.fnlNameAsync(fname, lname, null);
-        }
-        
-        /// <remarks/>
-        public void fnlNameAsync(string fname, string lname, object userState) {
-            if ((this.fnlNameOperationCompleted == null)) {
-                this.fnlNameOperationCompleted = new System.Threading.SendOrPostCallback(this.OnfnlNameOperationCompleted);
-            }
-            this.InvokeAsync("fnlName", new object[] {
-                        fname,
-                        lname}, this.fnlNameOperationCompleted, userState);
-        }
-        
-        private void OnfnlNameOperationCompleted(object arg) {
-            if ((this.fnlNameCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.fnlNameCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/userRegister", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public void userRegister([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string firstname, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string lastname, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string city, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string state, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string country, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string telephone) {
             this.Invoke("userRegister", new object[] {
@@ -220,6 +190,38 @@ namespace Team_Compostable.retrieve {
             if ((this.userRegisterCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.userRegisterCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/loginUser", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void loginUser([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, out int loginUserResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool loginUserResultSpecified) {
+            object[] results = this.Invoke("loginUser", new object[] {
+                        username,
+                        password});
+            loginUserResult = ((int)(results[0]));
+            loginUserResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void loginUserAsync(string username, string password) {
+            this.loginUserAsync(username, password, null);
+        }
+        
+        /// <remarks/>
+        public void loginUserAsync(string username, string password, object userState) {
+            if ((this.loginUserOperationCompleted == null)) {
+                this.loginUserOperationCompleted = new System.Threading.SendOrPostCallback(this.OnloginUserOperationCompleted);
+            }
+            this.InvokeAsync("loginUser", new object[] {
+                        username,
+                        password}, this.loginUserOperationCompleted, userState);
+        }
+        
+        private void OnloginUserOperationCompleted(object arg) {
+            if ((this.loginUserCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.loginUserCompleted(this, new loginUserCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -343,11 +345,41 @@ namespace Team_Compostable.retrieve {
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.79.0")]
-    public delegate void fnlNameCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    public delegate void userRegisterCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.79.0")]
-    public delegate void userRegisterCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    public delegate void loginUserCompletedEventHandler(object sender, loginUserCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.79.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class loginUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal loginUserCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int loginUserResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool loginUserResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
 }
 
 #pragma warning restore 1591

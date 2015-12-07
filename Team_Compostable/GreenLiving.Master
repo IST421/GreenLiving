@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GreenLiving.Master.cs" Inherits="Team_Compostable.Site1" %>
+
 <%@ Register Src="~/Controls/Banner.ascx" TagName="Banner" TagPrefix="ucBan" %>
 <%@ Register Src="~/Controls/Home.ascx" TagName="Home" TagPrefix="ucHome" %>
 <%@ Register Src="~/Controls/CarbonFoot.ascx" TagName="CarbFoot" TagPrefix="ucCar" %>
@@ -15,22 +16,19 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
     <script src="JavaScript1.js" type="text/javascript"></script>
     <script src="jquery.waypoints.min.js" type="text/javascript"></script>
 
-    <link href='https://fonts.googleapis.com/css?family=Norican' rel='stylesheet' type='text/css'/>
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'/>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
-    
+    <link href='https://fonts.googleapis.com/css?family=Norican' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css' />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+
 
     <title>Green Living</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
-
-    
-
     </asp:ContentPlaceHolder>
 
 </head>
@@ -46,23 +44,23 @@
 
 
     <form id="form1" runat="server">
-            <%--LOGIN AND REGISTER MODALS--%>
+        <%--LOGIN AND REGISTER MODALS--%>
         <div id="openModal" class="modalDialog">
-        <div>
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>Register</h2>
-            <asp:Table runat="server">
-                
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Register</h2>
+                <asp:Table runat="server">
 
-                <asp:TableRow>
-                <asp:TableCell>
-                    <asp:Label ID="lbluName" Style="color: Black;"
-                        Text="User Name:" runat="server" />
-                </asp:TableCell>
-                <asp:TableCell>
-                    <asp:TextBox ID="txtUserName" runat="server" />
-                </asp:TableCell>
-                <%--<asp:TableCell runat="server">
+
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Label ID="lbluName" Style="color: Black;"
+                                Text="User Name:" runat="server" />
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox ID="txtUserName" runat="server" />
+                        </asp:TableCell>
+                        <%--<asp:TableCell runat="server">
                     <asp:RequiredFieldValidator ID="valFirstNameRequired"
                         runat="server"
                         ControlToValidate="txtFirstName"
@@ -70,17 +68,17 @@
                         Display="dynamic"
                         CssClass="error" />
                 </asp:TableCell>--%>
-            </asp:TableRow>
+                    </asp:TableRow>
 
-                <asp:TableRow>
-                <asp:TableCell>
-                    <asp:Label ID="lblPassword" Style="color: Black"
-                        Text="Password: " runat="server" />
-                </asp:TableCell>
-                <asp:TableCell>
-                    <asp:TextBox ID="txtPassword" TextMode="Password" runat="server" />
-                </asp:TableCell>
-               <%-- <asp:TableCell>
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Label ID="lblPassword" Style="color: Black"
+                                Text="Password: " runat="server" />
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox ID="txtPassword" TextMode="Password" runat="server" />
+                        </asp:TableCell>
+                        <%-- <asp:TableCell>
                     <asp:RequiredFieldValidator ID="valRequiredPassword"
                         runat="server"
                         ControlToValidate="txtPassword"
@@ -88,19 +86,19 @@
                         Display="dynamic"
                         CssClass="error" />
                 </asp:TableCell>--%>
-            </asp:TableRow>
+                    </asp:TableRow>
 
-            <asp:TableRow>
-                <asp:TableCell>
-                    <asp:Label ID="lblPasswordConfirmation" Style="color: Black"
-                        Text="Confirm password: " runat="server" />
-                </asp:TableCell>
-                <asp:TableCell>
-                    <asp:TextBox ID="txtPasswordConfirmation" TextMode="Password" runat="server" />
-                </asp:TableCell>
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Label ID="lblPasswordConfirmation" Style="color: Black"
+                                Text="Confirm password: " runat="server" />
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox ID="txtPasswordConfirmation" TextMode="Password" runat="server" />
+                        </asp:TableCell>
 
 
-               <%-- <asp:TableCell>
+                        <%-- <asp:TableCell>
                     <asp:RequiredFieldValidator
                         ID="valRequiredPasswordConfirmation" runat="server"
                         ControlToValidate="txtPasswordConfirmation"
@@ -109,7 +107,7 @@
                         CssClass="error" />
                 </asp:TableCell>--%>
 
-             <%--   <asp:TableCell>
+                        <%--   <asp:TableCell>
                     <asp:CompareValidator ID="valCompare" runat="server"
                         ControlToValidate="txtPassword" ControlToCompare="txtPasswordConfirmation"
                         Operator="Equal"
@@ -121,19 +119,16 @@
 
 
                 </asp:TableCell>--%>
-
-
-
-            </asp:TableRow>
-                <asp:TableRow>
-                <asp:TableCell>
-                    <asp:Label ID="lblFirstName" Style="color: Black;"
-                        Text="First Name:" runat="server" />
-                </asp:TableCell>
-                <asp:TableCell>
-                    <asp:TextBox ID="txtFirstName" runat="server" />
-                </asp:TableCell>
-                <%--<asp:TableCell runat="server">
+                    </asp:TableRow>
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Label ID="lblFirstName" Style="color: Black;"
+                                Text="First Name:" runat="server" />
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox ID="txtFirstName" runat="server" />
+                        </asp:TableCell>
+                        <%--<asp:TableCell runat="server">
                     <asp:RequiredFieldValidator ID="valFirstNameRequired"
                         runat="server"
                         ControlToValidate="txtFirstName"
@@ -141,19 +136,19 @@
                         Display="dynamic"
                         CssClass="error" />
                 </asp:TableCell>--%>
-            </asp:TableRow>
-          
-            
-            <asp:TableRow>
-                <asp:TableCell>
-                    <asp:Label ID="lblLastName" Style="color: Black"
-                        Text="Last Name:" runat="server" />
-                </asp:TableCell>
-                <asp:TableCell>
-                    <asp:TextBox ID="txtLastName" runat="server" />
-                </asp:TableCell>
+                    </asp:TableRow>
 
-                <%--<asp:TableCell>
+
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Label ID="lblLastName" Style="color: Black"
+                                Text="Last Name:" runat="server" />
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox ID="txtLastName" runat="server" />
+                        </asp:TableCell>
+
+                        <%--<asp:TableCell>
                     <asp:RequiredFieldValidator ID="valLastNameRequired"
                         runat="server"
                         ControlToValidate="txtLastName"
@@ -161,17 +156,17 @@
                         Display="dynamic"
                         CssClass="error" />
                 </asp:TableCell>--%>
-            </asp:TableRow>
+                    </asp:TableRow>
 
-                <asp:TableRow>
-                <asp:TableCell>
-                    <asp:Label ID="lblEmailAddress" Style="color: Black"
-                        Text="Email Address:" runat="server" />
-                </asp:TableCell>
-                <asp:TableCell>
-                    <asp:TextBox ID="txtEmailAddress" runat="server" />
-                </asp:TableCell>
-                <%--<asp:TableCell>
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Label ID="lblEmailAddress" Style="color: Black"
+                                Text="Email Address:" runat="server" />
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox ID="txtEmailAddress" runat="server" />
+                        </asp:TableCell>
+                        <%--<asp:TableCell>
                     <asp:RegularExpressionValidator ID="valEmailRequired"
                         runat="server"
                         ControlToValidate="txtEmailAddress"
@@ -181,43 +176,43 @@
                         CssClass="error">
                     </asp:RegularExpressionValidator>
                 </asp:TableCell>--%>
-            </asp:TableRow> 
-                <asp:TableRow>
-                    <asp:TableCell>
-                        <asp:Label ID="lblCity" Style="color:black" Text="City:" runat="server" />
-                    </asp:TableCell>
-                    <asp:TableCell>
-                        <asp:TextBox ID="txtCity" runat="server" />
-                    </asp:TableCell>
-                </asp:TableRow>
+                    </asp:TableRow>
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Label ID="lblCity" Style="color: black" Text="City:" runat="server" />
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox ID="txtCity" runat="server" />
+                        </asp:TableCell>
+                    </asp:TableRow>
 
-                <asp:TableRow>
-                    <asp:TableCell>
-                        <asp:Label ID="lblState" Style="color:black" Text="State" runat="server" />
-                    </asp:TableCell>
-                    <asp:TableCell>
-                        <asp:TextBox ID="txtState" runat="server"/>
-                    </asp:TableCell>
-                </asp:TableRow>
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Label ID="lblState" Style="color: black" Text="State" runat="server" />
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox ID="txtState" runat="server" />
+                        </asp:TableCell>
+                    </asp:TableRow>
 
-                <asp:TableRow>
-                    <asp:TableCell>
-                        <asp:Label ID="lblCountry" Style="color:black" Text="Country:" runat="server" />
-                    </asp:TableCell>
-                    <asp:TableCell>
-                        <asp:TextBox ID="txtCountry" runat="server" />
-                    </asp:TableCell>
-                </asp:TableRow>
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Label ID="lblCountry" Style="color: black" Text="Country:" runat="server" />
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox ID="txtCountry" runat="server" />
+                        </asp:TableCell>
+                    </asp:TableRow>
 
-                 <asp:TableRow>
-                <asp:TableCell>
-                    <asp:Label ID="lblTelephoneNumber" Style="color: Black"
-                        Text="Telephone Number:" runat="server" />
-                </asp:TableCell>
-                <asp:TableCell>
-                    <asp:TextBox ID="txtTelephoneNumber" runat="server" />
-                </asp:TableCell>
-               <%-- <asp:TableCell>
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Label ID="lblTelephoneNumber" Style="color: Black"
+                                Text="Telephone Number:" runat="server" />
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox ID="txtTelephoneNumber" runat="server" />
+                        </asp:TableCell>
+                        <%-- <asp:TableCell>
                     <asp:RequiredFieldValidator ID="valRequiredTelephoneNumber"
                         runat="server"
                         ControlToValidate="txtTelephoneNumber"
@@ -232,29 +227,55 @@
                         CssClass="error"
                         Display="Dynamic" />
                 </asp:TableCell>--%>
-            </asp:TableRow>      
-                <asp:TableRow>
-                    <asp:TableCell>
-                        <asp:Button ID="btnSubmitRegister" Text="Submit" OnClick="btnSubmitRegister_Click" runat ="server"/>
-                    </asp:TableCell>
-                    <asp:TableCell>
-                        <asp:Label ID="labelWarning" Text="" runat="server"></asp:Label>
-                    </asp:TableCell>
-                </asp:TableRow>
-            </asp:Table>
-            <%--<p>put some boxes here</p>
+                    </asp:TableRow>
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Button ID="btnSubmitRegister" Text="Submit" OnClick="btnSubmitRegister_Click" runat="server" />
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:Label ID="labelWarning" Text="" runat="server"></asp:Label>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
+                <%--<p>put some boxes here</p>
             <p>and here</p>--%>
+            </div>
         </div>
-    </div>
 
-     <div id="openModal2" class="modalDialog">
-        <div>
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>Login</h2>
-            <p>put some boxes here</p>
-            <p>and here</p>
+        <div id="openModal2" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Login</h2>
+                <asp:Label ID="userName" Text="Hello!" runat="server"></asp:Label>
+
+                <asp:Table runat="server">
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Label ID="lblinUserName" Style="color: black" Text="Enter User Name: " runat="server" />
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox ID="txtinUserName" runat="server" />
+                        </asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Label ID="lblinPassword" Style="color: black" Text="Enter Password: " runat="server" />
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox ID="txtinPassword" TextMode="Password" runat="server" />
+                        </asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Button ID="loginSubmit" Text="Submit" OnClick="loginSubmit_Click" runat="server" />
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:Label ID="errorbox" Text="" runat="server"></asp:Label>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
+            </div>
         </div>
-    </div>
 
         <nav class="PrimaryNavigation">
             <ul>
@@ -263,27 +284,27 @@
                     <ItemTemplate>
                         <li>
                             <a href="<%# Eval("url") %>"><%# Eval("title") %></a>
-                            
+
                         </li>
 
                     </ItemTemplate>
                 </asp:Repeater>
                 <ucLan:Languages ID="LanSelect" runat="server" />
-                   <li> <a class="modals" href="#openModal"><i class="fa fa-user-plus"></i>Register</a></li>
-                   <li> <a class="modals" href="#openModal2"><i class="fa fa-sign-in"></i>Login</a></li>
+                <li><a class="modals" href="#openModal"><i class="fa fa-user-plus"></i>Register</a></li>
+                <li><a class="modals" href="#openModal2"><i class="fa fa-sign-in"></i>Login</a></li>
             </ul>
         </nav>
 
 
 
-        <%--<ucLan:Languages ID="LanSelect" runat="server" /> --%>   
- <%--     <asp:DropDownList runat="server" ID="DropDownList1" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+        <%--<ucLan:Languages ID="LanSelect" runat="server" /> --%>
+        <%--     <asp:DropDownList runat="server" ID="DropDownList1" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
       <asp:ListItem Value="en" Text="English" />
       <asp:ListItem Value="fr" Text="French" />
       <asp:ListItem Value="de" Text="German" />
 </asp:DropDownList>--%>
 
-      <%--  <asp:Button ID="btnSubmit" runat="server" Text="Button" />
+        <%--  <asp:Button ID="btnSubmit" runat="server" Text="Button" />
         <script type="text/javascript">
 
             $(document).ready(function() {
@@ -299,8 +320,6 @@
         <%--HOME AREA CONTENT--%>
         <div>
             <asp:ContentPlaceHolder ID="mainHomeContent" runat="server">
-
-
             </asp:ContentPlaceHolder>
 
         </div>
@@ -314,28 +333,24 @@
 
 
         <%--EVENTS AREA CONTENT--%>
-    <div>
-        <asp:ContentPlaceHolder ID="mainEventContent" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="mainEventContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
 
-        </asp:ContentPlaceHolder>
-    </div>
+        <div>
+            <asp:ContentPlaceHolder ID="CalendarContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
 
-    <div>
-        <asp:ContentPlaceHolder ID="CalendarContent" runat="server">
-       
-        </asp:ContentPlaceHolder>
-    </div>
-
-    <div>
-        <asp:ContentPlaceHolder ID="TestContent" runat="server">
-
-        </asp:ContentPlaceHolder>
-    </div>
+        <div>
+            <asp:ContentPlaceHolder ID="TestContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
 
         <%--CALC AREA CONTENT--%>
         <div>
             <asp:ContentPlaceHolder ID="mainCalcContent" runat="server">
-
             </asp:ContentPlaceHolder>
 
         </div>
@@ -343,7 +358,6 @@
         <%--POLLUTION AREA CONTENT--%>
         <div>
             <asp:ContentPlaceHolder ID="mainPollutionContent" runat="server">
-
             </asp:ContentPlaceHolder>
 
         </div>
@@ -351,39 +365,35 @@
         <%--CONTACT AREA CONTENT--%>
         <div>
             <asp:ContentPlaceHolder ID="mainContactContent" runat="server">
-
             </asp:ContentPlaceHolder>
 
         </div>
-         <div>
+        <div>
             <asp:ContentPlaceHolder ID="contactContent" runat="server">
+            </asp:ContentPlaceHolder>
 
-        </asp:ContentPlaceHolder>
+        </div>
+        <%--USER PROFILE CONTENT--%>
 
-    </div>
-       <%--USER PROFILE CONTENT--%>
-       
-         <%--Actual user settings and content--%>
+        <%--Actual user settings and content--%>
         <div>
             <asp:ContentPlaceHolder ID="mainUserContent" runat="server">
-
-
             </asp:ContentPlaceHolder>
         </div>
 
         <%--FOOTER ARE CONTENT--%>
 
         <div class="footer">
-          <div class="leftFoot">
+            <div class="leftFoot">
                 <a href="~/Pages/Terms.aspx" runat="server">Copyright<br />
                     Terms and Agreements</a>
             </div>
 
-           <div class="midFoot">
+            <div class="midFoot">
                 <a href="~/Pages/ContactUs.aspx" runat="server">Contact Us</a>
             </div>
 
-           <div class="rightFoot">
+            <div class="rightFoot">
                 <a href="https://www.facebook.com/" runat="server" title="Facebook"><i class="fa fa-facebook-square"></i></a>
                 <a href="https://instagram.com/" runat="server" title="Instagram"><i class="fa fa-instagram"></i></a>
                 <a href="https://github.com/" runat="server" title="Github"><i class="fa fa-github-square"></i></a>
