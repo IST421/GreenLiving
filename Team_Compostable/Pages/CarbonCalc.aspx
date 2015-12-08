@@ -162,9 +162,8 @@
                         </asp:Table>
                     </asp:Panel>
                 </div>
+
                 <div class="myCol3">
-
-
                     <asp:Panel runat="server" ID="totals" Style="clear: both"
                         GroupingText="Totals" CssClass="calcPanels">
                         <asp:Table runat="server">
@@ -195,7 +194,6 @@
                             </asp:TableRow>
                         </asp:Table>
                         <asp:Button ID="Submit" class="buttonSUBMIT" Text="Submit" runat="server" OnClick="Submit_Click" />
-
                     </asp:Panel>
                 </div>
             </div>
@@ -212,6 +210,8 @@
             </div>           
         </div>
     </div>
+
+
         
 
 
@@ -235,12 +235,58 @@
 
         <div id="mission4" class="animated myCol2">
             <div>
-                 
+                 INFO ABOUT GRAPH
             </div>
             </div>
-
     </div>
 
+    <div id="calc2" class="animated">
+        <div class="calcStyle1">
+            <h1 class="colh1">How do you stack up?</h1>
+            <div class="myCol3">
+
+                <h1><i id="arrowDown" class="fa fa-arrow-down calcCircle"></i></h1>
+                <h1 class="colh1">Below average</h1>
+
+            </div>
+            <div class="myCol3">
+
+                <h1><i id="minus" class="fa fa-minus calcCircle"></i></h1>
+                <h1 class="colh1">Average</h1>
+            </div>
+            <div class="myCol3">
+
+                <h1><i id="arrowUp" class="fa fa-arrow-up calcCircle"></i></h1>
+                <h1 class="colh1">Above average</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="calc3" class="animated">
+        <div class="calcStyle2" id="smallCalc">
+            <h1 class="colh1"></h1>
+            <div class="myCol3">
+                INFO1
+            </div>
+            <div class="myCol3">
+                INFO2
+            </div>
+            <div class="myCol3">
+                INFO3
+            </div>
+        </div>
+    </div>
+
+
+    <div id="calc4" class="animated">
+        <div class="basicStyle1">
+            <h1 class="colh1">Solutions</h1>
+            <div class="myCol1">
+                  SOLUTIONS BLAH BLAH
+
+            </div>           
+        </div>
+    </div>
 
 </asp:Content>
 

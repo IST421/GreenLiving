@@ -197,6 +197,29 @@ h2 {
     background-size:cover;
     /*margin:auto;*/ /*maybe*/
 }
+.calcCircle{
+    font-size:150px;
+    width: 230px;
+	height: 230px;
+	-moz-border-radius: 50px; 
+	-webkit-border-radius: 50px;
+	border-radius: 50%;
+    background-position:center;
+    background-size:cover;
+    /*margin:auto;*/ /*maybe*/
+}
+#arrowUp{
+    background-color:#c80000;
+    color:white;
+}
+#arrowDown{
+    background-color:#197000;
+    color:white;
+}
+#minus{
+    background-color:#e3ee00;
+    color:white;
+}
 .bgBee{
     background-image:url(../GreenTheme/Images/bgBee-min.jpg);
 }
@@ -299,6 +322,9 @@ h2 {
     display:block;
     min-height:100%;
 }
+.calcStyle1 .colh1{
+   font-size: 3vh; 
+}
 .calcStyle1 .myCol2{
     text-align:left;
 }
@@ -311,6 +337,9 @@ h2 {
     margin:auto;
     display:block;
     min-height:100%;
+}
+#smallCalc{
+    height:250px;
 }
 .calcPanels{
     color:black;
