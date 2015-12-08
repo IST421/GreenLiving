@@ -75,6 +75,7 @@ namespace Team_Compostable
             if (login == 0)
             {
                 Session["user"] = theUser;
+                Response.Redirect("~/Pages/UserPage.aspx#Link1");
                 
             }
             else

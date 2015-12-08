@@ -16,7 +16,7 @@ namespace Team_Compostable.Pages
             {
                 try
                 {
-                    hellouser.Text = "Welcome: " + Session["user"].ToString();
+                    theuser2.InnerHtml = Session["user"].ToString();
                     string area = Session["user"].ToString();
                     Service1Client datamine = new Service1Client();
                     datamine.sendBackdeets(Session["user"].ToString());

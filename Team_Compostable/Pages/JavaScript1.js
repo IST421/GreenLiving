@@ -123,9 +123,18 @@ $(document).ready(function () {
     $('#calc').waypoint(function () {
         $('#calc').addClass('fadeInUp');
     }, { offset: '75%' });
-    $('#calc2, #calc3, #calc4').css('opacity', 0);
-    $('#calc2, #calc3, #calc4').waypoint(function () {
-        $('#calc2, #calc3, #calc4').addClass('fadeInUp');
+
+    $('#calc2, #calc4').css('opacity', 0);
+    $('#calc2, #calc4').waypoint(function () {
+        $('#calc2, #calc4').addClass('fadeInUp');
     }, { offset: '75%' });
+
+    $('#calc3').css('opacity', 0);
+    $('#calc3').waypoint(function () {
+        $('#calc3').addClass('fadeInUp');
+    }, { offset: '75%' });
+
+
+ 
 
 })

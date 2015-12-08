@@ -471,22 +471,21 @@ h2 {
     width:100%;
     height:100vh;
     padding-top: 3%;
-    background-color:yellow;
     position:relative;
 
 }
         .userSettings{
-            width:15%;
-            height:99vh;
+            width:5%;
+            height:100%;
             background-color:red;
             
             
         }
         .userContent{
-            margin-left:1%;
-            width:75%;
-            height:99vh;
-            background-color:blue;
+            margin-left:10%;
+            width:85%;
+            height:100%;
+            border:solid 1px black;
             
         }
              .userSettings,
@@ -507,6 +506,119 @@ h2 {
                  padding-top:9%;
                  margin-top:-9%;                   
              }
+.userTables table{
+    position:relative;
+    width:100%;
+    margin:auto;  
+    height:100%; 
+}
+.userTables tr{
+    height:120px;
+    width:120px;    
+}
+.achIMG{
+    width: 120px;
+	height: 120px;
+	-moz-border-radius: 50px; 
+	-webkit-border-radius: 50px;
+	border-radius: 50%;
+    background-color:red;
+    animation-name:tada;
+    animation-duration:1.5s;
+}
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+.userNav {
+  position: fixed;
+  transition: left .2s ease;
+  width: 155px;
+  transform: translateX(-160px);
+  left:-50px; 
+}
+.userNav  ul {
+  list-style: none;
+  margin-top: -2px;
+  border: solid;  
+}
+.userNav  ul li {
+  position: relative;
+  width: 165px;
+  padding: 7px;
+  background: #000000;
+  margin: 2px;
+  transform: translateX(0);
+  transition: transform .2s ease;
+  font-size:14px;
+}
+.userNav  ul li:hover {
+  transform: translateX(112.5px);
+  left:50px;
+}
+.userNav  ul li a {
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+.userNav  ul li a i {
+  float:right;
+}
 /*ERROR PAGE*/
 .errorPage{
     background-image:url(../GreenTheme/Images/errorPageBG.jpg);
