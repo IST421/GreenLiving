@@ -5,18 +5,22 @@
 <%--Actual user settings and content--%>
 <asp:Content ID="mainUserContent" ContentPlaceHolderID="mainUserContent" runat="server">
     <div class="userMainBOX">
-        <div class="userSettings">
-            <a href="#Link1">Achievements</a><br />
-            <a href="#Link2">Calculator</a><br />
-            <a href="#Link3">Account Edit</a><br />
-            <a href="#Link4">Leaderboards</a><br />
-            <a href="#Link5">Link5</a>
-            <br />
+        <div class="userSettings userNav">
+            <ul>
+
+                <li><a href="#Link1">Achievements<i class="fa fa-arrow-circle-right"></i></a></li>
+                <li><a href="#Link2">Calculator<i class="fa fa-arrow-circle-right"></i></a></li>
+                <li><a href="#Link3">Account Edit<i class="fa fa-arrow-circle-right"></i></a></li>
+                <li><a href="#Link4">Leaderboards<i class="fa fa-arrow-circle-right"></i></a></li>
+                <li><a href="#Link5">Link5<i class="fa fa-arrow-circle-right"></i></a></li>
+
+            </ul>
+            
         </div>
 
         <div class="userContent">
             <div id="Link1">
-                <asp:Label ID="qqq"runat="server" Text="asdasd"></asp:Label>
+                <asp:Label ID="qqq" runat="server" Text="asdasd"></asp:Label>
                 <img src="" id="sexy" />
             </div>
 

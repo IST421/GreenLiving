@@ -468,22 +468,21 @@ h2 {
     width:100%;
     height:100vh;
     padding-top: 3%;
-    background-color:yellow;
     position:relative;
 
 }
         .userSettings{
-            width:15%;
+            width:5%;
             height:99vh;
             background-color:red;
             
             
         }
         .userContent{
-            margin-left:1%;
-            width:75%;
+            margin-left:10%;
+            width:85%;
             height:99vh;
-            background-color:blue;
+            border:solid 1px black;
             
         }
              .userSettings,
@@ -504,6 +503,42 @@ h2 {
                  padding-top:9%;
                  margin-top:-9%;                   
              }
+
+.userNav {
+  position: fixed;
+  transition: left .2s ease;
+  width: 155px;
+  transform: translateX(-160px);
+  left:-50px; 
+}
+.userNav  ul {
+  list-style: none;
+  margin-top: -2px;
+  border: solid;  
+}
+.userNav  ul li {
+  position: relative;
+  width: 165px;
+  padding: 7px;
+  background: #000000;
+  margin: 2px;
+  transform: translateX(0);
+  transition: transform .2s ease;
+  font-size:14px;
+}
+.userNav  ul li:hover {
+  transform: translateX(112.5px);
+  left:50px;
+}
+.userNav  ul li a {
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+.userNav  ul li a i {
+  float:right;
+}
 /*ERROR PAGE*/
 .errorPage{
     background-image:url(../GreenTheme/Images/errorPageBG.jpg);
