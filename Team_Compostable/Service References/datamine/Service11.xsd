@@ -7,4 +7,11 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="CompositeType" nillable="true" type="tns:CompositeType" />
+  <xs:complexType name="userDeets">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="captaincrunch" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="country" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="userDeets" nillable="true" type="tns:userDeets" />
 </xs:schema>

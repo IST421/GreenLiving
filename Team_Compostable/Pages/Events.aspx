@@ -30,7 +30,6 @@
                 Become and expert when it comes to Green Living. Show of your badges and while teaching others.
             </div>
         </div>
-
     </div>
 <%--<asp:Content ID="CalendarContent" ContentPlaceHolderID="CalendarContent" runat="server">
     <div class="calendar">

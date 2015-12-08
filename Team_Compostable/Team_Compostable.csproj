@@ -114,6 +114,9 @@
     <Content Include="Service References\datamine\Team_Compostable.datamine.CompositeType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Service References\datamine\Team_Compostable.datamine.userDeets.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Web References\retrieve\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -128,6 +131,9 @@
     <None Include="Web References\retrieve\Service11.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Web References\retrieve\userDeets.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

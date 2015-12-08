@@ -74,6 +74,67 @@ namespace Team_Compostable.datamine {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="userDeets", Namespace="http://schemas.datacontract.org/2004/07/infoRetrieval")]
+    [System.SerializableAttribute()]
+    public partial class userDeets : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string captaincrunchField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string countryField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string captaincrunch {
+            get {
+                return this.captaincrunchField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.captaincrunchField, value) != true)) {
+                    this.captaincrunchField = value;
+                    this.RaisePropertyChanged("captaincrunch");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string country {
+            get {
+                return this.countryField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.countryField, value) != true)) {
+                    this.countryField = value;
+                    this.RaisePropertyChanged("country");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="datamine.IService1")]
     public interface IService1 {
@@ -101,6 +162,12 @@ namespace Team_Compostable.datamine {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/loginUser", ReplyAction="http://tempuri.org/IService1/loginUserResponse")]
         System.Threading.Tasks.Task<int> loginUserAsync(string username, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/sendBackdeets", ReplyAction="http://tempuri.org/IService1/sendBackdeetsResponse")]
+        Team_Compostable.datamine.userDeets sendBackdeets(string username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/sendBackdeets", ReplyAction="http://tempuri.org/IService1/sendBackdeetsResponse")]
+        System.Threading.Tasks.Task<Team_Compostable.datamine.userDeets> sendBackdeetsAsync(string username);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -160,6 +227,14 @@ namespace Team_Compostable.datamine {
         
         public System.Threading.Tasks.Task<int> loginUserAsync(string username, string password) {
             return base.Channel.loginUserAsync(username, password);
+        }
+        
+        public Team_Compostable.datamine.userDeets sendBackdeets(string username) {
+            return base.Channel.sendBackdeets(username);
+        }
+        
+        public System.Threading.Tasks.Task<Team_Compostable.datamine.userDeets> sendBackdeetsAsync(string username) {
+            return base.Channel.sendBackdeetsAsync(username);
         }
     }
 }

@@ -37,6 +37,8 @@ namespace Team_Compostable.retrieve {
         
         private System.Threading.SendOrPostCallback loginUserOperationCompleted;
         
+        private System.Threading.SendOrPostCallback sendBackdeetsOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -86,6 +88,9 @@ namespace Team_Compostable.retrieve {
         
         /// <remarks/>
         public event loginUserCompletedEventHandler loginUserCompleted;
+        
+        /// <remarks/>
+        public event sendBackdeetsCompletedEventHandler sendBackdeetsCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/GetData", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -226,6 +231,36 @@ namespace Team_Compostable.retrieve {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/sendBackdeets", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public userDeets sendBackdeets([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username) {
+            object[] results = this.Invoke("sendBackdeets", new object[] {
+                        username});
+            return ((userDeets)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void sendBackdeetsAsync(string username) {
+            this.sendBackdeetsAsync(username, null);
+        }
+        
+        /// <remarks/>
+        public void sendBackdeetsAsync(string username, object userState) {
+            if ((this.sendBackdeetsOperationCompleted == null)) {
+                this.sendBackdeetsOperationCompleted = new System.Threading.SendOrPostCallback(this.OnsendBackdeetsOperationCompleted);
+            }
+            this.InvokeAsync("sendBackdeets", new object[] {
+                        username}, this.sendBackdeetsOperationCompleted, userState);
+        }
+        
+        private void OnsendBackdeetsOperationCompleted(object arg) {
+            if ((this.sendBackdeetsCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.sendBackdeetsCompleted(this, new sendBackdeetsCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -287,6 +322,41 @@ namespace Team_Compostable.retrieve {
             }
             set {
                 this.stringValueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.79.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/infoRetrieval")]
+    public partial class userDeets {
+        
+        private string captaincrunchField;
+        
+        private string countryField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string captaincrunch {
+            get {
+                return this.captaincrunchField;
+            }
+            set {
+                this.captaincrunchField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string country {
+            get {
+                return this.countryField;
+            }
+            set {
+                this.countryField = value;
             }
         }
     }
@@ -377,6 +447,32 @@ namespace Team_Compostable.retrieve {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.79.0")]
+    public delegate void sendBackdeetsCompletedEventHandler(object sender, sendBackdeetsCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.79.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class sendBackdeetsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal sendBackdeetsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public userDeets Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((userDeets)(this.results[0]));
             }
         }
     }

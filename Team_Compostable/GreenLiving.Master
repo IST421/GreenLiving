@@ -95,8 +95,9 @@
                         </asp:TableCell>
                         <asp:TableCell>
                             <asp:TextBox ID="txtPasswordConfirmation" TextMode="Password" runat="server" />
+                            <
                         </asp:TableCell>
-
+                        
 
                         <%-- <asp:TableCell>
                     <asp:RequiredFieldValidator

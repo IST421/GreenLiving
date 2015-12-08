@@ -25,11 +25,25 @@ namespace infoRetrieval
         [OperationContract]
         int loginUser(string username, string password);
 
+        [OperationContract]
+        userDeets sendBackdeets(string username);
+
+       
+
 
 
         // TODO: Add your service operations here
     }
 
+    [DataContract]
+    public class userDeets
+    {
+        [DataMember]
+        public string country { get; set; }
+
+        [DataMember]
+        public string city { get; set; }
+    }
 
     // Use a data contract as illustrated in the sample below to add composite types to service operations.
     [DataContract]

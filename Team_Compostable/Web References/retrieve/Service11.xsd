@@ -64,4 +64,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="sendBackdeets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendBackdeetsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/infoRetrieval" minOccurs="0" name="sendBackdeetsResult" nillable="true" type="q3:userDeets" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

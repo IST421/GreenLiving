@@ -18,8 +18,6 @@ namespace infoRetrieval
     public class Service1 : IService1
     {
         static string strcon = ConfigurationManager.ConnectionStrings["JoeDB"].ConnectionString;
-        //static SqlConnection con = new SqlConnection(strcon);
-        //static SqlCommand comm = new SqlCommand();
 
         public string GetData(int value)
         {
@@ -103,6 +101,48 @@ namespace infoRetrieval
                     con.Dispose();
                 }
                 return returnvalue;
+            }
+        }
+
+        public userDeets sendBackdeets(string username)
+        {
+            using (SqlConnection con = new SqlConnection(strcon))
+            {
+                string userCountry = "";
+                string userCity = "";
+                try
+                {
+                    using (SqlCommand comm = new SqlCommand("recieveCountry", con))
+                    {
+                        string ucountry = "";
+                        string ucity = "";
+                        comm.CommandType = CommandType.StoredProcedure;
+                        comm.Parameters.AddWithValue("@username", username);
+                        con.Open();
+                        SqlDataReader read = comm.ExecuteReader();
+                        while(read.Read())
+                        {
+                            ucountry = read.GetString(0).ToString();
+                            ucity = read.GetString(1).ToString();
+                        }
+                        userCountry = ucountry;
+                        userCity = ucity;
+                    }
+                }
+                catch (Exception nmsqt)
+                {
+                    throw nmsqt;
+                }
+                finally
+                {
+                    con.Close();
+                    con.Dispose();
+                }
+                return new userDeets()
+                {
+                  country = userCountry,
+                  city = userCity
+                };
             }
         }
     }
