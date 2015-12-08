@@ -23,7 +23,7 @@ namespace Team_Compostable.Pages
                     //New DataSet object - productCatalog 
                     DataSet productCatalog = new DataSet();
                     //Read the contents of the XML file into the DataSet
-                    productCatalog.ReadXml(MapPath("~/App_Data/ProductCatalog.xml"));
+                    productCatalog.ReadXml(MapPath("~/App_Data/roductCatalog.xml"));
                     //Set the productCatalog Data to the repeater control - pCatalog
                     pCatalog.DataSource = productCatalog;
                     //Bind the data to the repeater control
