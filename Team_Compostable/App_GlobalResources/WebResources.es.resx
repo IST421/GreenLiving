@@ -120,6 +120,31 @@
   <data name="HeaderMission" xml:space="preserve">
     <value>estado de la misión</value>
   </data>
+  <data name="hHabout" xml:space="preserve">
+    <value>acerca de</value>
+  </data>
+  <data name="hHEverything" xml:space="preserve">
+    <value>Todo lo que necesitas saber</value>
+  </data>
+  <data name="hHGreen" xml:space="preserve">
+    <value>Vida verde</value>
+  </data>
+  <data name="hHMission" xml:space="preserve">
+    <value>Misión Compostable !</value>
+  </data>
+  <data name="homeKnowW" xml:space="preserve">
+    <value>Conozca maneras de prevenir la contaminación , aprender las consecuencias y cómo se comparan con los demás</value>
+  </data>
+  <data name="homeKnowY" xml:space="preserve">
+    <value>Conozca su huella de carbono , ganar puntos , y competir con tus amigos .
+                Puede encontrar eventos y talleres alrededor de usted para hacerse un poco más ecológico</value>
+  </data>
+  <data name="homeOur" xml:space="preserve">
+    <value>Nuestra misión es proporcionar una mejor manera de informar a la gente acerca de Green Living</value>
+  </data>
+  <data name="homeWhat" xml:space="preserve">
+    <value>¿Qué es la Vida ecológica ?</value>
+  </data>
   <data name="LabelCarbFoot" xml:space="preserve">
     <value>Huella de carbono</value>
     <comment>Carbon Footprint page link</comment>
@@ -146,5 +171,30 @@
   <data name="LabelTerms" xml:space="preserve">
     <value>Términos y Acuerdos</value>
     <comment>Terms page link</comment>
+  </data>
+  <data name="mission3" xml:space="preserve">
+    <value>Misión compostable es un grupo sin fines de lucro de las personas dedicadas a la utilización de habilidades de desarrollo web modernas ,
+                 con el fin de diseñar y desarrollar una página web funcional para aquellos que buscan un estilo de vida más verde.
+                 Nuestra página web podrá ser utilizado para una multitud de tareas para promover la vida verde .</value>
+  </data>
+  <data name="mission4" xml:space="preserve">
+    <value>Gases de efecto invernadero han sido uno de los más hablado de los problemas en la década de 2000 .
+                 Los datos , soluciones y otra información relacionada con ellas son amplias y abundantes.
+                 Nos reunimos y recopilamos datos de diversas fuentes y determinar formas que permiten a los usuarios se someten a una vida más verde sin dejar de ser capaz de mantener un estilo de vida cómodo.</value>
+  </data>
+  <data name="mission7" xml:space="preserve">
+    <value>Nuestra principal preocupación es por el medio ambiente . Sin un medio ambiente sostenible y limpio,
+                Es posible que las consecuencias negativas para la salud humana , el suministro de energía , el ecosistema , etc.
+                A largo plazo, esto podría afectar a las generaciones futuras.
+                Misión Compostable busca crear conciencia de este problema y anima a la gente de hoy en día para dejar menos de una huella de carbono por el bien del medio ambiente y las futuras generaciones que viven en ella .</value>
+  </data>
+  <data name="missionDo" xml:space="preserve">
+    <value>¿Qué hacemos?</value>
+  </data>
+  <data name="missionHow" xml:space="preserve">
+    <value>¿Como lo hacemos?</value>
+  </data>
+  <data name="missionWhat" xml:space="preserve">
+    <value>¿Qué valor Traemos ?</value>
   </data>
 </root>

@@ -12,7 +12,7 @@ html{
 }
 .span1{
     font-family: 'Norican';
-    color:#1bdb0c;
+    color:#5C832F;
     text-shadow:3px 3px 3px black;
     font-size:12vh;
 }
@@ -62,7 +62,7 @@ body{
     padding:4px;
     height:25px;
     z-index:1;
-
+    background:rgba(0, 0, 0, 0.77);
 }
 .sticky {
      height:20px;
@@ -78,7 +78,7 @@ body{
 }
 /*  anchor tag */
 .PrimaryNavigation a, .userSettings a {
-	color:black;  /* text all channels = white*/
+	color:#5C832F;  /* text all channels = white*/
 	text-decoration:none; /* turn off underline */
 	font-weight:bold; /* bold the text */
 	padding-left:.65em; 
@@ -93,7 +93,7 @@ body{
     /*position:center;*/
 }
 .PrimaryNavigation :hover, .userSettings :hover, .basicStyle1 i:hover, .error a:hover{
-    color:#5C832F;
+    color:#78351b;
     transition: all 0.5s ease;
 }
 .active{
@@ -138,24 +138,11 @@ h2 {
     margin:auto;
     position:relative;
 } 
-.myCol1{
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: inline-block;
-    text-align: center;
-    font-size: 2vh;
-    padding: 2%;
-    min-width: 300px;
-    width: 100%;
-    float:left;
-    margin:auto;
-    position:relative;
-}
 .colh1 {
    font-size: 6vh;
    margin-bottom:10px;
    text-align:center;
-}           
+}       
 /*BASIC CONTENT STYLES*/
 .basicStyle1{
     font-size:20px;
@@ -176,6 +163,15 @@ h2 {
     margin:auto;
     display:block;
 }
+.carbonCalcForm{
+    width:100%;
+    margin:auto;
+    position:relative;
+    height:600px;
+    display:block;
+}
+
+
 .middleBreak {
     width: 100%;
     height: 17vh;
@@ -187,18 +183,7 @@ h2 {
 
 }
         /*IMAGES AND STYLING*/
-.circle{
-	width: 230px;
-	height: 230px;
-	-moz-border-radius: 50px; 
-	-webkit-border-radius: 50px;
-	border-radius: 50%;
-    background-position:center;
-    background-size:cover;
-    /*margin:auto;*/ /*maybe*/
-}
-.calcCircle{
-    font-size:150px;
+.circle {
     width: 230px;
 	height: 230px;
 	-moz-border-radius: 50px; 
@@ -206,20 +191,8 @@ h2 {
 	border-radius: 50%;
     background-position:center;
     background-size:cover;
-    /*margin:auto;*/ /*maybe*/
 }
-#arrowUp{
-    background-color:#c80000;
-    color:white;
-}
-#arrowDown{
-    background-color:#197000;
-    color:white;
-}
-#minus{
-    background-color:#e3ee00;
-    color:white;
-}
+
 .bgBee{
     background-image:url(../GreenTheme/Images/bgBee-min.jpg);
 }
@@ -251,7 +224,7 @@ h2 {
     box-shadow: 1px 5px 20px  black;
 }
 .transBOX{
-    background-color:rgba(221, 221, 221, 0.30);
+    background-color:rgba(0, 0, 0, 0.40); /*background-color:rgba(221, 221, 221, 0.30);*/
     border-radius:10px;
     width:100%; 
     margin:auto;
@@ -260,7 +233,7 @@ h2 {
 .mainHome {
     width: 100%;
     height:100vh;
-    background-image:url(../GreenTheme/Images/Home1-min.JPEG);
+    background-image:url(../EarthTheme/Images/HOME-min.JPG);
 }
 .mainHome h1{
     font-size:8vh; /*10?*/
@@ -309,57 +282,15 @@ h2 {
 .mainCalc{
     width: 100%;
     height:50vh;
-    background-image:url(../GreenTheme/Images/Solution-min.JPG);
+    background-image:url(../EarthTheme/Images/Calc1-min.JPEG);
     background-position:bottom;
 }
-.calcStyle1 {
-    font-size:20px;
-    text-align:left;
-    width:60%;
-    height:500px;
-    padding-bottom:100px;
-    margin:auto;
-    display:block;
-    min-height:100%;
-}
-.calcStyle1 .colh1{
-   font-size: 3vh; 
-}
-.calcStyle1 .myCol2{
-    text-align:left;
-}
-.calcStyle2{
-    font-size:20px;
-    text-align:center;
-    width:60%;
-    height:450px;
-    padding-bottom:100px;
-    margin:auto;
-    display:block;
-    min-height:100%;
-}
-#smallCalc{
-    height:250px;
-}
-.calcPanels{
-    color:black;
-    font-size:14px;
-    display:block;
-    width:360px;    
-    margin:auto;
-    padding-bottom:25px;
-
-}
-.buttonSUBMIT{
-    float:left;
-}
-
 
 /*POLLUTION content HERE*/
 .mainPollution{
     width: 100%;
     height:50vh;
-    background-image:url(../GreenTheme/Images/Pollution-min.jpg);
+    background-image:url(../EarthTheme/Images/Pollution1-min.jpeg);
 }
 .pollutionSmall{
     /*background-color:red;*/
@@ -436,8 +367,8 @@ h2 {
 	                background: white;
                 }
                                     .close {
-	                                        background: #606061;
-	                                        color: #FFFFFF;
+	                                        background: #ffffff;
+	                                        color: green;
 	                                        line-height: 25px;
 	                                        position: absolute;
 	                                        right: -12px;
@@ -454,7 +385,10 @@ h2 {
                                             -webkit-box-shadow: 1px 1px 3px #000;
 	                                        box-shadow: 1px 1px 3px #000;
                                         }
-                                     .close:hover { background: green; }
+                                     .close:hover { background: #5e2a16;
+                                                    color:white;
+                                                    transition: all 0.7s ease-out;
+                                     }
 /*USER PROFILE*/
 .mainUser{
     width: 100%;
@@ -541,7 +475,7 @@ h2 {
     height:225px;
     min-height:100%;
     width:100%;
-    background-color:#363942;
+    background:rgba(0, 0, 0, 0.77);
     text-align:center;  
 
 }
@@ -580,10 +514,6 @@ h2 {
     animation-duration:1.9s;
     transition-timing-function:ease-out;
 }
-#pollution1, #pollution2, #pollution3, #pollution4, #pollution5, #pollution6{
-    animation-duration:1s;
-    transition-timing-function:ease-out;
-} 
 /* just messing around lol */
 @media screen and (max-width: 480px){
 .leftFoot,

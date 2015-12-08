@@ -1,6 +1,10 @@
-﻿//$(document).ready(function () {
-//    alert("hi!");
-//});
+﻿$(document).ready(function () {
+    $("#blahblah").click(function () {
+        $("#userPageID").css("display", "block")
+        $("#userPageID").html("user CHANGED WHEN logged in ")
+        $(".modals").css("display", "none")                    //give login Li and ID OF "blahblah" for test 
+    });
+});
 
 //$(".midArrow").hover(function () {
 //    $(".midArrow").effect("bounce", { times: 4, distance: 200 }, 400);
@@ -53,7 +57,7 @@ $(document).ready(function () {
     $('#mission, #events, #calendar').waypoint(function () {
         $('#mission, #events').addClass('fadeInUp');
         $('#calendar').addClass('rollIn');
-        $('#calendar, #events, #mission').css('animation-duration','1.5s');
+        $('#calendar, #events, #mission').css('animation-duration', '1.5s');
     }, { offset: '70%' });
 
 
@@ -103,15 +107,25 @@ $(document).ready(function () {
     ///////////////////////////////////////////////////////POLLUTION ANIMATION
     $('#pollution1, #pollution2').css('opacity', 0);
     $('#pollution1, #pollution2').waypoint(function () {
-        $('#pollution1, #pollution2').addClass('rotateInUpLeft');
+        $('#pollution1, #pollution2').addClass('fadeInUp');
     }, { offset: '75%' });
     $('#pollution3, #pollution4').css('opacity', 0);
     $('#pollution3, #pollution4').waypoint(function () {
-        $('#pollution3, #pollution4').addClass('rotateInUpLeft');
+        $('#pollution3, #pollution4').addClass('fadeInUp');
     }, { offset: '75%' });
     $('#pollution5, #pollution6').css('opacity', 0);
     $('#pollution5, #pollution6').waypoint(function () {
-        $('#pollution5, #pollution6').addClass('rotateInUpLeft');
+        $('#pollution5, #pollution6').addClass('fadeInUp');
     }, { offset: '75%' });
 
-});
+
+    $('#calc').css('opacity', 0);
+    $('#calc').waypoint(function () {
+        $('#calc').addClass('fadeInUp');
+    }, { offset: '75%' });
+    $('#calc2, #calc3, #calc4').css('opacity', 0);
+    $('#calc2, #calc3, #calc4').waypoint(function () {
+        $('#calc2, #calc3, #calc4').addClass('fadeInUp');
+    }, { offset: '75%' });
+
+})
