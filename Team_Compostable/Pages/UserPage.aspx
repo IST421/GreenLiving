@@ -19,7 +19,7 @@
             <div id="Link1">
                 <asp:Label ID="hellouser" runat="server" Text="asdasd"></asp:Label>
                 <asp:Label ID="country" runat="server" Text='<%# Bind("country") %>'></asp:Label>
-                <asp
+                
             </div>
 
             <div id="Link2">

@@ -84,7 +84,7 @@ namespace Team_Compostable.datamine {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string captaincrunchField;
+        private string cityField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string countryField;
@@ -100,14 +100,14 @@ namespace Team_Compostable.datamine {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string captaincrunch {
+        public string city {
             get {
-                return this.captaincrunchField;
+                return this.cityField;
             }
             set {
-                if ((object.ReferenceEquals(this.captaincrunchField, value) != true)) {
-                    this.captaincrunchField = value;
-                    this.RaisePropertyChanged("captaincrunch");
+                if ((object.ReferenceEquals(this.cityField, value) != true)) {
+                    this.cityField = value;
+                    this.RaisePropertyChanged("city");
                 }
             }
         }
@@ -156,6 +156,12 @@ namespace Team_Compostable.datamine {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/userRegister", ReplyAction="http://tempuri.org/IService1/userRegisterResponse")]
         System.Threading.Tasks.Task userRegisterAsync(string username, string password, string firstname, string lastname, string email, string city, string state, string country, string telephone);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/carbonInsert", ReplyAction="http://tempuri.org/IService1/carbonInsertResponse")]
+        void carbonInsert(string username, double score);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/carbonInsert", ReplyAction="http://tempuri.org/IService1/carbonInsertResponse")]
+        System.Threading.Tasks.Task carbonInsertAsync(string username, double score);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/loginUser", ReplyAction="http://tempuri.org/IService1/loginUserResponse")]
         int loginUser(string username, string password);
@@ -219,6 +225,14 @@ namespace Team_Compostable.datamine {
         
         public System.Threading.Tasks.Task userRegisterAsync(string username, string password, string firstname, string lastname, string email, string city, string state, string country, string telephone) {
             return base.Channel.userRegisterAsync(username, password, firstname, lastname, email, city, state, country, telephone);
+        }
+        
+        public void carbonInsert(string username, double score) {
+            base.Channel.carbonInsert(username, score);
+        }
+        
+        public System.Threading.Tasks.Task carbonInsertAsync(string username, double score) {
+            return base.Channel.carbonInsertAsync(username, score);
         }
         
         public int loginUser(string username, string password) {

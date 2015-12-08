@@ -97,7 +97,7 @@
                             <asp:TextBox ID="txtPasswordConfirmation" TextMode="Password" runat="server" />
                             <
                         </asp:TableCell>
-                        
+
 
                         <%-- <asp:TableCell>
                     <asp:RequiredFieldValidator
@@ -268,7 +268,7 @@
                     </asp:TableRow>
                     <asp:TableRow>
                         <asp:TableCell>
-                            <asp:Button ID="loginSubmit" Text="Submit" OnClick="loginSubmit_Click" runat="server" />
+                            <asp:Button ID="loginSubmit" Text="Submit" OnClick="loginSubmit_Click" runat="server" ClientIDMode="Static" />
                         </asp:TableCell>
                         <asp:TableCell>
                             <asp:Label ID="errorbox" Text="" runat="server"></asp:Label>
@@ -291,13 +291,14 @@
                     </ItemTemplate>
                 </asp:Repeater>
                 <ucLan:Languages ID="LanSelect" runat="server" />
-                <li><a class="modals" href="#openModal"><i class="fa fa-user-plus"></i>Register</a></li>
-                <li><a class="modals" href="#openModal2"><i class="fa fa-sign-in"></i>Login</a></li>
+                
+                
+                    <li><a class="modals" href="#openModal"><i class="fa fa-user-plus"></i>Register</a></li>
+                    <li><a class="modals" href="#openModal2"><i class="fa fa-sign-in"></i>Login</a></li>
+                
+                
             </ul>
         </nav>
-
-
-
         <%--<ucLan:Languages ID="LanSelect" runat="server" /> --%>
         <%--     <asp:DropDownList runat="server" ID="DropDownList1" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
       <asp:ListItem Value="en" Text="English" />

@@ -23,6 +23,9 @@ namespace infoRetrieval
         void userRegister(string username, string password, string firstname, string lastname, string email, string city, string state, string country, string telephone);
 
         [OperationContract]
+        void carbonInsert(string username, double score);
+
+        [OperationContract]
         int loginUser(string username, string password);
 
         [OperationContract]

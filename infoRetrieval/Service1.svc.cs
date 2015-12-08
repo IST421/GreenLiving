@@ -70,6 +70,34 @@ namespace infoRetrieval
                 }
             }
         }
+
+        public void carbonInsert(string username, double score)
+        {
+            using (SqlConnection con = new SqlConnection(strcon))
+            {
+                try
+                {
+                    using (SqlCommand comm = new SqlCommand("userDate", con))
+                    {
+                        comm.CommandType = CommandType.StoredProcedure;
+                        comm.Parameters.AddWithValue("@userName", username);
+                        comm.Parameters.AddWithValue("@points", score);
+                        con.Open();
+                        comm.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception dmx)
+                {
+                    throw dmx;
+                }
+                finally
+                {
+                    con.Close();
+                    con.Dispose();
+                }
+            }
+        }
+
         public int loginUser(string username, string password)
         {
             using (SqlConnection con = new SqlConnection(strcon))

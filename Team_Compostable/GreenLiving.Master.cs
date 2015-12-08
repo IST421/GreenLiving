@@ -13,6 +13,8 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Data;
 using System.Data.Sql;
+using System.Web.UI.HtmlControls;
+
 
 namespace Team_Compostable
 {
@@ -73,7 +75,7 @@ namespace Team_Compostable
             if (login == 0)
             {
                 Session["user"] = theUser;
-                Response.Redirect("~/Pages/UserPage.aspx");
+                
             }
             else
             {

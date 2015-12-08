@@ -10,6 +10,7 @@ using System.IO;
 using System.Threading;
 using System.Globalization;
 using System.Configuration;
+using Team_Compostable.datamine;
 
 namespace Team_Compostable.Pages
 {
@@ -104,6 +105,11 @@ namespace Team_Compostable.Pages
             txtUtilitiesScore.Text = Convert.ToString(carbonFootPrint[0]);
             txtTransScore.Text = Convert.ToString(carbonFootPrint[1]);
             txtTotal.Text = Convert.ToString(carbonFootPrint[2]);
+
+            string uname = Session["user"].ToString();
+            double points = carbonFootPrint[2];
+            Service1Client datamine = new Service1Client();
+            //datamine.carbonInsert(uname, points);
         }
 
     }
