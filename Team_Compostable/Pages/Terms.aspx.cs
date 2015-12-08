@@ -17,14 +17,22 @@ namespace Team_Compostable.Pages
         }
         protected override void InitializeCulture()
         {
-            if ((string)Session["Language"] != null)
+            try
             {
-                string selectedLanguage = (string)Session["Language"];
-                UICulture = selectedLanguage;
-                Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(selectedLanguage);
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo(selectedLanguage);
+                if ((string)Session["Language"] != null)
+                {
+                    string selectedLanguage = (string)Session["Language"];
+                    UICulture = selectedLanguage;
+                    Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(selectedLanguage);
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(selectedLanguage);
+                }
+                base.InitializeCulture();
             }
-            base.InitializeCulture();
+            catch (Exception exc)
+            {
+                //ExceptionUtility.LogException(exc, "Reading the Sales Summary");
+                Team_Compostable.App_Code.ExceptionUtility.LogException(exc, "Terms");
+            }
         }
     }
 }

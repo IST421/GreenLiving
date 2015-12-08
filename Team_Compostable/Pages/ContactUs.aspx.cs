@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using System.Threading;
 using System.Globalization;
 using System.Net.Mail;
+using Team_Compostable.App_Code;
 
 
 namespace Team_Compostable.Pages
@@ -19,17 +20,27 @@ namespace Team_Compostable.Pages
         }
         protected override void InitializeCulture()
         {
-            if ((string)Session["Language"] != null)
+             try
             {
-                string selectedLanguage = (string)Session["Language"];
-                UICulture = selectedLanguage;
-                Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(selectedLanguage);
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo(selectedLanguage);
+                if ((string)Session["Language"] != null)
+                {
+                    string selectedLanguage = (string)Session["Language"];
+                    UICulture = selectedLanguage;
+                    Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(selectedLanguage);
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(selectedLanguage);
+                }
+                base.InitializeCulture();
             }
-            base.InitializeCulture();
-        }
+            catch (Exception exc)
+            {
+                //ExceptionUtility.LogException(exc, "Reading the Sales Summary");
+                Team_Compostable.App_Code.ExceptionUtility.LogException(exc, "ContactUS");
+            }
+            }
+        
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
+            try { 
             if (Page.IsValid)
             {
                 MailMessage mail = new MailMessage();
@@ -54,6 +65,13 @@ namespace Team_Compostable.Pages
             {
                 lblResult.Text = "Fill up all the fields";
             }
+        }
+            catch (Exception exc)
+            {
+
+                Team_Compostable.App_Code.ExceptionUtility.LogException(exc, "ContactUS");
+            }
+            
         }
     }
 }

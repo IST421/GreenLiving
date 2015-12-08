@@ -17,30 +17,47 @@ namespace Team_Compostable.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string connectionInfo = ConfigurationManager.AppSettings["ChartImageHandler"];
-            DataSet ds = new DataSet();
-            ds.ReadXml(MapPath(".") + "/../App_Data/XMLFile2.xml");
-            DataTable dt = ds.Tables[0];
-            DataView dataView = new DataView(dt);
-            Chart1.Series[0].Points.DataBindXY(dataView, "year", dataView, "totalCO2");
+            try
+            {
+                string connectionInfo = ConfigurationManager.AppSettings["ChartImageHandler"];
+                DataSet ds = new DataSet();
+                ds.ReadXml(MapPath(".") + "/../App_Data/XMLFile2.xml");
+                DataTable dt = ds.Tables[0];
+                DataView dataView = new DataView(dt);
+                Chart1.Series[0].Points.DataBindXY(dataView, "year", dataView, "totalCO2");
 
-            DataSet ds2 = new DataSet();
-            ds2.ReadXml(MapPath(".") + "/../App_Data/XMLFile1.xml");
-           DataTable dt2 = ds2.Tables[0];
-           DataView dataView2 = new DataView(dt2);
-           Chart2.Series[0].Points.DataBindXY(dataView2, "year", dataView2, "totalMSkm");
+                DataSet ds2 = new DataSet();
+                ds2.ReadXml(MapPath(".") + "/../App_Data/XMLFile1.xml");
+                DataTable dt2 = ds2.Tables[0];
+                DataView dataView2 = new DataView(dt2);
+                Chart2.Series[0].Points.DataBindXY(dataView2, "year", dataView2, "totalMSkm");
+            }
+            catch (Exception exc)
+            {
+                //ExceptionUtility.LogException(exc, "Reading the Sales Summary");
+                Team_Compostable.App_Code.ExceptionUtility.LogException(exc, "Pollution");
+            }
            
         }
         protected override void InitializeCulture()
         {
-            if ((string)Session["Language"] != null)
+            try
             {
-                string selectedLanguage = (string)Session["Language"];
-                UICulture = selectedLanguage;
-                Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(selectedLanguage);
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo(selectedLanguage);
+                if ((string)Session["Language"] != null)
+                {
+                    string selectedLanguage = (string)Session["Language"];
+                    UICulture = selectedLanguage;
+                    Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(selectedLanguage);
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(selectedLanguage);
+                }
+                base.InitializeCulture();
             }
-            base.InitializeCulture();
+            catch (Exception exc)
+            {
+                //ExceptionUtility.LogException(exc, "Reading the Sales Summary");
+                Team_Compostable.App_Code.ExceptionUtility.LogException(exc, "Pollution");
+            }
+            
         }
     }
 }
