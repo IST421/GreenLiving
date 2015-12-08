@@ -269,6 +269,17 @@
                     </ItemTemplate>
                 </asp:Repeater>
                 <ucLan:Languages ID="LanSelect" runat="server" />
+
+               <%-- <asp:LoginView ID="loginview1" runat="server">
+                    <AnonymousTemplate>
+                        <a class="modals" href="#openModal"><i class="fa fa-user-plus"></i>Register</a>
+                        <a id="blahblah" class="modals" href="#openModal2"><i class="fa fa-sign-in"></i>Login</a>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <a id="userPageID" style="float:right;" href="UserPage.aspx" >USER </a>
+                    </LoggedInTemplate>
+                </asp:LoginView>--%>
+
                    <li> <a class="modals" href="#openModal"><i class="fa fa-user-plus"></i>Register</a></li>
                    <li> <a id="blahblah" class="modals" href="#openModal2"><i class="fa fa-sign-in"></i>Login</a></li>
                 <li> <a id="userPageID" style="float:right; display:none;" href="UserPage.aspx" >USER </a></li>

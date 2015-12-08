@@ -1,10 +1,10 @@
-﻿$(document).ready(function () {
-    $("#blahblah").click(function () {
-        $("#userPageID").css("display", "block")
-        $("#userPageID").html("user CHANGED WHEN logged in ")
-        $(".modals").css("display", "none")                    //give login Li and ID OF "blahblah" for test 
-    });
-});
+﻿//$(document).ready(function () {
+//    $("#blahblah").click(function () {
+//        $("#userPageID").css("display", "block")
+//        $("#userPageID").html("user CHANGED WHEN logged in ")
+//        $(".modals").css("display", "none")                    //give login Li and ID OF "blahblah" for test 
+//    });
+//});
 
 //$(".midArrow").hover(function () {
 //    $(".midArrow").effect("bounce", { times: 4, distance: 200 }, 400);
@@ -123,9 +123,18 @@ $(document).ready(function () {
     $('#calc').waypoint(function () {
         $('#calc').addClass('fadeInUp');
     }, { offset: '75%' });
-    $('#calc2, #calc3, #calc4').css('opacity', 0);
-    $('#calc2, #calc3, #calc4').waypoint(function () {
-        $('#calc2, #calc3, #calc4').addClass('fadeInUp');
+
+    $('#calc2, #calc4').css('opacity', 0);
+    $('#calc2, #calc4').waypoint(function () {
+        $('#calc2, #calc4').addClass('fadeInUp');
     }, { offset: '75%' });
+
+    $('#calc3').css('opacity', 0);
+    $('#calc3').waypoint(function () {
+        $('#calc3').addClass('fadeInUp');
+    }, { offset: '75%' });
+
+
+ 
 
 })
