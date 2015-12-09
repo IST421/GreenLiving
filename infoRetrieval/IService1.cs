@@ -23,6 +23,15 @@ namespace infoRetrieval
         void userRegister(string username, string password, string firstname, string lastname, string email, string city, string state, string country, string telephone);
 
         [OperationContract]
+        int getprofileID(string username);
+
+        [OperationContract]
+        void  updateAchievements(int profileID, int achievement, string actualvalue);
+
+        [OperationContract]
+        void createuserAchievements(int profID, int acheivements, string achievemenetpoints);
+
+        [OperationContract]
         void carbonInsert(string username, double score);
 
         [OperationContract]
@@ -31,7 +40,7 @@ namespace infoRetrieval
         [OperationContract]
         userDeets sendBackdeets(string username);
 
-       
+
 
 
 

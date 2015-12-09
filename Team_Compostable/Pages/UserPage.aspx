@@ -88,7 +88,8 @@
 
                             <asp:TableRow runat="server">
                                 <asp:TableCell runat="server">
-                                    <asp:Label runat="server" Text="Text1: "></asp:Label>
+                                    <asp:Label runat="server" Text="Seedling: "></asp:Label>
+                                    <asp:Label runat="server" Text="100" ID="seed"></asp:Label>
                                 </asp:TableCell>
 
                                 <asp:TableCell runat="server">
@@ -96,7 +97,8 @@
                                 </asp:TableCell>
                             
                                 <asp:TableCell runat="server">
-                                    <asp:Label runat="server" Text="Text2: "></asp:Label>
+                                    <asp:Label runat="server" Text="Days of Compost: "></asp:Label>
+                                    <asp:Label runat="server" Text="0" ID="compost"></asp:Label>
                                 </asp:TableCell>
 
                                 <asp:TableCell runat="server">
@@ -105,21 +107,23 @@
                            
                             
                                 <asp:TableCell runat="server">
-                                    <asp:Label runat="server" Text="Text3: "></asp:Label>
+                                    <asp:Label runat="server" Text="Length of Shower: "></asp:Label>
+                                    <asp:Label runat="server" Text="0" ID="shower"></asp:Label>
                                 </asp:TableCell>
 
                                 <asp:TableCell runat="server">
                                     <asp:TextBox ID="txtTruck" placeholder="label3" runat="server"></asp:TextBox>
                                    </asp:TableCell>
 
-                                 <asp:TableCell ID="pic1" CssClass="achIMG animated">pic1</asp:TableCell>
-                                <asp:TableCell ID="pic2" CssClass="achIMG animated">pic2</asp:TableCell>
-                                <asp:TableCell ID="pic3" CssClass="achIMG animated">pic3</asp:TableCell>
+                                 <asp:TableCell ID="pic1" CssClass="achIMG animated">?</asp:TableCell>
+                                <asp:TableCell ID="pic2" CssClass="achIMG animated">?</asp:TableCell>
+                                <asp:TableCell ID="pic3" CssClass="achIMG animated">?</asp:TableCell>
                                 </asp:TableRow>
                     <%-- row2--%>
                             <asp:TableRow runat="server">
                                 <asp:TableCell runat="server">
-                                    <asp:Label runat="server" Text="Text4: "></asp:Label>
+                                    <asp:Label runat="server" Text="Days of Work from Home: "></asp:Label>
+                                    <asp:Label runat="server" Text="0" ID="telecommute"></asp:Label>
                                 </asp:TableCell>
 
                                 <asp:TableCell runat="server">
@@ -128,30 +132,35 @@
 
                             
                                 <asp:TableCell runat="server">
-                                    <asp:Label runat="server" Text="Text5: "></asp:Label>
+                                    <asp:Label runat="server" Text="Charitability: "></asp:Label>
+                                    <asp:Label runat="server" Text="0" Visible="false" ID="giver"></asp:Label>
                                 </asp:TableCell>
 
                                 <asp:TableCell runat="server">
-                                    <asp:TextBox ID="txtTaxi" placeholder="label5" runat="server"></asp:TextBox>
+                                    <%--<asp:TextBox ID="txtTaxi" placeholder="label5" runat="server"></asp:TextBox>--%>
+                                    <asp:Button ID="gifts" Text="Yes!" runat="server"/>
                                    </asp:TableCell>
                             
                    
                      
                                 <asp:TableCell runat="server">
-                                    <asp:Label runat="server" Text="Text6: "></asp:Label>
+                                    <asp:Label runat="server" Text="Plant a Tree?"></asp:Label>
+                                    <asp:Label runat="server" ID="naturaleza" Text="0" Visible="false"></asp:Label>
                                 </asp:TableCell>
 
                                 <asp:TableCell runat="server">
-                                    <asp:TextBox ID="TextBox1" placeholder="label6" runat="server"></asp:TextBox>                        
+                                    <%--<asp:TextBox ID="TextBox1" placeholder="label6" runat="server"></asp:TextBox>--%>
+                                    <asp:Button ID="prestineNature" Text="Mother Nature" runat="server"/>                        
                                 </asp:TableCell>
-                                <asp:TableCell ID="pic4" CssClass="achIMG animated">pic4</asp:TableCell>
-                                <asp:TableCell ID="pic5" CssClass="achIMG animated">pic5</asp:TableCell>
-                                <asp:TableCell ID="pic6" CssClass="achIMG animated">pic6</asp:TableCell>
+                                <asp:TableCell ID="pic4" CssClass="achIMG animated">?</asp:TableCell>
+                                <asp:TableCell ID="pic5" CssClass="achIMG animated">?</asp:TableCell>
+                                <asp:TableCell ID="pic6" CssClass="achIMG animated">?</asp:TableCell>
                              </asp:TableRow>
                      <%--row3--%>
                      <asp:TableRow>
                                 <asp:TableCell runat="server">
-                                    <asp:Label runat="server" Text="Text7: "></asp:Label>
+                                    <asp:Label runat="server" Text="Days Spent in Forest: "></asp:Label>
+                                    <asp:Label runat="server" Text="0" ID="forest"></asp:Label>
                                 </asp:TableCell>
 
                                 <asp:TableCell runat="server">
@@ -160,7 +169,8 @@
                            
                             
                                 <asp:TableCell runat="server">
-                                    <asp:Label runat="server" Text="Text8: "></asp:Label>
+                                    <asp:Label runat="server" Text="Cruise Control Hours: "></asp:Label>
+                                    <asp:Label runat="server" Text="0" ID="cruise"></asp:Label>
                                 </asp:TableCell>
 
                                 <asp:TableCell runat="server">
@@ -168,20 +178,22 @@
                                    </asp:TableCell>
                             
                                 <asp:TableCell runat="server">
-                                    <asp:Label runat="server" Text="Text9: "></asp:Label>
+                                    <asp:Label runat="server" Text="E-Ticket Status: "></asp:Label>
+                                    <asp:Label runat="server" Text="0" visible="false" ID="ticket"/>
                                 </asp:TableCell>
 
                                 <asp:TableCell runat="server">
-                                    <asp:TextBox ID="TextBox4" placeholder="label9" runat="server"></asp:TextBox>
+                                    <%--<asp:TextBox ID="TextBox4" placeholder="label9" runat="server"></asp:TextBox>--%>
+                                    <asp:Button ID="button2" runat="server" Text="Traveled!" />
                                     
                                    </asp:TableCell>
                                   
-                                <asp:TableCell ID="pic7" CssClass="achIMG animated">pic7</asp:TableCell>
-                                <asp:TableCell ID="pic8" CssClass="achIMG animated">pic8</asp:TableCell>
-                                <asp:TableCell ID="pic9" CssClass="achIMG animated">pic9</asp:TableCell>
+                                <asp:TableCell ID="pic7" CssClass="achIMG animated">?</asp:TableCell>
+                                <asp:TableCell ID="pic8" CssClass="achIMG animated">?</asp:TableCell>
+                                <asp:TableCell ID="pic9" CssClass="achIMG animated">?</asp:TableCell>
                           </asp:TableRow>
                             
-                          <asp:TableRow><asp:TableCell><asp:Button Text="Submit" runat="server" /></asp:TableCell></asp:TableRow>
+                          <asp:TableRow><asp:TableCell><asp:Button Text="Submit" OnClick="ach_Click" runat="server" /></asp:TableCell></asp:TableRow>
                            
                         </asp:Table>
 

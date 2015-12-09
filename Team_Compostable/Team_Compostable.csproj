@@ -90,6 +90,7 @@
     <Content Include="Controls\Home.ascx" />
     <Content Include="Controls\Pollution.ascx" />
     <Content Include="Controls\Languages.ascx" />
+    <Content Include="Images\seedling.jpg" />
     <Content Include="Pages\Global.asax" />
     <Content Include="GreenLiving.Master" />
     <None Include="Properties\Settings.settings">

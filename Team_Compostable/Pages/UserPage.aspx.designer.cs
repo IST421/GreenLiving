@@ -22,6 +22,15 @@ namespace Team_Compostable.Pages {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl theuser2;
         
         /// <summary>
+        /// seed control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label seed;
+        
+        /// <summary>
         /// txtCar control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace Team_Compostable.Pages {
         protected global::System.Web.UI.WebControls.TextBox txtCar;
         
         /// <summary>
+        /// compost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label compost;
+        
+        /// <summary>
         /// txtVan control.
         /// </summary>
         /// <remarks>
@@ -38,6 +56,15 @@ namespace Team_Compostable.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtVan;
+        
+        /// <summary>
+        /// shower control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label shower;
         
         /// <summary>
         /// txtTruck control.
@@ -76,6 +103,15 @@ namespace Team_Compostable.Pages {
         protected global::System.Web.UI.WebControls.TableCell pic3;
         
         /// <summary>
+        /// telecommute control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label telecommute;
+        
+        /// <summary>
         /// txtBus control.
         /// </summary>
         /// <remarks>
@@ -85,22 +121,40 @@ namespace Team_Compostable.Pages {
         protected global::System.Web.UI.WebControls.TextBox txtBus;
         
         /// <summary>
-        /// txtTaxi control.
+        /// giver control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTaxi;
+        protected global::System.Web.UI.WebControls.Label giver;
         
         /// <summary>
-        /// TextBox1 control.
+        /// gifts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.Button gifts;
+        
+        /// <summary>
+        /// naturaleza control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label naturaleza;
+        
+        /// <summary>
+        /// prestineNature control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button prestineNature;
         
         /// <summary>
         /// pic4 control.
@@ -130,6 +184,15 @@ namespace Team_Compostable.Pages {
         protected global::System.Web.UI.WebControls.TableCell pic6;
         
         /// <summary>
+        /// forest control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label forest;
+        
+        /// <summary>
         /// TextBox2 control.
         /// </summary>
         /// <remarks>
@@ -137,6 +200,15 @@ namespace Team_Compostable.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        
+        /// <summary>
+        /// cruise control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label cruise;
         
         /// <summary>
         /// TextBox3 control.
@@ -148,13 +220,22 @@ namespace Team_Compostable.Pages {
         protected global::System.Web.UI.WebControls.TextBox TextBox3;
         
         /// <summary>
-        /// TextBox4 control.
+        /// ticket control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.Label ticket;
+        
+        /// <summary>
+        /// button2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button button2;
         
         /// <summary>
         /// pic7 control.
