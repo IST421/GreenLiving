@@ -1,10 +1,10 @@
-﻿//$(document).ready(function () {
-//    $("#blahblah").click(function () {
-//        $("#userPageID").css("display", "block")
-//        $("#userPageID").html("user CHANGED WHEN logged in ")
-//        $(".modals").css("display", "none")                    //give login Li and ID OF "blahblah" for test 
-//    });
-//});
+﻿$(document).ready(function () {
+    $("#loginSubmit").click(function () {
+        $("#userPageID").css("display", "block")
+        $("#userPageID").html("owen5020")
+        $(".modals").css("display", "none")                    //give login Li and ID OF "blahblah" for test 
+    });
+});
 
 //$(".midArrow").hover(function () {
 //    $(".midArrow").effect("bounce", { times: 4, distance: 200 }, 400);
@@ -50,7 +50,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-   ///////////////////////////////////////////////////////////////// //MISSION/EVENTS ANIMATION
+    ///////////////////////////////////////////////////////////////// //MISSION/EVENTS ANIMATION
 
     // hide our element on page load
     $('#mission, #events, #calendar').css('opacity', 0);
@@ -63,7 +63,7 @@ $(document).ready(function () {
 
 
     // hide our element on page load 
-   ////////////////////////////////////// WRAP
+    ////////////////////////////////////// WRAP
     //////WRAP1
     $('#eventsLeftID, #mission2').css('opacity', 0);
     $('#eventsLeftID, #mission2').waypoint(function () {
@@ -94,13 +94,13 @@ $(document).ready(function () {
     $('#mission7').waypoint(function () {
         $('#mission7').addClass('fadeInRight');
     }, { offset: '75%' });
-     //////////////////////////////////END WRAP
+    //////////////////////////////////END WRAP
 
-        $('#eventsHead, #calcHead, #pollutionHead, #homeHead').waypoint(function () {
-            $('#eventsHead, #calcHead, #pollutionHead, #homeHead').addClass('fadeInDown').css('display','block')
-        }, { offset: '100%' });
+    $('#eventsHead, #calcHead, #pollutionHead, #homeHead').waypoint(function () {
+        $('#eventsHead, #calcHead, #pollutionHead, #homeHead').addClass('fadeInDown').css('display','block')
+    }, { offset: '100%' });
 
-        $('#eventsHead, #calcHead, #pollutionHead, #homeHead').css('animation-duration', '1.3s', 'transition', 'ease-out');
+    $('#eventsHead, #calcHead, #pollutionHead, #homeHead').css('animation-duration', '1.3s', 'transition', 'ease-out');
 
 
 
@@ -134,7 +134,13 @@ $(document).ready(function () {
         $('#calc3').addClass('fadeInUp');
     }, { offset: '75%' });
 
+    //User Page Begins
+    $(function () {
+        $("#accordion").accordion({
+            collapsible: true,
+            animate: 200
 
- 
+        });
+    });
 
 })
