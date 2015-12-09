@@ -70,71 +70,6 @@ namespace infoRetrieval
                 }
             }
         }
-        public int getprofileID(string username)
-        {
-            using (SqlConnection con = new SqlConnection(strcon))
-            {
-
-                int profileID = 0;
-
-                try
-                {
-                    using (SqlCommand comm = new SqlCommand("getProfID", con))
-                    {
-                        int localID = 0;
-                        comm.CommandType = CommandType.StoredProcedure;
-                        comm.Parameters.AddWithValue("@uname", username);
-                        con.Open();
-                        SqlDataReader read = comm.ExecuteReader();
-                        while (read.Read())
-                        {
-                            localID = Convert.ToInt32(read.GetInt32(0));
-                        }
-                        profileID = localID;
-                    }
-                }
-                catch (Exception a)
-                {
-                    throw a;
-                }
-                finally
-                {
-                    con.Close();
-                    con.Dispose();
-                }
-                return profileID;
-            }
-        }
-
-        public void createuserAchievements(int profID, int acheivements, int achievemenetpoints)
-        {
-            using (SqlConnection con = new SqlConnection(strcon))
-            {
-                try
-                {
-                    using (SqlCommand comm = new SqlCommand("achievementInsert", con))
-                    {
-                        comm.CommandType = CommandType.StoredProcedure;
-                        comm.Parameters.AddWithValue("@profID", profID);
-                        comm.Parameters.AddWithValue("@achievementID", acheivements);
-                        comm.Parameters.AddWithValue("@achievementpoints", achievemenetpoints);
-                        con.Open();
-                        comm.ExecuteNonQuery();
-                    }
-                }
-                catch (Exception b)
-                {
-                    throw b;
-                }
-                finally
-                {
-                    con.Close();
-                    con.Dispose();
-                }
-            }
-        }
-
-
 
         public void carbonInsert(string username, double score)
         {
@@ -213,7 +148,7 @@ namespace infoRetrieval
                         comm.Parameters.AddWithValue("@username", username);
                         con.Open();
                         SqlDataReader read = comm.ExecuteReader();
-                        while (read.Read())
+                        while(read.Read())
                         {
                             ucountry = read.GetString(0).ToString();
                             ucity = read.GetString(1).ToString();
@@ -233,8 +168,8 @@ namespace infoRetrieval
                 }
                 return new userDeets()
                 {
-                    country = userCountry,
-                    city = userCity
+                  country = userCountry,
+                  city = userCity
                 };
             }
         }

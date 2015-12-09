@@ -23,12 +23,6 @@ namespace infoRetrieval
         void userRegister(string username, string password, string firstname, string lastname, string email, string city, string state, string country, string telephone);
 
         [OperationContract]
-        int getprofileID(string username);
-
-        [OperationContract]
-        void createuserAchievements(int profID, int acheivements, int achievemenetpoints);
-
-        [OperationContract]
         void carbonInsert(string username, double score);
 
         [OperationContract]
