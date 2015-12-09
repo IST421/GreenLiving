@@ -7,19 +7,80 @@
     <div class="userMainBOX">
         <div class="userSettings userNav">
             <ul>
-
-                <li><a href="#Link1">Achievements<i class="fa fa-arrow-circle-right"></i></a></li>
-                <li><a href="#Link2">Calculator<i class="fa fa-arrow-circle-right"></i></a></li>
-                <li><a href="#Link3">Account Edit<i class="fa fa-arrow-circle-right"></i></a></li>
-                <li><a href="#Link4">Leaderboards<i class="fa fa-arrow-circle-right"></i></a></li>
-                <li><a href="#Link5">Link5<i class="fa fa-arrow-circle-right"></i></a></li>
+                <li><a href="#Link1">User Welcome<i class="fa fa-arrow-circle-right"></i></a></li>
+                <li><a href="#Link2">Achievements<i class="fa fa-arrow-circle-right"></i></a></li>
+                <li><a href="#Link3">Calculator<i class="fa fa-arrow-circle-right"></i></a></li>
+                <li><a href="#Link4">Account Edit<i class="fa fa-arrow-circle-right"></i></a></li>
+                <li><a href="#Link5">Leaderboards<i class="fa fa-arrow-circle-right"></i></a></li>
+                
 
             </ul>
             
         </div>
 
         <div class="userContent">
+
             <div id="Link1">
+
+                <h1 class="colh1">sup dude</h1>
+                <div id="accordion">
+                    <h3>Section 1</h3>
+                    <div>
+                        <p class="pRight circle">picture here</p>
+                        <p class="pLeft">1</p>
+                    </div>
+                    <h3>Section 2</h3>
+                    <div>
+                        <p class="pRight circle">picture here</p>
+                        <p class="pLeft">2</p>
+                    </div>
+                    <h3>Section 3</h3>
+                    <div>
+                        <p class="pRight circle">picture here</p>
+                        <p class="pLeft">3</p>
+                    </div>
+                    <h3>Section 4</h3>
+                    <div>
+                        <p class="pRight circle">picture here</p>
+                        <p class="pLeft">4</p>
+                    </div>
+                    <h3>Section 5</h3>
+                    <div>
+                        <p class="pRight circle">picture here</p>
+                        <p class="pLeft">5</p>
+                    </div>
+                    <h3>Section 6</h3>
+                    <div>
+                        <p class="pRight circle">picture here</p>
+                        <p class="pLeft">6</p>
+                    </div>
+                    <h3>Section 7</h3>
+                    <div>
+                        <p class="pRight circle">picture here</p>
+                        <p class="pLeft">7</p>
+                    </div>
+                    <h3>Section 8</h3>
+                    <div>
+                        <p class="pRight circle">picture here</p>
+                        <p class="pLeft">8</p>
+                    </div>
+                    <h3>Section 9</h3>
+                    <div>
+                        <p class="pRight circle">picture here</p>
+                        <p class="pLeft">9</p>
+                    </div>
+                    <h3>Section 10</h3>
+                    <div>
+                        <p class="pRight circle">picture here</p>
+                        <p class="pLeft">10</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div id="Link2">
                 <%--<asp:Label ID="theUserSession" style="text-align:center" CssClass="colh1" runat="server">q</asp:Label>--%>
                 <h1 class="colh1" id="theuser2" runat="server">hi</h1>
                 <h1 class="colh1">Achievements<i class="fa fa-trophy"></i></h1>
@@ -126,10 +187,6 @@
 
             </div>
 
-            <div id="Link2">
-                test 2
-            </div>
-
             <div id="Link3">
                 test 3
             </div>
@@ -141,6 +198,8 @@
             <div id="Link5">
                 test 5
             </div>
+
+            
 
         </div>
     </div>

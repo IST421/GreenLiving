@@ -106,10 +106,10 @@ namespace Team_Compostable.Pages
             txtTransScore.Text = Convert.ToString(carbonFootPrint[1]);
             txtTotal.Text = Convert.ToString(carbonFootPrint[2]);
 
-            string uname = Session["user"].ToString();
-            double points = carbonFootPrint[2];
-            Service1Client datamine = new Service1Client();
-            //datamine.carbonInsert(uname, points);
+            //string uname = Session["user"].ToString();
+            //double points = carbonFootPrint[2];
+            //Service1Client datamine = new Service1Client();
+            ////datamine.carbonInsert(uname, points);
         }
 
     }
