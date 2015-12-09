@@ -65,7 +65,10 @@ namespace Team_Compostable.Pages
             double waste = (((housingCosts[4] * 0.453592) * 52) * 0.53592);
 
             //Total carbon foot print of housing costs
-            housingCostsTotal = electricity + naturalGas + fuelOil + lPG + waste;
+            //Converts CFP from pounds to tons by multipling the value by 0.0005
+            //Rounds result to 2 decimal and if the result is i nbetween two numbers it will round to the nearest number away from zero from zero
+
+            housingCostsTotal = Math.Round(((electricity + naturalGas + fuelOil + lPG + waste) * 0.0005), 2, MidpointRounding.AwayFromZero);
 
 
             //calcuates carbon foot print of travel cost by multiplying each value by EF the average emmissions factor
@@ -80,8 +83,10 @@ namespace Team_Compostable.Pages
             double rail = (travelCosts[5] * 1.60934) * 0.083053;
             double flying = (travelCosts[6] * 1.60934) * 0.08974;
 
-            //Total carbon foot print of housing costs
-            travelCostsTotal = car + van + truck + bus + taxi + rail + flying;
+            //Total carbon foot print of travel costs
+            //Converts CFP from pounds to tons by multipling the value by 0.0005
+            //Rounds result to 2 decimal and if the result is i nbetween two numbers it will round to the nearest number away from zero from zero
+            travelCostsTotal = Math.Round(((car + van + truck + bus + taxi + rail + flying) * 0.0005), 2, MidpointRounding.AwayFromZero);
 
             total = housingCostsTotal + travelCostsTotal;
 
