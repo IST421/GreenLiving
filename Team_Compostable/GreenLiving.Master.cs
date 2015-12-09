@@ -56,12 +56,26 @@ namespace Team_Compostable
             //smtp.Send(mail);
 
             Service1 retrieve = new Service1();
+            Service1Client datamine = new Service1Client();
             if (validationcheck(theUser, thePass, thePassConfirmation, email, telephone) == true)
             {
                 //string newPass = passHash(thePass);
                 retrieve.userRegister(theUser, thePass, first, last, email, city, state, country, telephone);
+                int profid = datamine.getprofileID(theUser);
                 Session["user"] = theUser;
-                Response.Redirect("~/Pages/UserPage.aspx");
+                Session["id"] = profid;
+
+                datamine.createuserAchievements(profid, 1121, "0");
+                datamine.createuserAchievements(profid, 2212, "0");
+                datamine.createuserAchievements(profid, 3234, "0");
+                datamine.createuserAchievements(profid, 3333, "0");
+                datamine.createuserAchievements(profid, 4444, "0");
+                datamine.createuserAchievements(profid, 5555, "0");
+                datamine.createuserAchievements(profid, 6666, "0");
+                datamine.createuserAchievements(profid, 7777, "0");
+                datamine.createuserAchievements(profid, 8888, "0");
+                datamine.createuserAchievements(profid, 9999, "0");
+                Response.Redirect("~/Pages/UserPage.aspx#Link1");
             }
         }
 
@@ -74,9 +88,11 @@ namespace Team_Compostable
             int login = datamine.loginUser(theUser, thePass);
             if (login == 0)
             {
+                int profid = datamine.getprofileID(theUser);
+                Session["id"] = profid;
                 Session["user"] = theUser;
                 Response.Redirect("~/Pages/UserPage.aspx#Link1");
-                
+
             }
             else
             {
