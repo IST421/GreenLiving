@@ -134,6 +134,11 @@ $(document).ready(function () {
         $('#calc3').addClass('fadeInUp');
     }, { offset: '75%' });
 
+    $('#solUP').css('opacity', 0);
+    $('#solUP').waypoint(function () {
+        $('#solUP').addClass('fadeInUp');
+    }, { offset: '75%' });
+
     //User Page Begins
     $(function () {
         $("#accordion").accordion({

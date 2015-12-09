@@ -295,7 +295,7 @@
     </div>
 
 
-    <div id="calc4" class="animated">
+    <div id="solUP" class="animated">
         <div class="basicStyle1">
             <h1 class="colh1">Solutions</h1>
             <div class="myCol1">

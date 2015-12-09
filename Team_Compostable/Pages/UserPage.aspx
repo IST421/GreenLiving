@@ -27,7 +27,7 @@
                     <h3>Section 1</h3>
                     <div>
                         <p class="pRight circle">picture here</p>
-                        <p class="pLeft">1</p>
+                        <p id="left" class="pLeft">1</p>
                     </div>
                     <h3>Section 2</h3>
                     <div>
@@ -80,7 +80,7 @@
 
 
 
-            <div id="Link2">
+            <div id="Link2"> 
                 <%--<asp:Label ID="theUserSession" style="text-align:center" CssClass="colh1" runat="server">q</asp:Label>--%>
                 <h1 class="colh1" id="theuser2" runat="server">hi</h1>
                 <h1 class="colh1">Achievements<i class="fa fa-trophy"></i></h1>
@@ -196,7 +196,6 @@
                           <asp:TableRow><asp:TableCell><asp:Button Text="Submit" OnClick="ach_Click" runat="server" /></asp:TableCell></asp:TableRow>
                            
                         </asp:Table>
-
             </div>
 
             <div id="Link3">
