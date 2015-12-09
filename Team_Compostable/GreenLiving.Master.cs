@@ -65,16 +65,16 @@ namespace Team_Compostable
                 Session["user"] = theUser;
                 Session["id"] = profid;
 
-                datamine.createuserAchievements(profid, 1121, 0);
-                datamine.createuserAchievements(profid, 2212, 0);
-                datamine.createuserAchievements(profid, 3234, 0);
-                datamine.createuserAchievements(profid, 3333, 0);
-                datamine.createuserAchievements(profid, 4444, 0);
-                datamine.createuserAchievements(profid, 5555, 0);
-                datamine.createuserAchievements(profid, 6666, 0);
-                datamine.createuserAchievements(profid, 7777, 0);
-                datamine.createuserAchievements(profid, 8888, 0);
-                datamine.createuserAchievements(profid, 9999, 0);
+                datamine.createuserAchievements(profid, 1121, "0");
+                datamine.createuserAchievements(profid, 2212, "0");
+                datamine.createuserAchievements(profid, 3234, "0");
+                datamine.createuserAchievements(profid, 3333, "0");
+                datamine.createuserAchievements(profid, 4444, "0");
+                datamine.createuserAchievements(profid, 5555, "0");
+                datamine.createuserAchievements(profid, 6666, "0");
+                datamine.createuserAchievements(profid, 7777, "0");
+                datamine.createuserAchievements(profid, 8888, "0");
+                datamine.createuserAchievements(profid, 9999, "0");
                 Response.Redirect("~/Pages/UserPage.aspx#Link1");
             }
         }
