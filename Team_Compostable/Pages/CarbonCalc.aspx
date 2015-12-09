@@ -205,8 +205,10 @@
    <div id="calc" class="animated">
         <div class="basicStyle1">
             <div class="myCol1">
-                  123123123
-
+                Carbon calculator uses your basic household and traveling information in order to calculate carbon dioxide emissions a person has in one year.
+                We use utility information that is available to everyone when they pay for various bills. 
+                We also take into consideration the miles a person might travels through the year in order calculate the total score.
+                The score that the person receives is converted from kg into metric tons in order to compare it to global person average.
             </div>           
         </div>
     </div>
@@ -221,21 +223,27 @@
             <Titles>
                 <asp:Title Text="Average CO2 emissions yearly per person" Font="Relaway, 14" />
             </Titles>
+            
             <Series>
-                <asp:Series ChartType="Column" Name="Emissions"></asp:Series>
-
+                <asp:Series ChartType="Column" Font="Relaway, 24px" Name="Emissions"></asp:Series>
+                
             </Series>
             <ChartAreas>
                 <asp:ChartArea Name="ChartArea1">
-                    <AxisX Interval="2" Title="COUNTRY" TitleFont="Relaway, 14" />
+                    <AxisX Interval="1"  Title="COUNTRY" TitleFont="Relaway, 14" >
+                    <LabelStyle Font="Arial, 20" Angle="40"/>
+                    </AxisX>
                     <AxisY Interval="auto" Title="CO2(TONS)" TitleFont="Relaway, 14" />
                 </asp:ChartArea>
             </ChartAreas>
         </asp:Chart>
 
-        <div id="mission5" class="animated myCol2">
+        <div id="calcLeft" class="animated myCol2">
             <div>
-                 INFO ABOUT GRAPH
+                You’ve received your score, here’s what it means: <br />
+                The number you’ve received is in metric tons of Carbon Dioxide you emit into the atmosphere yearly.
+                On the right is a graph that contains person average for that country. 
+                You can base your score on where you live and act accordingly. We can help you too!
             </div>
             </div>
     </div>
@@ -266,13 +274,22 @@
         <div class="calcStyle2" id="smallCalc">
             <h1 class="colh1"></h1>
             <div class="myCol3">
-                INFO1
+                You're doing great! <br />
+                You know how to manage your utilities and you go easy on the transportation. 
+                You’re already helping our planet. 
+                Start encouraging others to join you and make this planet cleaner.
             </div>
             <div class="myCol3">
-                INFO2
+                You’re doing alright, but could be better! 
+                You float around the country average and could use some help. 
+                Manage some of your utilities in a better way. 
+                Are your lights on when you’re not home? Maybe you can catch a train to work once in a while.
+                Get yourself involved and you’ll be a Green Living pro!
             </div>
             <div class="myCol3">
-                INFO3
+                You could use some help. Definitely use our solutions information below to go greener! 
+                You’re using extra energy that could be saved. Turn off your lights when you’re away. 
+                Lessen your waste emission and definitely try to bike with Joe to use less transportation.
             </div>
         </div>
     </div>
@@ -282,8 +299,11 @@
         <div class="basicStyle1">
             <h1 class="colh1">Solutions</h1>
             <div class="myCol1">
-                  SOLUTIONS BLAH BLAH
-
+                You know your score. You know where you stack up against the world and some of small ways to  improve your emissions factor. 
+                Common solutions to green live style includes recycling, using public transportation which emits less CO2 than driving by yourself. 
+                Turning off utilities that are not being used is the crucial part. 
+                Know your utility bills and how you can improve them. 
+                Check out our <a href="Events.aspx" style="text-decoration:none;">events page</a> to find more about information session that are aimed to help people live a greener, planet healthier life. 
             </div>           
         </div>
     </div>

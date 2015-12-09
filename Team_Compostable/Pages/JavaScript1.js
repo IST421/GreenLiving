@@ -85,9 +85,9 @@ $(document).ready(function () {
     }, { offset: '75%' });
 
     // WRAP3
-    $('#mission6').css('opacity', 0);
-    $('#mission6').waypoint(function () {
-        $('#mission6').addClass('fadeInLeft');
+    $('#mission6, #calcLeft').css('opacity', 0);
+    $('#mission6, #calcLeft').waypoint(function () {
+        $('#mission6, #calcLeft').addClass('fadeInLeft');
     }, { offset: '75%' });
 
     $('#mission7').css('opacity', 0);

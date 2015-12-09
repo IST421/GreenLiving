@@ -315,6 +315,9 @@ h2 {
     background-image:url(../GreenTheme/Images/Solution-min.JPG);
     background-position:bottom;
 }
+#calc .basicStyle1{
+    height:200px;
+}
 .calcStyle1 {
     font-size:20px;
     text-align:left;
@@ -324,6 +327,9 @@ h2 {
     margin:auto;
     display:block;
     min-height:100%;
+}
+#calc2 .calcStyle1{
+    height:300px;
 }
 .calcStyle1 .colh1{
    font-size: 3vh; 
