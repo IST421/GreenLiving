@@ -25,6 +25,18 @@
   <wsdl:message name="IService1_userRegister_OutputMessage">
     <wsdl:part name="parameters" element="tns:userRegisterResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_getprofileID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getprofileID" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getprofileID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getprofileIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_createuserAchievements_InputMessage">
+    <wsdl:part name="parameters" element="tns:createuserAchievements" />
+  </wsdl:message>
+  <wsdl:message name="IService1_createuserAchievements_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createuserAchievementsResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_carbonInsert_InputMessage">
     <wsdl:part name="parameters" element="tns:carbonInsert" />
   </wsdl:message>
@@ -55,6 +67,14 @@
     <wsdl:operation name="userRegister">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/userRegister" message="tns:IService1_userRegister_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/userRegisterResponse" message="tns:IService1_userRegister_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getprofileID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getprofileID" message="tns:IService1_getprofileID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getprofileIDResponse" message="tns:IService1_getprofileID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createuserAchievements">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/createuserAchievements" message="tns:IService1_createuserAchievements_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/createuserAchievementsResponse" message="tns:IService1_createuserAchievements_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="carbonInsert">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/carbonInsert" message="tns:IService1_carbonInsert_InputMessage" />
@@ -91,6 +111,24 @@
     </wsdl:operation>
     <wsdl:operation name="userRegister">
       <soap:operation soapAction="http://tempuri.org/IService1/userRegister" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getprofileID">
+      <soap:operation soapAction="http://tempuri.org/IService1/getprofileID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createuserAchievements">
+      <soap:operation soapAction="http://tempuri.org/IService1/createuserAchievements" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

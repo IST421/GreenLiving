@@ -157,6 +157,18 @@ namespace Team_Compostable.datamine {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/userRegister", ReplyAction="http://tempuri.org/IService1/userRegisterResponse")]
         System.Threading.Tasks.Task userRegisterAsync(string username, string password, string firstname, string lastname, string email, string city, string state, string country, string telephone);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getprofileID", ReplyAction="http://tempuri.org/IService1/getprofileIDResponse")]
+        int getprofileID(string username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getprofileID", ReplyAction="http://tempuri.org/IService1/getprofileIDResponse")]
+        System.Threading.Tasks.Task<int> getprofileIDAsync(string username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/createuserAchievements", ReplyAction="http://tempuri.org/IService1/createuserAchievementsResponse")]
+        void createuserAchievements(int profID, int acheivements, int achievemenetpoints);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/createuserAchievements", ReplyAction="http://tempuri.org/IService1/createuserAchievementsResponse")]
+        System.Threading.Tasks.Task createuserAchievementsAsync(int profID, int acheivements, int achievemenetpoints);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/carbonInsert", ReplyAction="http://tempuri.org/IService1/carbonInsertResponse")]
         void carbonInsert(string username, double score);
         
@@ -225,6 +237,22 @@ namespace Team_Compostable.datamine {
         
         public System.Threading.Tasks.Task userRegisterAsync(string username, string password, string firstname, string lastname, string email, string city, string state, string country, string telephone) {
             return base.Channel.userRegisterAsync(username, password, firstname, lastname, email, city, state, country, telephone);
+        }
+        
+        public int getprofileID(string username) {
+            return base.Channel.getprofileID(username);
+        }
+        
+        public System.Threading.Tasks.Task<int> getprofileIDAsync(string username) {
+            return base.Channel.getprofileIDAsync(username);
+        }
+        
+        public void createuserAchievements(int profID, int acheivements, int achievemenetpoints) {
+            base.Channel.createuserAchievements(profID, acheivements, achievemenetpoints);
+        }
+        
+        public System.Threading.Tasks.Task createuserAchievementsAsync(int profID, int acheivements, int achievemenetpoints) {
+            return base.Channel.createuserAchievementsAsync(profID, acheivements, achievemenetpoints);
         }
         
         public void carbonInsert(string username, double score) {

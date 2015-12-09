@@ -523,6 +523,7 @@ h2 {
 	-webkit-border-radius: 50px;
 	border-radius: 50%;
     background-color:red;
+    background-size:cover;
     animation-name:tada;
     animation-duration:1.5s;
 }
