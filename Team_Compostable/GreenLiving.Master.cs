@@ -22,60 +22,67 @@ namespace Team_Compostable
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         protected void btnSubmitRegister_Click(object sender, EventArgs e)
         {
-            string theUser = txtUserName.Text.Trim();
-            string thePass = txtPassword.Text.Trim();
-            string thePassConfirmation = txtPasswordConfirmation.Text.Trim();
-            string first = txtFirstName.Text.Trim();
-            string last = txtLastName.Text.Trim();
-            string email = txtEmailAddress.Text.Trim();
-            string city = txtCity.Text.Trim();
-            string state = txtState.Text.Trim();
-            string country = txtCountry.Text.Trim();
-            string telephone = txtTelephoneNumber.Text.Trim();
-
-            //MailMessage mail = new MailMessage();
-            //mail.To.Add(email);
-
-            //mail.From = new MailAddress("421.team3.greenliving@gmail.com");
-            //mail.Subject = "Welcome!" + first;
-            //mail.Body = "Hello!";
-            //mail.IsBodyHtml = true;
-
-            //SmtpClient smtp = new SmtpClient();
-            //smtp.Host = "smtp.gmail.com";
-            //smtp.Port = 587;
-            //smtp.Credentials = new System.Net.NetworkCredential
-            //     ("421.team3.greenliving@gmail.com", "421Team3Joe");
-
-            //smtp.EnableSsl = true;
-            //smtp.Send(mail);
-
-            Service1 retrieve = new Service1();
-            Service1Client datamine = new Service1Client();
-            if (validationcheck(theUser, thePass, thePassConfirmation, email, telephone) == true)
+            try
             {
-                //string newPass = passHash(thePass);
-                retrieve.userRegister(theUser, thePass, first, last, email, city, state, country, telephone);
-                int profid = datamine.getprofileID(theUser);
-                Session["user"] = theUser;
-                Session["id"] = profid;
+                string theUser = txtUserName.Text.Trim();
+                string thePass = txtPassword.Text.Trim();
+                string thePassConfirmation = txtPasswordConfirmation.Text.Trim();
+                string first = txtFirstName.Text.Trim();
+                string last = txtLastName.Text.Trim();
+                string email = txtEmailAddress.Text.Trim();
+                string city = txtCity.Text.Trim();
+                string state = txtState.Text.Trim();
+                string country = txtCountry.Text.Trim();
+                string telephone = txtTelephoneNumber.Text.Trim();
 
-                datamine.createuserAchievements(profid, 1121, "0");
-                datamine.createuserAchievements(profid, 2212, "0");
-                datamine.createuserAchievements(profid, 3234, "0");
-                datamine.createuserAchievements(profid, 3333, "0");
-                datamine.createuserAchievements(profid, 4444, "0");
-                datamine.createuserAchievements(profid, 5555, "0");
-                datamine.createuserAchievements(profid, 6666, "0");
-                datamine.createuserAchievements(profid, 7777, "0");
-                datamine.createuserAchievements(profid, 8888, "0");
-                datamine.createuserAchievements(profid, 9999, "0");
-                Response.Redirect("~/Pages/UserPage.aspx#Link1");
+                //MailMessage mail = new MailMessage();
+                //mail.To.Add(email);
+
+                //mail.From = new MailAddress("421.team3.greenliving@gmail.com");
+                //mail.Subject = "Welcome!" + first;
+                //mail.Body = "Hello!";
+                //mail.IsBodyHtml = true;
+
+                //SmtpClient smtp = new SmtpClient();
+                //smtp.Host = "smtp.gmail.com";
+                //smtp.Port = 587;
+                //smtp.Credentials = new System.Net.NetworkCredential
+                //     ("421.team3.greenliving@gmail.com", "421Team3Joe");
+
+                //smtp.EnableSsl = true;
+                //smtp.Send(mail);
+
+                Service1 retrieve = new Service1();
+                Service1Client datamine = new Service1Client();
+                if (validationcheck(theUser, thePass, thePassConfirmation, email, telephone) == true)
+                {
+                    //string newPass = passHash(thePass);
+                    retrieve.userRegister(theUser, thePass, first, last, email, city, state, country, telephone);
+                    int profid = datamine.getprofileID(theUser);
+                    Session["user"] = theUser;
+                    Session["id"] = profid;
+
+                    datamine.createuserAchievements(profid, 1121, "0");
+                    datamine.createuserAchievements(profid, 2212, "0");
+                    datamine.createuserAchievements(profid, 3234, "0");
+                    datamine.createuserAchievements(profid, 3333, "0");
+                    datamine.createuserAchievements(profid, 4444, "0");
+                    datamine.createuserAchievements(profid, 5555, "0");
+                    datamine.createuserAchievements(profid, 6666, "0");
+                    datamine.createuserAchievements(profid, 7777, "0");
+                    datamine.createuserAchievements(profid, 8888, "0");
+                    datamine.createuserAchievements(profid, 9999, "0");
+                    Response.Redirect("~/Pages/UserPage.aspx#Link1");
+                }
+            }
+            catch (Exception ab)
+            {
+                Team_Compostable.App_Code.ExceptionUtility.LogException(ab, "btnSubmit Register Error");
             }
         }
 
