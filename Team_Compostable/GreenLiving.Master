@@ -95,7 +95,7 @@
                         </asp:TableCell>
                         <asp:TableCell>
                             <asp:TextBox ID="txtPasswordConfirmation" TextMode="Password" runat="server" />
-                            <
+                            
                         </asp:TableCell>
 
 
@@ -292,7 +292,7 @@
                 </asp:Repeater>
                 <ucLan:Languages ID="LanSelect" runat="server" />
                 
-                    <li><a href="Pages/UserPage.aspx#Link1" id="userPageID" style="display:none; float:right;"><i class="fa fa-user"></i>Register</a></li>
+                    <li><a href="Pages/UserPage.aspx#Link1" id="userPageID" style="display:none; float:right;" runat="server"><i class="fa fa-user"></i></a></li>
                     <li><a class="modals" href="#openModal"><i class="fa fa-user-plus"></i>Register</a></li>
                     <li><a class="modals" href="#openModal2"><i class="fa fa-sign-in"></i>Login</a></li>
                 

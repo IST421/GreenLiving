@@ -152,13 +152,14 @@
 
                             
                                 <asp:TableCell runat="server">
-                                    <asp:Label runat="server" Text="Charitability: "></asp:Label>
+                                    <asp:Label runat="server" placeholder="label5" Text="Charitability: "></asp:Label>
                                     <asp:Label runat="server" Text="0" Visible="false" ID="giver"></asp:Label>
                                 </asp:TableCell>
 
                                 <asp:TableCell runat="server">
                                     <%--<asp:TextBox ID="txtTaxi" placeholder="label5" runat="server"></asp:TextBox>--%>
-                                    <asp:Button ID="gifts" Text="Yes!" runat="server"/>
+                                    <asp:TextBox ID="gifty" runat="server" />
+                                    
                                    </asp:TableCell>
                             
                    
@@ -169,8 +170,8 @@
                                 </asp:TableCell>
 
                                 <asp:TableCell runat="server">
-                                    <%--<asp:TextBox ID="TextBox1" placeholder="label6" runat="server"></asp:TextBox>--%>
-                                    <asp:Button ID="prestineNature" Text="Mother Nature" runat="server"/>                        
+                                    <asp:TextBox ID="TextBox1" placeholder="label6" runat="server"></asp:TextBox>
+                                    <%--<asp:Button ID="prestineNature" Text="Mother Nature" runat="server"/>     --%>                   
                                 </asp:TableCell>
                                 <asp:TableCell ID="pic4" CssClass="achIMG animated">?</asp:TableCell>
                                 <asp:TableCell ID="pic5" CssClass="achIMG animated">?</asp:TableCell>
@@ -203,8 +204,8 @@
                                 </asp:TableCell>
 
                                 <asp:TableCell runat="server">
-                                    <%--<asp:TextBox ID="TextBox4" placeholder="label9" runat="server"></asp:TextBox>--%>
-                                    <asp:Button ID="button2" runat="server" Text="Traveled!" />
+                                    <asp:TextBox ID="TextBox4" placeholder="label9" runat="server"></asp:TextBox>
+                                    <%--<asp:Button ID="button2" runat="server" Text="Traveled!" />--%>
                                     
                                    </asp:TableCell>
                                   
@@ -227,39 +228,48 @@
             </div>
 
             <div id="Link5">
-               <asp:Chart ID="leaderBoardChart" Width="900px" Height="900px" BorderStyle="solid" runat="server">
-                <Titles>
-                    <asp:Title Text="Leaderboard" Font="Relaway, 14" />
-                </Titles>
-            
-                <Series>
-                    <asp:Series ChartType="Column" Font="Relaway, 24px" Name="scores"></asp:Series>
-                
-                </Series>
-                <ChartAreas>
-                    <asp:ChartArea Name="ChartArea1">
-                        <AxisX Interval="1"  Title="Users" TitleFont="Relaway, 14" >
-                        <LabelStyle Font="Arial, 20" Angle="40"/>
-                        </AxisX>
-                        <AxisY Interval="auto" Title="Scores" TitleFont="Relaway, 14" />
-                    </asp:ChartArea>
-                </ChartAreas>
-            </asp:Chart>
-                <asp:Label runat="server" ID="userName1" Text=""></asp:Label>
-                <asp:Label runat="server" ID="userScore1" Text=""></asp:Label><br />
-                <asp:Label runat="server" ID="userName2" Text=""></asp:Label>
-                <asp:Label runat="server" ID="userScore2" Text=""></asp:Label><br />
-                <asp:Label runat="server" ID="userName3" Text=""></asp:Label>
-                <asp:Label runat="server" ID="userScore3" Text=""></asp:Label><br />
-                <asp:Label runat="server" ID="userName4" Text=""></asp:Label>
-                <asp:Label runat="server" ID="userScore4" Text=""></asp:Label><br />
-                <asp:Label runat="server" ID="userName5" Text=""></asp:Label>
-                <asp:Label runat="server" ID="userScore5" Text=""></asp:Label>
-            </div>
+               <div style="width:100%;">
 
-            
+                   <div style="float:left;  margin:auto; width:50%;">
+                       <asp:Chart ID="leaderBoardChart" Width="600px" Height="600px" BorderStyle="solid" runat="server">
+                           <Titles>
+                               <asp:Title Text="Leaderboard" Font="Relaway, 14" />
+                           </Titles>
 
-        </div>
-    </div>
+                           <Series>
+                               <asp:Series ChartType="Column" Font="Relaway, 24px" Name="scores"></asp:Series>
+
+                           </Series>
+                           <ChartAreas>
+                               <asp:ChartArea Name="ChartArea1">
+                                   <AxisX Interval="1" Title="Users" TitleFont="Relaway, 14">
+                                       <LabelStyle Font="Arial, 20" Angle="40" />
+                                   </AxisX>
+                                   <AxisY Interval="auto" Title="Scores" TitleFont="Relaway, 14" />
+                               </asp:ChartArea>
+                           </ChartAreas>
+                       </asp:Chart>
+                   </div>
+
+                   <div style="float:right; margin:auto; width:50%;">
+                       
+                       <asp:Label runat="server" ID="userName1" Text=""></asp:Label>
+                       <asp:Label runat="server" ID="userScore1" Text=""></asp:Label><br />
+                       <asp:Label runat="server" ID="userName2" Text=""></asp:Label>
+                       <asp:Label runat="server" ID="userScore2" Text=""></asp:Label><br />
+                       <asp:Label runat="server" ID="userName3" Text=""></asp:Label>
+                       <asp:Label runat="server" ID="userScore3" Text=""></asp:Label><br />
+                       <asp:Label runat="server" ID="userName4" Text=""></asp:Label>
+                       <asp:Label runat="server" ID="userScore4" Text=""></asp:Label><br />
+                       <asp:Label runat="server" ID="userName5" Text=""></asp:Label>
+                       <asp:Label runat="server" ID="userScore5" Text=""></asp:Label>
+                   </div>
+               </div>
+
+               </div>
+           
+
+       </div>
+   </div>
 
 </asp:Content>

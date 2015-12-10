@@ -36,7 +36,10 @@ namespace infoRetrieval
             }
             return composite;
         }
-        public void userRegister(string username, string password, string firstname, string lastname, string email, string city, string state, string country, string telephone)
+
+        public void userRegister(string username, string password, 
+            string firstname, string lastname, 
+            string email, string city, string state, string country, string telephone)
         {
             using (SqlConnection con = new SqlConnection(strcon))
             {

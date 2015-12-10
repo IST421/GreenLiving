@@ -139,13 +139,13 @@ namespace Team_Compostable.Pages {
         protected global::System.Web.UI.WebControls.Label giver;
         
         /// <summary>
-        /// gifts control.
+        /// gifty control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button gifts;
+        protected global::System.Web.UI.WebControls.TextBox gifty;
         
         /// <summary>
         /// naturaleza control.
@@ -157,13 +157,13 @@ namespace Team_Compostable.Pages {
         protected global::System.Web.UI.WebControls.Label naturaleza;
         
         /// <summary>
-        /// prestineNature control.
+        /// TextBox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button prestineNature;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
         
         /// <summary>
         /// pic4 control.
@@ -238,13 +238,13 @@ namespace Team_Compostable.Pages {
         protected global::System.Web.UI.WebControls.Label ticket;
         
         /// <summary>
-        /// button2 control.
+        /// TextBox4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button button2;
+        protected global::System.Web.UI.WebControls.TextBox TextBox4;
         
         /// <summary>
         /// pic7 control.

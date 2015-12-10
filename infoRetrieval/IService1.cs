@@ -20,7 +20,8 @@ namespace infoRetrieval
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         [OperationContract]
-        void userRegister(string username, string password, string firstname, string lastname, string email, string city, string state, string country, string telephone);
+        void userRegister(string username, string password, string firstname, string lastname, 
+            string email, string city, string state, string country, string telephone);
 
         [OperationContract]
         int getprofileID(string username);

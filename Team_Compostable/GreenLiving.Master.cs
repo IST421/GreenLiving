@@ -38,22 +38,7 @@ namespace Team_Compostable
             string country = txtCountry.Text.Trim();
             string telephone = txtTelephoneNumber.Text.Trim();
 
-            //MailMessage mail = new MailMessage();
-            //mail.To.Add(email);
-
-            //mail.From = new MailAddress("421.team3.greenliving@gmail.com");
-            //mail.Subject = "Welcome!" + first;
-            //mail.Body = "Hello!";
-            //mail.IsBodyHtml = true;
-
-            //SmtpClient smtp = new SmtpClient();
-            //smtp.Host = "smtp.gmail.com";
-            //smtp.Port = 587;
-            //smtp.Credentials = new System.Net.NetworkCredential
-            //     ("421.team3.greenliving@gmail.com", "421Team3Joe");
-
-            //smtp.EnableSsl = true;
-            //smtp.Send(mail);
+            
 
             Service1 retrieve = new Service1();
             Service1Client datamine = new Service1Client();
@@ -64,7 +49,23 @@ namespace Team_Compostable
                 int profid = datamine.getprofileID(theUser);
                 Session["user"] = theUser;
                 Session["id"] = profid;
+                
+                MailMessage mail = new MailMessage();
+                mail.To.Add(email);
 
+                mail.From = new MailAddress("421.team3.greenliving@gmail.com");
+                mail.Subject = "Welcome!" + first;
+                mail.Body = "Hello!";
+                mail.IsBodyHtml = true;
+
+                SmtpClient smtp = new SmtpClient();
+                smtp.Host = "smtp.gmail.com";
+                smtp.Port = 587;
+                smtp.Credentials = new System.Net.NetworkCredential
+                     ("421.team3.greenliving@gmail.com", "421Team3Joe");
+
+                smtp.EnableSsl = true;
+                smtp.Send(mail);
                 datamine.createuserAchievements(profid, 1121, "0");
                 datamine.createuserAchievements(profid, 2212, "0");
                 datamine.createuserAchievements(profid, 3234, "0");
@@ -89,8 +90,10 @@ namespace Team_Compostable
             if (login == 0)
             {
                 int profid = datamine.getprofileID(theUser);
+
                 Session["id"] = profid;
                 Session["user"] = theUser;
+                this.userPageID.InnerHtml = Session["user"].ToString();
                 Response.Redirect("~/Pages/UserPage.aspx#Link1");
 
             }

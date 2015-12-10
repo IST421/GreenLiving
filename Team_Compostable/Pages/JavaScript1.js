@@ -1,10 +1,12 @@
 ﻿$(document).ready(function () {
-    $("#loginSubmit").click(function () {
+   
+    if (document.location.pathname === '/Pages/UserPage.aspx') {
         $("#userPageID").css("display", "block")
-        $("#userPageID").html("owen5020")
-        $(".modals").css("display", "none")                    //give login Li and ID OF "blahblah" for test 
-    });
+        $(".modals").css("display", "none")
+    }
 });
+
+
 
 //$(".midArrow").hover(function () {
 //    $(".midArrow").effect("bounce", { times: 4, distance: 200 }, 400);

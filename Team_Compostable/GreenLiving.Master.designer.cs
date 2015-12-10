@@ -319,6 +319,15 @@ namespace Team_Compostable {
         protected global::Team_Compostable.Controls.WebUserControl1 LanSelect;
         
         /// <summary>
+        /// userPageID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor userPageID;
+        
+        /// <summary>
         /// mainHomeContent control.
         /// </summary>
         /// <remarks>
