@@ -242,6 +242,7 @@
       <DependentUpon>Languages.ascx</DependentUpon>
     </Compile>
     <Compile Include="classes\InputValidation.cs" />
+    <Compile Include="App_Code\ExceptionUtility.cs" />
     <Compile Include="Pages\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -327,9 +328,7 @@
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Code\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="App_GlobalResources\WebResources.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>

@@ -9,7 +9,9 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Data;
 using System.Data.Sql;
-
+using System.IO;
+using System.Web;
+using infoRetrieval;
 
 namespace infoRetrieval
 {
@@ -65,6 +67,7 @@ namespace infoRetrieval
 
                 catch (Exception et)
                 {
+                    infoRetrieval.App_Code.ExceptionHandler.LogException(et, "User Registration Error");
                     throw et;
                 }
                 finally
@@ -99,6 +102,7 @@ namespace infoRetrieval
                 }
                 catch (Exception a)
                 {
+                    infoRetrieval.App_Code.ExceptionHandler.LogException(a, "Get Profile ID Error");
                     throw a;
                 }
                 finally
@@ -128,6 +132,7 @@ namespace infoRetrieval
                 }
                 catch (Exception b)
                 {
+                    infoRetrieval.App_Code.ExceptionHandler.LogException(b, "Create User Achievement Error");
                     throw b;
                 }
                 finally
@@ -157,6 +162,7 @@ namespace infoRetrieval
                 }
                 catch (Exception b)
                 {
+                    infoRetrieval.App_Code.ExceptionHandler.LogException(b, "Update Achievements Error");
                     throw b;
                 }
                 finally
@@ -185,6 +191,7 @@ namespace infoRetrieval
                 }
                 catch (Exception dmx)
                 {
+                    infoRetrieval.App_Code.ExceptionHandler.LogException(dmx, "Carbon Insert Error");
                     throw dmx;
                 }
                 finally
@@ -218,6 +225,7 @@ namespace infoRetrieval
                 }
                 catch (Exception e)
                 {
+                    infoRetrieval.App_Code.ExceptionHandler.LogException(e, "Login User Error");
                     throw e;
                 }
                 finally
@@ -256,6 +264,7 @@ namespace infoRetrieval
                 }
                 catch (Exception nmsqt)
                 {
+                    infoRetrieval.App_Code.ExceptionHandler.LogException(nmsqt, "User Deets Error");
                     throw nmsqt;
                 }
                 finally

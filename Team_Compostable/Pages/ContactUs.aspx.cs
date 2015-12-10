@@ -30,29 +30,36 @@ namespace Team_Compostable.Pages
         }
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (Page.IsValid)
+            try
             {
-                MailMessage mail = new MailMessage();
-                mail.To.Add(txtEmail.Text);
+                if (Page.IsValid)
+                {
+                    MailMessage mail = new MailMessage();
+                    mail.To.Add(txtEmail.Text);
 
-                mail.From = new MailAddress("421.team3.greenliving@gmail.com");
-                mail.Subject = ddlSubject.Text;
-                mail.Body = txtMessage.Text;
-                mail.IsBodyHtml = true;
-                
-                SmtpClient smtp = new SmtpClient();
-                smtp.Host = "smtp.gmail.com";
-                smtp.Port = 587;
-                smtp.Credentials = new System.Net.NetworkCredential
-                     ("421.team3.greenliving@gmail.com", "421Team3Joe");
+                    mail.From = new MailAddress("421.team3.greenliving@gmail.com");
+                    mail.Subject = "Thanks For Contacting Green Living Support!";
+                    mail.Body = "Thank You For Contacting Us! <br/> We will contact you shortly. <br/> Your message was <br/> " + txtMessage.Text;
+                    mail.IsBodyHtml = true;
 
-                smtp.EnableSsl = true;
-                smtp.Send(mail);
-                lblResult.Text = "Thank You";
+                    SmtpClient smtp = new SmtpClient();
+                    smtp.Host = "smtp.gmail.com";
+                    smtp.Port = 587;
+                    smtp.Credentials = new System.Net.NetworkCredential
+                         ("421.team3.greenliving@gmail.com", "421Team3Joe");
+
+                    smtp.EnableSsl = true;
+                    smtp.Send(mail);
+                    lblResult.Text = "Thank You";
+                }
+                else
+                {
+                    lblResult.Text = "Fill up all the fields";
+                }
             }
-            else
+            catch (Exception ex)
             {
-                lblResult.Text = "Fill up all the fields";
+                Team_Compostable.App_Code.ExceptionUtility.LogException(ex, "Contact Us Error");
             }
         }
     }
