@@ -54,6 +54,7 @@ namespace infoRetrieval
                         comm.Parameters.AddWithValue("@state", state);
                         comm.Parameters.AddWithValue("@country", country);
                         comm.Parameters.AddWithValue("@userTelephone", telephone);
+                        comm.Parameters.AddWithValue("@initialScore",0);
                         con.Open();
                         comm.ExecuteNonQuery();
                     }

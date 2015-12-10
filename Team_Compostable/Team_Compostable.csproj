@@ -90,7 +90,16 @@
     <Content Include="Controls\Home.ascx" />
     <Content Include="Controls\Pollution.ascx" />
     <Content Include="Controls\Languages.ascx" />
+    <Content Include="Images\Charity.png" />
+    <Content Include="Images\ComProster.png" />
+    <Content Include="Images\CruiseControl.png" />
+    <Content Include="Images\Forest.jpg" />
+    <Content Include="Images\HomeWork.png" />
+    <Content Include="Images\JollyGreen.png" />
     <Content Include="Images\seedling.jpg" />
+    <Content Include="Images\ShowerPower.png" />
+    <Content Include="Images\TreePlanting.png" />
+    <Content Include="Images\World.jpg" />
     <Content Include="Pages\Global.asax" />
     <Content Include="GreenLiving.Master" />
     <None Include="Properties\Settings.settings">

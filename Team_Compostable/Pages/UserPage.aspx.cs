@@ -28,7 +28,7 @@ namespace Team_Compostable.Pages
                 //int cruisAch = Convert.ToInt32(cruise.Text);
                 //int elecAch = Convert.ToInt32(ticket.Text);
                 int profid = Convert.ToInt32(Session["id"]);
-
+                sup.InnerHtml = Session["user"].ToString();
                 using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["JoeDB"].ConnectionString))
                 {
 
@@ -41,7 +41,7 @@ namespace Team_Compostable.Pages
                             comm.Parameters.AddWithValue("@id", profid);
                             con.Open();
                             SqlDataReader read = comm.ExecuteReader();
-                            Label[] achievements = new Label[] { seed, compost, shower, telecommute, giver, naturaleza, forest, cruise,ticket};
+                            Label[] achievements = new Label[] { seed, compost, shower, telecommute, giver, naturaleza, forest, cruise, ticket };
 
                             int index = 0;
                             while (read.Read() && index < achievements.Length)
@@ -49,60 +49,54 @@ namespace Team_Compostable.Pages
                                 achievements[index].Text = read.GetString(0).ToString();
                                 index++;
                             }
-                            if (compost.Text.Equals("100"))
+                            if (seed.Text.Equals("100"))
                             {
                                 pic1.Text = string.Format("<img src='../Images/seedling.jpg' class='achIMG'/>");
-                                pic1.CssClass = "";
+                                pic1.CssClass = "regular";
+                                pic1.Visible = false;
                                 seed.Visible = false;
                                 txtCar.Visible = false;
-                            } 
+                            }
                             if (compost.Text.Equals("100"))
                             {
-                                pic2.Text = string.Format("<img src='../Images/seedling.jpg' class='achIMG'/>");
-                                pic2.CssClass = "";
-                                seed.Visible = false;
-                            } 
+                                pic2.Text = string.Format("<img src='../Images/ComProster.png' class='achIMG'/>");
+                                pic2.CssClass.Replace("achIMG animated", "");
+
+                            }
                             if (shower.Text.Equals("100"))
                             {
-                                pic3.Text = string.Format("<img src='../Images/seedling.jpg' class='achIMG'/>");
+                                pic3.Text = string.Format("<img src='../Images/ShowerPower.png' class='achIMG'/>");
                                 pic3.CssClass = "";
-                                seed.Visible = false;
                             }
                             if (telecommute.Text.Equals("100"))
                             {
-                                pic4.Text = string.Format("<img src='../Images/seedling.jpg' class='achIMG'/>");
+                                pic4.Text = string.Format("<img src='../Images/HomeWork.png' class='achIMG'/>");
                                 pic4.CssClass = "";
-                                seed.Visible = false;
-                            } 
-                            if(giver.Text.Equals("100"))
+                            }
+                            if (giver.Text.Equals("100"))
                             {
-                                pic5.Text = string.Format("<img src='../Images/seedling.jpg' class='achIMG'/>");
+                                pic5.Text = string.Format("<img src='../Images/Charity.png' class='achIMG'/>");
                                 pic5.CssClass = "";
-                                seed.Visible = false;
                             }
                             if (naturaleza.Text.Equals("100"))
                             {
-                                pic6.Text = string.Format("<img src='../Images/seedling.jpg' class='achIMG'/>");
+                                pic6.Text = string.Format("<img src='../Images/TreePlanting.png' class='achIMG'/>");
                                 pic6.CssClass = "";
-                                seed.Visible = false;
                             }
                             if (forest.Text.Equals("100"))
                             {
-                                pic7.Text = string.Format("<img src='../Images/seedling.jpg' class='achIMG'/>");
+                                pic7.Text = string.Format("<img src='../Images/Forest.jpg' class='achIMG'/>");
                                 pic7.CssClass = "";
-                                seed.Visible = false;
                             }
                             if (cruise.Text.Equals("100"))
                             {
-                                pic8.Text = string.Format("<img src='../Images/seedling.jpg' class='achIMG'/>");
+                                pic8.Text = string.Format("<img src='../Images/CruiseControl.png' class='achIMG'/>");
                                 pic8.CssClass = "";
-                                seed.Visible = false;
                             }
                             if (ticket.Text.Equals("100"))
                             {
-                                pic9.Text = string.Format("<img src='../Images/seedling.jpg' class='achIMG'/>");
+                                pic9.Text = string.Format("<img src='../Images/World.jpg' class='achIMG'/>");
                                 pic9.CssClass = "";
-                                seed.Visible = false;
                             }
                         }
                     }
@@ -116,7 +110,58 @@ namespace Team_Compostable.Pages
                         con.Close();
                     }
                 }
+                using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["JoeDB"].ConnectionString)){
+                    try
+                    {
+                        
+                        var userNameList = new List<string>();
+                        var userScoreList = new List<Int32>();
+                        using (SqlCommand comm = new SqlCommand("leadeboards", con))
+                        {
+                            comm.CommandType = CommandType.StoredProcedure;
+                            con.Open();
+                            SqlDataReader read = comm.ExecuteReader();
+                            
+                            int index = 0;
+                            while (read.Read() && index < 5)
+                            {
+                                userNameList.Add(read.GetString(0));
+                                userScoreList.Add(read.GetInt32(1));
+                            }
+                        }
+
+
+
+                        this.leaderBoardChart.Series["scores"].Points.AddXY(userNameList[0], userScoreList[0]);
+                        this.leaderBoardChart.Series["scores"].Points.AddXY(userNameList[1], userScoreList[1]);
+                        this.leaderBoardChart.Series["scores"].Points.AddXY(userNameList[2], userScoreList[2]);
+                        this.leaderBoardChart.Series["scores"].Points.AddXY(userNameList[3], userScoreList[3]);
+                        this.leaderBoardChart.Series["scores"].Points.AddXY(userNameList[4], userScoreList[4]);
+
+                        userName1.Text = userNameList[0];
+                        userScore1.Text = Convert.ToString(userScoreList[0]);
+                        userName2.Text = userNameList[1];
+                        userScore2.Text = Convert.ToString(userScoreList[1]);
+                        userName3.Text = userNameList[2];
+                        userScore3.Text = Convert.ToString(userScoreList[2]);
+                        userName4.Text = userNameList[3];
+                        userScore4.Text = Convert.ToString(userScoreList[3]);
+                        userName5.Text = userNameList[4];
+                        userScore5.Text = Convert.ToString(userScoreList[4]);
+                    }
+                    catch (Exception wqj)
+                    {
+                        throw wqj;
+                    }
+                    finally
+                    {
+                        con.Close();
+                        con.Dispose();
+                    }
+
+                }
             }
+
 
 
 
@@ -152,7 +197,7 @@ namespace Team_Compostable.Pages
             int addTele = Convert.ToInt32(telecommute.Text);
             int sumTele = teleAchievement + addTele;
             int addForest = Convert.ToInt32(forest.Text);
-            int sumForest= forestSaverAch + addForest;
+            int sumForest = forestSaverAch + addForest;
             int addCruis = Convert.ToInt32(cruise.Text);
             int sumCruise = cruisAch + addCruis;
 
@@ -163,7 +208,9 @@ namespace Team_Compostable.Pages
             datamine.updateAchievements(profid, 3333, sumTele.ToString());
             datamine.updateAchievements(profid, 6666, sumForest.ToString());
             datamine.updateAchievements(profid, 7777, sumCruise.ToString());
+            Response.Redirect("~/Pages/UserPage.aspx#Link2");
         }
+
 
     }
 }

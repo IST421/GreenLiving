@@ -22,7 +22,7 @@
 
             <div id="Link1">
 
-                <h1 class="colh1">sup dude</h1>
+                <h1 class="colh1" runat="server" id="sup">sup dude</h1>
                 <div id="accordion">
                     <h3>Section 1</h3>
                     <div>
@@ -208,7 +208,34 @@
             </div>
 
             <div id="Link5">
-                test 5
+               <asp:Chart ID="leaderBoardChart" Width="900px" Height="900px" BorderStyle="solid" runat="server">
+                <Titles>
+                    <asp:Title Text="Leaderboard" Font="Relaway, 14" />
+                </Titles>
+            
+                <Series>
+                    <asp:Series ChartType="Column" Font="Relaway, 24px" Name="scores"></asp:Series>
+                
+                </Series>
+                <ChartAreas>
+                    <asp:ChartArea Name="ChartArea1">
+                        <AxisX Interval="1"  Title="Users" TitleFont="Relaway, 14" >
+                        <LabelStyle Font="Arial, 20" Angle="40"/>
+                        </AxisX>
+                        <AxisY Interval="auto" Title="Scores" TitleFont="Relaway, 14" />
+                    </asp:ChartArea>
+                </ChartAreas>
+            </asp:Chart>
+                <asp:Label runat="server" ID="userName1" Text=""></asp:Label>
+                <asp:Label runat="server" ID="userScore1" Text=""></asp:Label><br />
+                <asp:Label runat="server" ID="userName2" Text=""></asp:Label>
+                <asp:Label runat="server" ID="userScore2" Text=""></asp:Label><br />
+                <asp:Label runat="server" ID="userName3" Text=""></asp:Label>
+                <asp:Label runat="server" ID="userScore3" Text=""></asp:Label><br />
+                <asp:Label runat="server" ID="userName4" Text=""></asp:Label>
+                <asp:Label runat="server" ID="userScore4" Text=""></asp:Label><br />
+                <asp:Label runat="server" ID="userName5" Text=""></asp:Label>
+                <asp:Label runat="server" ID="userScore5" Text=""></asp:Label>
             </div>
 
             
