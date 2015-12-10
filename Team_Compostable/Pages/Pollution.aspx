@@ -12,7 +12,7 @@
                 <h1><span class="span1">Pollution</span></h1>
                 <h1>Carbon Dioxide,
                     <br />
-                    Haze, Ozone, and More</h1>
+                    Global Warming and Ice level</h1>
             </div>
         </div>
     </div>

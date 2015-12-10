@@ -24,63 +24,83 @@
 
                 <h1 class="colh1" runat="server" id="sup">sup dude</h1>
                 <div id="accordion">
-                    <h3>Section 1</h3>
+
+                    <h3>Seedling</h3>
                     <div>
-                        <p class="pRight circle">picture here</p>
-                        <p class="pLeft">1</p>
+                        <p id="left" class="pLeft">
+                            <img src="../Images/seedling.jpg" class="achIMG" />                                             
+                            Welcome to Team Compostable!
+                            Automatically unlock the achievement by registering. 
+                        </p>
                     </div>
-                    <h3>Section 2</h3>
+
+                    <h3>The 100 Days of Compost</h3>
                     <div>
-                        <p class="pRight circle">picture here</p>
-                        <p class="pLeft">2</p>
+                        
+                        <p class="pLeft"><img src="../Images/ComProster.png" class="achIMG" /> 
+                            You've made an effort to compost for 100 days out of 365 days.</p>
                     </div>
-                    <h3>Section 3</h3>
+
+                    <h3>Shower Power</h3>
+                    <div>    
+                                         
+                        <p class="pLeft"><img src="../Images/ShowerPower.png" class="achIMG" />  Taking shorter showers conserves more than 10 gallons of water,
+                             more fresh water for all! </p>
+                    </div>
+
+                    <h3>The Telecommute</h3>
                     <div>
-                        <p class="pRight circle">picture here</p>
-                        <p class="pLeft">3</p>
+                        
+                        <p class="pLeft"><img src="../Images/HomeWork.png" class="achIMG" />Worked from home for 50 days!</p>
                     </div>
-                    <h3>Section 4</h3>
+
+                    <h3>Charitable Character</h3>
                     <div>
-                        <p class="pRight circle">picture here</p>
-                        <p class="pLeft">4</p>
+                       
+                        <p class="pLeft"><img src="../Images/Charity.png" class="achIMG" />
+                            Rather than wasting it, you donate it, not only are you charitable to the envrinoment but to other people!</p>
                     </div>
-                    <h3>Section 5</h3>
+
+                    <h3>Tree Hugger</h3>
                     <div>
-                        <p class="pRight circle">picture here</p>
-                        <p class="pLeft">5</p>
+                    
+                        <p class="pLeft"><img src="../Images/TreePlanting.png" class="achIMG" />
+                            Supported planting a tree</p>
                     </div>
-                    <h3>Section 6</h3>
+
+                    <h3>Speak for the trees</h3>
                     <div>
-                        <p class="pRight circle">picture here</p>
-                        <p class="pLeft">6</p>
+                    
+                        <p class="pLeft"><img src="../Images/Forest.jpg" class="achIMG" />
+                            Participated in 4 forest saving sessions</p>
                     </div>
-                    <h3>Section 7</h3>
+
+                    <h3>Use the Cruise</h3>
                     <div>
-                        <p class="pRight circle">picture here</p>
-                        <p class="pLeft">7</p>
+                  
+                        <p class="pLeft"><img src="../Images/CruiseControl.png" class="achIMG" />
+                            Spend over 100 hours in cruise in your car</p>
                     </div>
-                    <h3>Section 8</h3>
+
+                    <h3>International!</h3>
                     <div>
-                        <p class="pRight circle">picture here</p>
-                        <p class="pLeft">8</p>
-                    </div>
-                    <h3>Section 9</h3>
+                 
+                        <p class="pLeft"><img src="../Images/World.jpg" class="achIMG" />
+                            Puurchase an e-ticket, travel to a foreign country and visit a green landmark</p>
+                    </div>    
+                    <h3>Jolly and Green</h3>
                     <div>
-                        <p class="pRight circle">picture here</p>
-                        <p class="pLeft">9</p>
-                    </div>
-                    <h3>Section 10</h3>
-                    <div>
-                        <p class="pRight circle">picture here</p>
-                        <p class="pLeft">10</p>
-                    </div>
+                 
+                        <p class="pLeft"><img src="../Images/JollyGreen.png" class="achIMG" />
+                           Lives like a true Green Man!</p>
+                    </div>        
                 </div>
 
             </div>
 
 
 
-            <div id="Link2">
+            <div id="Link2"> 
                 <%--<asp:Label ID="theUserSession" style="text-align:center" CssClass="colh1" runat="server">q</asp:Label>--%>
                 <h1 class="colh1" id="theuser2" runat="server">hi</h1>
                 <h1 class="colh1">Achievements<i class="fa fa-trophy"></i></h1>
@@ -196,7 +216,6 @@
                           <asp:TableRow><asp:TableCell><asp:Button Text="Submit" OnClick="ach_Click" runat="server" /></asp:TableCell></asp:TableRow>
                            
                         </asp:Table>
-
             </div>
 
             <div id="Link3">

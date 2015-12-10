@@ -20,7 +20,7 @@ i{
     text-shadow:1px 1px 1px black;
 }
 .midArrow{
-    animation-name:bounce;
+    animation-name:bounce1;
     animation-iteration-count:infinite;
     animation-duration:3s;
     width:100%;
@@ -28,7 +28,10 @@ i{
     bottom:0px;
     left:0px;
 }
-@keyframes bounce {
+.none{
+    display:none;
+}
+@keyframes bounce1 {
 	0%, 40%, 80% {
     transform:translateY(0);
   }
@@ -193,6 +196,29 @@ h2 {
     background-size:cover;
 }
 
+.calcCircle{
+    font-size:150px;
+    width: 230px;
+	height: 230px;
+	-moz-border-radius: 50px; 
+	-webkit-border-radius: 50px;
+	border-radius: 50%;
+    background-position:center;
+    background-size:cover;
+    /*margin:auto;*/ /*maybe*/
+}
+#arrowUp{
+    background-color:#c80000;
+    color:white;
+}
+#arrowDown{
+    background-color:#197000;
+    color:white;
+}
+#minus{
+    background-color:#e3ee00;
+    color:white;
+}
 .bgBee{
     background-image:url(../GreenTheme/Images/bgBee-min.jpg);
 }
@@ -284,6 +310,53 @@ h2 {
     height:50vh;
     background-image:url(../EarthTheme/Images/Calc1-min.JPEG);
     background-position:bottom;
+}
+#calc .basicStyle1{
+    height:200px;
+}
+.calcStyle1 {
+    font-size:20px;
+    text-align:left;
+    width:60%;
+    height:500px;
+    padding-bottom:100px;
+    margin:auto;
+    display:block;
+    min-height:100%;
+}
+#calc2 .calcStyle1{
+    height:300px;
+}
+.calcStyle1 .colh1{
+   font-size: 3vh; 
+}
+.calcStyle1 .myCol2{
+    text-align:left;
+}
+.calcStyle2{
+    font-size:20px;
+    text-align:center;
+    width:60%;
+    height:450px;
+    padding-bottom:100px;
+    margin:auto;
+    display:block;
+    min-height:100%;
+}
+#smallCalc{
+    height:250px;
+}
+.calcPanels{
+    color:black;
+    font-size:14px;
+    display:block;
+    width:360px;    
+    margin:auto;
+    padding-bottom:25px;
+
+}
+.buttonSUBMIT{
+    float:left;
 }
 
 /*POLLUTION content HERE*/
@@ -434,10 +507,237 @@ h2 {
                  display:none;
              } 
              #Link1:target, #Link2:target, #Link3:target, #Link4:target, #Link5:target{
-                 display:inline-block;  
+               display:inline-block;  
                  padding-top:9%;
-                 margin-top:-9%;                   
+                 margin-top:-9%;   
+                 width:100%;                  
              }
+             .userTables table{
+    position:relative;
+    width:100%;
+    margin:auto;  
+    height:100%; 
+}
+.userTables tr{
+    height:120px;
+    width:120px;    
+}
+.achIMG{
+    width: 120px;
+	height: 120px;
+	-moz-border-radius: 50px; 
+	-webkit-border-radius: 50px;
+	border-radius: 50%;
+    background-size:cover;
+    animation-name:tada;
+    animation-duration:1.5s;
+}
+.achIMG:hover{
+    animation-name:bounce;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration:1s;
+}
+#accordion{
+    border:solid 2px black;
+    border-radius:10px;
+    width:50%;
+    margin-left:5%;
+    transition:ease-in-out all 2s;
+    font-size:20px;
+   
+}
+#Link1 h1{
+    text-align:left; 
+    margin-left:5%;
+}
+#accordion h3{
+    border-bottom:solid 3px black;
+    background:repeating-linear-gradient(#494949, black);
+    color:black;
+    margin-top:10px;
+    padding-left:5px;
+    height:100%;
+    color:white;
+}
+    #accordion > div {
+        padding: 1em 2.2em;
+        height:200px;
+       
+    }
+    #accordion p{
+        height:100px;
+    }
+    #accordion h3:hover{
+        background:#ffffff;
+        color:black;
+        transition: all 0.5s ease;
+        cursor:pointer;
+    }
+.pRight{
+    float:right
+
+}
+.pLeft{
+    float:left;
+    height:100px;
+}
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+
+@-webkit-keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0,-4px,0);
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0,-4px,0);
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+.userNav {
+  position: fixed;
+  transition: left .2s ease;
+  width: 155px;
+  transform: translateX(-160px);
+  left:-50px; 
+}
+.userNav  ul {
+  list-style: none;
+  margin-top: -2px;
+  border: solid;  
+}
+.userNav  ul li {
+  position: relative;
+  width: 165px;
+  padding: 7px;
+  background: #000000;
+  margin: 2px;
+  transform: translateX(0);
+  transition: transform .2s ease;
+  font-size:14px;
+}
+.userNav  ul li:hover {
+  transform: translateX(112.5px);
+  left:50px;
+}
+.userNav  ul li a {
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+.userNav  ul li a i {
+  float:right;
+}
 /*ERROR PAGE*/
 .errorPage{
     background-image:url(../GreenTheme/Images/errorPageBG.jpg);
@@ -514,6 +814,10 @@ h2 {
     animation-duration:1.9s;
     transition-timing-function:ease-out;
 }
+#pollution1, #pollution2, #pollution3, #pollution4, #pollution5, #pollution6{
+    animation-duration:1s;
+    transition-timing-function:ease-out;
+} 
 /* just messing around lol */
 @media screen and (max-width: 480px){
 .leftFoot,
